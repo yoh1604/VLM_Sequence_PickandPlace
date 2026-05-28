@@ -1,0 +1,117 @@
+{
+  "resolved_primary_target": "orange fruit",
+  "target_visibility": "clear",
+  "plan_intent": "pick_target",
+  "visual_analysis": [
+    {
+      "object": "orange fruit",
+      "bbox": [
+        601,
+        664,
+        749,
+        807
+      ],
+      "description": "An orange fruit with a green stem, located on the right side of the wooden shelf.",
+      "status": "target",
+      "target_role": "primary_target"
+    },
+    {
+      "object": "red apple",
+      "bbox": [
+        518,
+        542,
+        683,
+        675
+      ],
+      "description": "A red apple positioned in front of a red soda can.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "red soda can",
+      "bbox": [
+        431,
+        533,
+        632,
+        631
+      ],
+      "description": "A red and silver A&W soda can behind the red apple.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "white garlic",
+      "bbox": [
+        626,
+        424,
+        724,
+        526
+      ],
+      "description": "A white bulb of garlic in the center of the shelf.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "yellow lemon",
+      "bbox": [
+        560,
+        350,
+        688,
+        471
+      ],
+      "description": "A yellow lemon located to the left of the garlic.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "white milk carton",
+      "bbox": [
+        418,
+        378,
+        635,
+        480
+      ],
+      "description": "A white Ultra Milk carton behind the yellow lemon.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "brown potato",
+      "bbox": [
+        595,
+        224,
+        714,
+        372
+      ],
+      "description": "A brown potato on the far left of the shelf.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "wooden shelf",
+      "bbox": [
+        673,
+        155,
+        811,
+        901
+      ],
+      "description": "The wooden shelf holding all the objects.",
+      "status": "clear_background",
+      "target_role": "background"
+    }
+  ],
+  "action_plan": [
+    {
+      "step": 1,
+      "action": "pick",
+      "target": "orange fruit",
+      "target_role": "primary_target",
+      "step_intent": "pick_primary_target",
+      "explanation": "The user wants to eat an orange, and the orange fruit is clearly visible and accessible.",
+      "grasp_pixel_2d": [
+        735,
+        675
+      ]
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "resolved_primary_target": "white garlic",
+  "target_visibility": "clear",
+  "plan_intent": "pick_target",
+  "visual_analysis": [
+    {
+      "object": "white garlic",
+      "bbox": [
+        644,
+        435,
+        724,
+        518
+      ],
+      "description": "A white bulb of garlic located in the center foreground of the table.",
+      "status": "target",
+      "target_role": "primary_target"
+    },
+    {
+      "object": "brown potato",
+      "bbox": [
+        597,
+        253,
+        713,
+        399
+      ],
+      "description": "A brown potato on the left side of the table.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "yellow lemon",
+      "bbox": [
+        558,
+        398,
+        675,
+        496
+      ],
+      "description": "A yellow lemon positioned behind the garlic.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "white milk carton",
+      "bbox": [
+        421,
+        379,
+        603,
+        476
+      ],
+      "description": "A white carton of Ultra Milk in the background.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "red soda can",
+      "bbox": [
+        441,
+        522,
+        605,
+        593
+      ],
+      "description": "A red A&W soda can in the background.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "red apple",
+      "bbox": [
+        533,
+        542,
+        648,
+        628
+      ],
+      "description": "A red apple in front of the soda can.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "orange orange",
+      "bbox": [
+        583,
+        622,
+        688,
+        708
+      ],
+      "description": "An orange on the right side of the table.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "wooden table",
+      "bbox": [
+        575,
+        194,
+        798,
+        808
+      ],
+      "description": "The wooden surface that all the objects are resting on.",
+      "status": "clear_background",
+      "target_role": "background"
+    }
+  ],
+  "action_plan": [
+    {
+      "step": 1,
+      "action": "pick",
+      "target": "white garlic",
+      "target_role": "primary_target",
+      "step_intent": "pick_primary_target",
+      "explanation": "The user requested to pick the garlic, which is clearly visible and unobstructed.",
+      "grasp_pixel_2d": [
+        476,
+        684
+      ]
+    }
+  ]
+}

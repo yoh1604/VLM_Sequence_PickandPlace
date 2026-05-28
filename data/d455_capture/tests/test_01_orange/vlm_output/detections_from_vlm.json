@@ -1,0 +1,178 @@
+[
+  {
+    "label": "orange fruit",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      664,
+      601,
+      807,
+      749
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      601,
+      664,
+      749,
+      807
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "An orange fruit with a green stem, located on the right side of the wooden shelf.",
+    "status": "target",
+    "target_role": "primary_target"
+  },
+  {
+    "label": "red apple",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      542,
+      518,
+      675,
+      683
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      518,
+      542,
+      683,
+      675
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A red apple positioned in front of a red soda can.",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "red soda can",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      533,
+      431,
+      631,
+      632
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      431,
+      533,
+      632,
+      631
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A red and silver A&W soda can behind the red apple.",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "white garlic",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      424,
+      626,
+      526,
+      724
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      626,
+      424,
+      724,
+      526
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A white bulb of garlic in the center of the shelf.",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "yellow lemon",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      350,
+      560,
+      471,
+      688
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      560,
+      350,
+      688,
+      471
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A yellow lemon located to the left of the garlic.",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "white milk carton",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      378,
+      418,
+      480,
+      635
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      418,
+      378,
+      635,
+      480
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A white Ultra Milk carton behind the yellow lemon.",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "brown potato",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      224,
+      595,
+      372,
+      714
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      595,
+      224,
+      714,
+      372
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A brown potato on the far left of the shelf.",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "wooden shelf",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      155,
+      673,
+      901,
+      811
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      673,
+      155,
+      811,
+      901
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "The wooden shelf holding all the objects.",
+    "status": "clear_background",
+    "target_role": "background"
+  }
+]

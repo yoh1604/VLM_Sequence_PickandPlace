@@ -1,0 +1,117 @@
+{
+  "resolved_primary_target": "brown potato",
+  "target_visibility": "clear",
+  "plan_intent": "pick_target",
+  "visual_analysis": [
+    {
+      "object": "brown potato",
+      "bbox": [
+        591,
+        256,
+        739,
+        418
+      ],
+      "description": "A brown potato on the left side of the table.",
+      "status": "target",
+      "target_role": "primary_target"
+    },
+    {
+      "object": "yellow lemon",
+      "bbox": [
+        561,
+        383,
+        688,
+        501
+      ],
+      "description": "A yellow lemon behind the potato and garlic.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "white garlic",
+      "bbox": [
+        642,
+        454,
+        719,
+        539
+      ],
+      "description": "A white bulb of garlic in the center of the table.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "red apple",
+      "bbox": [
+        533,
+        543,
+        681,
+        651
+      ],
+      "description": "A red apple next to the soda can.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "orange fruit",
+      "bbox": [
+        601,
+        641,
+        729,
+        750
+      ],
+      "description": "An orange fruit on the right side of the table.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "white milk carton",
+      "bbox": [
+        422,
+        363,
+        599,
+        469
+      ],
+      "description": "A white carton of Ultra Milk in the background.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "red soda can",
+      "bbox": [
+        422,
+        532,
+        609,
+        620
+      ],
+      "description": "A red can of A&W root beer in the background.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "wooden table",
+      "bbox": [
+        681,
+        184,
+        818,
+        819
+      ],
+      "description": "The wooden tabletop surface where all objects are placed.",
+      "status": "clear_background",
+      "target_role": "background"
+    }
+  ],
+  "action_plan": [
+    {
+      "step": 1,
+      "action": "pick",
+      "target": "brown potato",
+      "target_role": "primary_target",
+      "step_intent": "pick_primary_target",
+      "explanation": "Pick the brown potato to make french fries.",
+      "grasp_pixel_2d": [
+        337,
+        665
+      ]
+    }
+  ]
+}

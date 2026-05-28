@@ -1,0 +1,12 @@
+{
+  "target": "yellow lemon",
+  "post_check_status": "REMOVED_SUCCESS",
+  "target_found_after_action": false,
+  "best_detection": null,
+  "all_detections": [],
+  "post_image_path": "/home/b401/Documents/pick_place_occlusion/data/d455_capture/post_scene_rgb.jpg",
+  "post_yolo_image": "/home/b401/Documents/pick_place_occlusion/data/d455_capture/tests/test_04_susu/post_check_output/STEP_1_post_check_yolo_result.jpg",
+  "post_fastsam_mask": null,
+  "post_fastsam_image": null,
+  "note": "Target tidak ditemukan setelah aksi manual. FastSAM tidak dijalankan karena tidak ada bbox target. Step dianggap berhasil."
+}

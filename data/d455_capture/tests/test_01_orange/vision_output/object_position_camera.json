@@ -1,0 +1,15 @@
+{
+  "object": "orange fruit",
+  "pixel_center_uv": [
+    413,
+    317
+  ],
+  "median_depth_m": 0.3100000023841858,
+  "point_camera_m": [
+    0.06947693285463241,
+    0.05803485087564507,
+    0.3100000023841858
+  ],
+  "frame": "RealSense D455 aligned color camera frame",
+  "note": "Belum ditransformasikan ke base frame UR5."
+}

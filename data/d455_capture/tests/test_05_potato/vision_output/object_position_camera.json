@@ -1,0 +1,15 @@
+{
+  "object": "brown potato",
+  "pixel_center_uv": [
+    200,
+    317
+  ],
+  "median_depth_m": 0.3070000112056732,
+  "point_camera_m": [
+    -0.10069578319053084,
+    0.05745756901080064,
+    0.3070000112056732
+  ],
+  "frame": "RealSense D455 aligned color camera frame",
+  "note": "Belum ditransformasikan ke base frame UR5."
+}

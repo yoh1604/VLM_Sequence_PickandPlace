@@ -1,0 +1,156 @@
+[
+  {
+    "label": "white milk carton",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      376,
+      422,
+      468,
+      616
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      422,
+      376,
+      616,
+      468
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A white carton of Ultra Milk located behind a red apple.",
+    "status": "obstructed",
+    "target_role": "primary_target"
+  },
+  {
+    "label": "red apple",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      360,
+      528,
+      452,
+      664
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      528,
+      360,
+      664,
+      452
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A red apple positioned in front of the white milk carton, blocking access.",
+    "status": "obstructing",
+    "target_role": "search_occluder"
+  },
+  {
+    "label": "brown potato",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      236,
+      594,
+      368,
+      694
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      594,
+      236,
+      694,
+      368
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A brown potato on the left side of the table.",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "white garlic",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      448,
+      642,
+      520,
+      718
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      642,
+      448,
+      718,
+      520
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A white head of garlic in the center of the table.",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "yellow lemon",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      512,
+      554,
+      620,
+      662
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      554,
+      512,
+      662,
+      620
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A yellow lemon to the right of the garlic.",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "orange orange",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      624,
+      600,
+      720,
+      704
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      600,
+      624,
+      704,
+      720
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "An orange orange in the front right corner of the table.",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "red soda can",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      552,
+      418,
+      628,
+      584
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      418,
+      552,
+      584,
+      628
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A red A&W soda can behind the yellow lemon.",
+    "status": "clear",
+    "target_role": "background"
+  }
+]

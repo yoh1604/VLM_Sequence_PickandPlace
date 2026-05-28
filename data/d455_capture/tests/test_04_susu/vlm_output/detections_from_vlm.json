@@ -1,0 +1,178 @@
+[
+  {
+    "label": "white milk carton",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      383,
+      423,
+      479,
+      609
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      423,
+      383,
+      609,
+      479
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A white carton of Ultra Milk located in the back, partially blocked by a lemon.",
+    "status": "obstructed",
+    "target_role": "primary_target"
+  },
+  {
+    "label": "yellow lemon",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      413,
+      556,
+      495,
+      649
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      556,
+      413,
+      649,
+      495
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A yellow lemon positioned directly in front of the white milk carton.",
+    "status": "obstructing",
+    "target_role": "search_occluder"
+  },
+  {
+    "label": "brown potato",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      304,
+      589,
+      411,
+      679
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      589,
+      304,
+      679,
+      411
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A brown potato on the left side of the table.",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "white garlic",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      482,
+      621,
+      539,
+      679
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      621,
+      482,
+      679,
+      539
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A white garlic bulb in the middle of the table.",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "red soda can",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      523,
+      438,
+      584,
+      599
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      438,
+      523,
+      599,
+      584
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A red A&W soda can to the right of the milk carton.",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "red apple",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      538,
+      533,
+      614,
+      639
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      533,
+      538,
+      639,
+      614
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A red apple in front of the soda can.",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "orange orange",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      613,
+      593,
+      689,
+      688
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      593,
+      613,
+      688,
+      689
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "An orange orange on the right side of the table.",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "wooden table",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      128,
+      655,
+      877,
+      779
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      655,
+      128,
+      779,
+      877
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "The wooden surface all the objects are resting on.",
+    "status": "clear_background",
+    "target_role": "background"
+  }
+]

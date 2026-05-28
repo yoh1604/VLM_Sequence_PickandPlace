@@ -1,0 +1,15 @@
+[
+  {
+    "label": "potato",
+    "confidence": 0.2675972878932953,
+    "bbox": [
+      164,
+      285,
+      236,
+      349
+    ],
+    "bbox_format": "xyxy_pixel",
+    "source": "yolo_world",
+    "target_query": "brown potato"
+  }
+]

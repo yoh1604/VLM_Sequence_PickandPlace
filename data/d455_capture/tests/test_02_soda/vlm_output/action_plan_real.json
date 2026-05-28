@@ -1,0 +1,129 @@
+{
+  "resolved_primary_target": "red soda can",
+  "target_visibility": "obstructed",
+  "plan_intent": "search_for_hidden_or_blocked_target",
+  "visual_analysis": [
+    {
+      "object": "red soda can",
+      "bbox": [
+        417,
+        540,
+        642,
+        638
+      ],
+      "description": "A red A&W soda can, partially blocked by a red apple.",
+      "status": "target",
+      "target_role": "primary_target"
+    },
+    {
+      "object": "red apple",
+      "bbox": [
+        536,
+        535,
+        684,
+        648
+      ],
+      "description": "A red apple positioned directly in front of the red soda can.",
+      "status": "obstructing",
+      "target_role": "search_occluder"
+    },
+    {
+      "object": "white milk carton",
+      "bbox": [
+        419,
+        396,
+        626,
+        504
+      ],
+      "description": "A white carton of Ultra Milk to the left of the soda can.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "yellow lemon",
+      "bbox": [
+        524,
+        350,
+        660,
+        460
+      ],
+      "description": "A yellow lemon on the table.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "brown potato",
+      "bbox": [
+        590,
+        234,
+        696,
+        364
+      ],
+      "description": "A brown potato on the left side of the table.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "white garlic",
+      "bbox": [
+        608,
+        450,
+        692,
+        532
+      ],
+      "description": "A white bulb of garlic in the center of the scene.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "orange orange",
+      "bbox": [
+        580,
+        638,
+        710,
+        746
+      ],
+      "description": "An orange with a stem, to the right of the red apple.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "wooden table",
+      "bbox": [
+        658,
+        156,
+        778,
+        848
+      ],
+      "description": "The wooden surface that all the objects are resting on.",
+      "status": "clear_background",
+      "target_role": "background"
+    }
+  ],
+  "action_plan": [
+    {
+      "step": 1,
+      "action": "remove",
+      "target": "red apple",
+      "target_role": "search_occluder",
+      "step_intent": "clear_occluder_to_reveal_primary_target",
+      "explanation": "The red apple is blocking direct access to the red soda can. It must be moved first.",
+      "grasp_pixel_2d": [
+        591,
+        610
+      ]
+    },
+    {
+      "step": 2,
+      "action": "pick",
+      "target": "red soda can",
+      "target_role": "primary_target",
+      "step_intent": "pick_primary_target",
+      "explanation": "The red soda can is now accessible and can be picked up to fulfill the user's request.",
+      "grasp_pixel_2d": [
+        589,
+        530
+      ]
+    }
+  ]
+}

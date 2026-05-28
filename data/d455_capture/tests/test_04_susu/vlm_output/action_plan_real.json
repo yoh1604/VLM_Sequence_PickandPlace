@@ -1,0 +1,129 @@
+{
+  "resolved_primary_target": "white milk carton",
+  "target_visibility": "obstructed",
+  "plan_intent": "search_for_hidden_or_blocked_target",
+  "visual_analysis": [
+    {
+      "object": "white milk carton",
+      "bbox": [
+        423,
+        383,
+        609,
+        479
+      ],
+      "description": "A white carton of Ultra Milk located in the back, partially blocked by a lemon.",
+      "status": "obstructed",
+      "target_role": "primary_target"
+    },
+    {
+      "object": "yellow lemon",
+      "bbox": [
+        556,
+        413,
+        649,
+        495
+      ],
+      "description": "A yellow lemon positioned directly in front of the white milk carton.",
+      "status": "obstructing",
+      "target_role": "search_occluder"
+    },
+    {
+      "object": "brown potato",
+      "bbox": [
+        589,
+        304,
+        679,
+        411
+      ],
+      "description": "A brown potato on the left side of the table.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "white garlic",
+      "bbox": [
+        621,
+        482,
+        679,
+        539
+      ],
+      "description": "A white garlic bulb in the middle of the table.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "red soda can",
+      "bbox": [
+        438,
+        523,
+        599,
+        584
+      ],
+      "description": "A red A&W soda can to the right of the milk carton.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "red apple",
+      "bbox": [
+        533,
+        538,
+        639,
+        614
+      ],
+      "description": "A red apple in front of the soda can.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "orange orange",
+      "bbox": [
+        593,
+        613,
+        688,
+        689
+      ],
+      "description": "An orange orange on the right side of the table.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "wooden table",
+      "bbox": [
+        655,
+        128,
+        779,
+        877
+      ],
+      "description": "The wooden surface all the objects are resting on.",
+      "status": "clear_background",
+      "target_role": "background"
+    }
+  ],
+  "action_plan": [
+    {
+      "step": 1,
+      "action": "remove",
+      "target": "yellow lemon",
+      "target_role": "search_occluder",
+      "step_intent": "clear_occluder_to_reveal_primary_target",
+      "explanation": "Remove the yellow lemon that is blocking access to the white milk carton.",
+      "grasp_pixel_2d": [
+        454,
+        602
+      ]
+    },
+    {
+      "step": 2,
+      "action": "pick",
+      "target": "white milk carton",
+      "target_role": "primary_target",
+      "step_intent": "pick_primary_target",
+      "explanation": "Pick the white milk carton now that it is accessible.",
+      "grasp_pixel_2d": [
+        431,
+        516
+      ]
+    }
+  ]
+}

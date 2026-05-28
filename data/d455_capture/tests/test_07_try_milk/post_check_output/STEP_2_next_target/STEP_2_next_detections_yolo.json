@@ -1,0 +1,15 @@
+[
+  {
+    "label": "white milk carton",
+    "confidence": 0.6288860440254211,
+    "bbox": [
+      244,
+      201,
+      295,
+      315
+    ],
+    "bbox_format": "xyxy_pixel",
+    "source": "yolo_world",
+    "target_query": "white milk carton"
+  }
+]

@@ -1,0 +1,64 @@
+{
+  "next_step": {
+    "step": 2,
+    "action": "pick",
+    "target": "white milk carton",
+    "target_role": "primary_target",
+    "step_intent": "pick_primary_target",
+    "explanation": "The path is now clear to pick the white milk carton.",
+    "grasp_pixel_2d": [
+      422,
+      519
+    ]
+  },
+  "next_target": "white milk carton",
+  "best_detection": {
+    "label": "white milk carton",
+    "confidence": 0.6288860440254211,
+    "bbox": [
+      244,
+      201,
+      295,
+      315
+    ],
+    "bbox_format": "xyxy_pixel",
+    "source": "yolo_world",
+    "target_query": "white milk carton"
+  },
+  "all_detections": [
+    {
+      "label": "white milk carton",
+      "confidence": 0.6288860440254211,
+      "bbox": [
+        244,
+        201,
+        295,
+        315
+      ],
+      "bbox_format": "xyxy_pixel",
+      "source": "yolo_world",
+      "target_query": "white milk carton"
+    }
+  ],
+  "next_yolo_json": "/home/b401/Documents/pick_place_occlusion/data/d455_capture/tests/test_07_try_milk/post_check_output/STEP_2_next_target/STEP_2_next_detections_yolo.json",
+  "next_yolo_image": "/home/b401/Documents/pick_place_occlusion/data/d455_capture/tests/test_07_try_milk/post_check_output/STEP_2_next_target/STEP_2_next_yolo_result.jpg",
+  "next_fastsam_mask": "/home/b401/Documents/pick_place_occlusion/data/d455_capture/tests/test_07_try_milk/post_check_output/STEP_2_next_target/STEP_2_next_fastsam_mask.png",
+  "next_fastsam_image": "/home/b401/Documents/pick_place_occlusion/data/d455_capture/tests/test_07_try_milk/post_check_output/STEP_2_next_target/STEP_2_next_fastsam_result.jpg",
+  "next_object_position_json": "/home/b401/Documents/pick_place_occlusion/data/d455_capture/tests/test_07_try_milk/post_check_output/STEP_2_next_target/STEP_2_next_object_position_camera.json",
+  "object_position": {
+    "object": "white milk carton",
+    "pixel_center_uv": [
+      268,
+      258
+    ],
+    "median_depth_m": 0.4620000123977661,
+    "point_camera_m": [
+      -0.07013020014426806,
+      0.015742163388764573,
+      0.4620000123977661
+    ],
+    "frame": "RealSense D455 aligned color camera frame",
+    "note": "Belum ditransformasikan ke base frame UR5."
+  },
+  "note": "Next target has been detected, segmented, and localized after previous step was verified as successful."
+}

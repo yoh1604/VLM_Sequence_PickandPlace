@@ -1,0 +1,15 @@
+{
+  "object": "yellow lemon",
+  "pixel_center_uv": [
+    284,
+    288
+  ],
+  "median_depth_m": 0.37700000405311584,
+  "point_camera_m": [
+    -0.04158934674287241,
+    0.042201126628032354,
+    0.37700000405311584
+  ],
+  "frame": "RealSense D455 aligned color camera frame",
+  "note": "Belum ditransformasikan ke base frame UR5."
+}

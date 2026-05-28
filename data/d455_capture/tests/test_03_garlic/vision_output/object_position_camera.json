@@ -1,0 +1,15 @@
+{
+  "object": "white garlic",
+  "pixel_center_uv": [
+    313,
+    322
+  ],
+  "median_depth_m": 0.3150000274181366,
+  "point_camera_m": [
+    -0.011067005562237593,
+    0.06305883439037742,
+    0.3150000274181366
+  ],
+  "frame": "RealSense D455 aligned color camera frame",
+  "note": "Belum ditransformasikan ke base frame UR5."
+}

@@ -1,0 +1,117 @@
+{
+  "resolved_primary_target": "white milk carton",
+  "target_visibility": "obstructed",
+  "plan_intent": "pick_target",
+  "visual_analysis": [
+    {
+      "object": "white milk carton",
+      "bbox": [
+        422,
+        376,
+        616,
+        468
+      ],
+      "description": "A white carton of Ultra Milk located behind a red apple.",
+      "status": "obstructed",
+      "target_role": "primary_target"
+    },
+    {
+      "object": "red apple",
+      "bbox": [
+        528,
+        360,
+        664,
+        452
+      ],
+      "description": "A red apple positioned in front of the white milk carton, blocking access.",
+      "status": "obstructing",
+      "target_role": "search_occluder"
+    },
+    {
+      "object": "brown potato",
+      "bbox": [
+        594,
+        236,
+        694,
+        368
+      ],
+      "description": "A brown potato on the left side of the table.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "white garlic",
+      "bbox": [
+        642,
+        448,
+        718,
+        520
+      ],
+      "description": "A white head of garlic in the center of the table.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "yellow lemon",
+      "bbox": [
+        554,
+        512,
+        662,
+        620
+      ],
+      "description": "A yellow lemon to the right of the garlic.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "orange orange",
+      "bbox": [
+        600,
+        624,
+        704,
+        720
+      ],
+      "description": "An orange orange in the front right corner of the table.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "red soda can",
+      "bbox": [
+        418,
+        552,
+        584,
+        628
+      ],
+      "description": "A red A&W soda can behind the yellow lemon.",
+      "status": "clear",
+      "target_role": "background"
+    }
+  ],
+  "action_plan": [
+    {
+      "step": 1,
+      "action": "pick",
+      "target": "red apple",
+      "target_role": "search_occluder",
+      "step_intent": "clear_occluder_to_reveal_primary_target",
+      "explanation": "Pick the red apple because it is blocking the path to the white milk carton.",
+      "grasp_pixel_2d": [
+        406,
+        596
+      ]
+    },
+    {
+      "step": 2,
+      "action": "pick",
+      "target": "white milk carton",
+      "target_role": "primary_target",
+      "step_intent": "pick_primary_target",
+      "explanation": "The path is now clear to pick the white milk carton.",
+      "grasp_pixel_2d": [
+        422,
+        519
+      ]
+    }
+  ]
+}

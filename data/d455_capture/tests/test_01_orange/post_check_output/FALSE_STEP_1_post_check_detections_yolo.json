@@ -1,0 +1,28 @@
+[
+  {
+    "label": "orange fruit",
+    "confidence": 0.5050066113471985,
+    "bbox": [
+      223,
+      267,
+      299,
+      332
+    ],
+    "bbox_format": "xyxy_pixel",
+    "source": "yolo_world",
+    "target_query": "orange fruit"
+  },
+  {
+    "label": "orange fruit",
+    "confidence": 0.36307770013809204,
+    "bbox": [
+      156,
+      287,
+      241,
+      350
+    ],
+    "bbox_format": "xyxy_pixel",
+    "source": "yolo_world",
+    "target_query": "orange fruit"
+  }
+]

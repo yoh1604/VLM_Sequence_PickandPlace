@@ -1,0 +1,178 @@
+[
+  {
+    "label": "red soda can",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      540,
+      417,
+      638,
+      642
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      417,
+      540,
+      642,
+      638
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A red A&W soda can, partially blocked by a red apple.",
+    "status": "target",
+    "target_role": "primary_target"
+  },
+  {
+    "label": "red apple",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      535,
+      536,
+      648,
+      684
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      536,
+      535,
+      684,
+      648
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A red apple positioned directly in front of the red soda can.",
+    "status": "obstructing",
+    "target_role": "search_occluder"
+  },
+  {
+    "label": "white milk carton",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      396,
+      419,
+      504,
+      626
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      419,
+      396,
+      626,
+      504
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A white carton of Ultra Milk to the left of the soda can.",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "yellow lemon",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      350,
+      524,
+      460,
+      660
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      524,
+      350,
+      660,
+      460
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A yellow lemon on the table.",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "brown potato",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      234,
+      590,
+      364,
+      696
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      590,
+      234,
+      696,
+      364
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A brown potato on the left side of the table.",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "white garlic",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      450,
+      608,
+      532,
+      692
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      608,
+      450,
+      692,
+      532
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A white bulb of garlic in the center of the scene.",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "orange orange",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      638,
+      580,
+      746,
+      710
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      580,
+      638,
+      710,
+      746
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "An orange with a stem, to the right of the red apple.",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "wooden table",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      156,
+      658,
+      848,
+      778
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      658,
+      156,
+      778,
+      848
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "The wooden surface that all the objects are resting on.",
+    "status": "clear_background",
+    "target_role": "background"
+  }
+]

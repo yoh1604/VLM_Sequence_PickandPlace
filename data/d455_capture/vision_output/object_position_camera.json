@@ -1,0 +1,15 @@
+{
+  "object": "orange orange",
+  "pixel_center_uv": [
+    384,
+    326
+  ],
+  "median_depth_m": 0.30800002813339233,
+  "point_camera_m": [
+    0.04584728130527861,
+    0.06481987516135097,
+    0.30800002813339233
+  ],
+  "frame": "RealSense D455 aligned color camera frame",
+  "note": "Belum ditransformasikan ke base frame UR5."
+}

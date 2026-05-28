@@ -1,0 +1,93 @@
+[
+  {
+    "label": "red apple",
+    "confidence": 0.7593359351158142,
+    "bbox": [
+      231,
+      253,
+      298,
+      328
+    ],
+    "bbox_format": "xyxy_pixel",
+    "source": "yolo_world",
+    "target_query": "red apple"
+  },
+  {
+    "label": "apple",
+    "confidence": 0.7586986422538757,
+    "bbox": [
+      231,
+      253,
+      298,
+      328
+    ],
+    "bbox_format": "xyxy_pixel",
+    "source": "yolo_world",
+    "target_query": "red apple"
+  },
+  {
+    "label": "red apple",
+    "confidence": 0.47903695702552795,
+    "bbox": [
+      398,
+      287,
+      463,
+      343
+    ],
+    "bbox_format": "xyxy_pixel",
+    "source": "yolo_world",
+    "target_query": "red apple"
+  },
+  {
+    "label": "red apple",
+    "confidence": 0.44615650177001953,
+    "bbox": [
+      290,
+      297,
+      352,
+      349
+    ],
+    "bbox_format": "xyxy_pixel",
+    "source": "yolo_world",
+    "target_query": "red apple"
+  },
+  {
+    "label": "apple",
+    "confidence": 0.32874929904937744,
+    "bbox": [
+      331,
+      266,
+      405,
+      325
+    ],
+    "bbox_format": "xyxy_pixel",
+    "source": "yolo_world",
+    "target_query": "red apple"
+  },
+  {
+    "label": "apple",
+    "confidence": 0.2655913233757019,
+    "bbox": [
+      291,
+      297,
+      352,
+      349
+    ],
+    "bbox_format": "xyxy_pixel",
+    "source": "yolo_world",
+    "target_query": "red apple"
+  },
+  {
+    "label": "apple",
+    "confidence": 0.23505675792694092,
+    "bbox": [
+      398,
+      287,
+      463,
+      344
+    ],
+    "bbox_format": "xyxy_pixel",
+    "source": "yolo_world",
+    "target_query": "red apple"
+  }
+]

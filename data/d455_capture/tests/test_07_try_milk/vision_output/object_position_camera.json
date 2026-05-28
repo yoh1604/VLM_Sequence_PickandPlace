@@ -1,0 +1,15 @@
+{
+  "object": "red apple",
+  "pixel_center_uv": [
+    265,
+    290
+  ],
+  "median_depth_m": 0.37800002098083496,
+  "point_camera_m": [
+    -0.06031917964539299,
+    0.04427527555742093,
+    0.37800002098083496
+  ],
+  "frame": "RealSense D455 aligned color camera frame",
+  "note": "Belum ditransformasikan ke base frame UR5."
+}

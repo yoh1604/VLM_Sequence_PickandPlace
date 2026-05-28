@@ -1,0 +1,15 @@
+{
+  "object": "red soda can",
+  "pixel_center_uv": [
+    362,
+    257
+  ],
+  "median_depth_m": 0.46700000762939453,
+  "point_camera_m": [
+    0.042929170614025805,
+    0.014704435143224332,
+    0.46700000762939453
+  ],
+  "frame": "RealSense D455 aligned color camera frame",
+  "note": "Belum ditransformasikan ke base frame UR5."
+}

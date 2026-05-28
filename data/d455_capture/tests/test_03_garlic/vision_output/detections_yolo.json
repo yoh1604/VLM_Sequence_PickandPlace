@@ -1,0 +1,15 @@
+[
+  {
+    "label": "garlic",
+    "confidence": 0.11759379506111145,
+    "bbox": [
+      286,
+      301,
+      345,
+      346
+    ],
+    "bbox_format": "xyxy_pixel",
+    "source": "yolo_world",
+    "target_query": "white garlic"
+  }
+]

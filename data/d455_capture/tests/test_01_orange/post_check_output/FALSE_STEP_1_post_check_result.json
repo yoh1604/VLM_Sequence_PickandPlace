@@ -1,0 +1,51 @@
+{
+  "target": "orange fruit",
+  "post_check_status": "STILL_FOUND",
+  "target_found_after_action": true,
+  "best_detection": {
+    "label": "orange fruit",
+    "confidence": 0.5050066113471985,
+    "bbox": [
+      223,
+      267,
+      299,
+      332
+    ],
+    "bbox_format": "xyxy_pixel",
+    "source": "yolo_world",
+    "target_query": "orange fruit"
+  },
+  "all_detections": [
+    {
+      "label": "orange fruit",
+      "confidence": 0.5050066113471985,
+      "bbox": [
+        223,
+        267,
+        299,
+        332
+      ],
+      "bbox_format": "xyxy_pixel",
+      "source": "yolo_world",
+      "target_query": "orange fruit"
+    },
+    {
+      "label": "orange fruit",
+      "confidence": 0.36307770013809204,
+      "bbox": [
+        156,
+        287,
+        241,
+        350
+      ],
+      "bbox_format": "xyxy_pixel",
+      "source": "yolo_world",
+      "target_query": "orange fruit"
+    }
+  ],
+  "post_image_path": "/home/b401/Documents/pick_place_occlusion/data/d455_capture/post_scene_rgb.jpg",
+  "post_yolo_image": "/home/b401/Documents/pick_place_occlusion/data/d455_capture/tests/test_01_orange/post_check_output/STEP_1_post_check_yolo_result.jpg",
+  "post_fastsam_mask": "/home/b401/Documents/pick_place_occlusion/data/d455_capture/tests/test_01_orange/post_check_output/STEP_1_post_check_fastsam_mask.png",
+  "post_fastsam_image": "/home/b401/Documents/pick_place_occlusion/data/d455_capture/tests/test_01_orange/post_check_output/STEP_1_post_check_fastsam_result.jpg",
+  "note": "Target masih terdeteksi setelah aksi manual. FastSAM dijalankan untuk memvisualisasikan target yang masih tersisa."
+}

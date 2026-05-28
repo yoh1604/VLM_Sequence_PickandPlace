@@ -1,0 +1,93 @@
+[
+  {
+    "label": "orange fruit",
+    "confidence": 0.8077383041381836,
+    "bbox": [
+      378,
+      288,
+      447,
+      347
+    ],
+    "bbox_format": "xyxy_pixel",
+    "source": "yolo_world",
+    "target_query": "orange fruit"
+  },
+  {
+    "label": "orange fruit",
+    "confidence": 0.5876535773277283,
+    "bbox": [
+      223,
+      267,
+      297,
+      331
+    ],
+    "bbox_format": "xyxy_pixel",
+    "source": "yolo_world",
+    "target_query": "orange fruit"
+  },
+  {
+    "label": "orange fruit",
+    "confidence": 0.33231887221336365,
+    "bbox": [
+      156,
+      287,
+      241,
+      350
+    ],
+    "bbox_format": "xyxy_pixel",
+    "source": "yolo_world",
+    "target_query": "orange fruit"
+  },
+  {
+    "label": "orange fruit",
+    "confidence": 0.29144856333732605,
+    "bbox": [
+      274,
+      297,
+      337,
+      350
+    ],
+    "bbox_format": "xyxy_pixel",
+    "source": "yolo_world",
+    "target_query": "orange fruit"
+  },
+  {
+    "label": "fruit",
+    "confidence": 0.2131621092557907,
+    "bbox": [
+      274,
+      297,
+      337,
+      351
+    ],
+    "bbox_format": "xyxy_pixel",
+    "source": "yolo_world",
+    "target_query": "orange fruit"
+  },
+  {
+    "label": "orange fruit",
+    "confidence": 0.185297891497612,
+    "bbox": [
+      272,
+      298,
+      299,
+      334
+    ],
+    "bbox_format": "xyxy_pixel",
+    "source": "yolo_world",
+    "target_query": "orange fruit"
+  },
+  {
+    "label": "fruit",
+    "confidence": 0.12389051914215088,
+    "bbox": [
+      343,
+      252,
+      408,
+      329
+    ],
+    "bbox_format": "xyxy_pixel",
+    "source": "yolo_world",
+    "target_query": "orange fruit"
+  }
+]

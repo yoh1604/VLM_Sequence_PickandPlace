@@ -1,0 +1,14 @@
+[
+  {
+    "step": 2,
+    "action": "pick",
+    "target": "red soda can",
+    "target_role": "primary_target",
+    "step_intent": "pick_primary_target",
+    "explanation": "The red soda can is now accessible and can be picked up to fulfill the user's request.",
+    "grasp_pixel_2d": [
+      589,
+      530
+    ]
+  }
+]

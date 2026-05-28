@@ -1,0 +1,14 @@
+[
+  {
+    "step": 2,
+    "action": "pick",
+    "target": "white milk carton",
+    "target_role": "primary_target",
+    "step_intent": "pick_primary_target",
+    "explanation": "Pick the white milk carton now that it is accessible.",
+    "grasp_pixel_2d": [
+      431,
+      516
+    ]
+  }
+]

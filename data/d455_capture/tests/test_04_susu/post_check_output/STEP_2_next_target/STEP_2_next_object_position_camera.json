@@ -1,0 +1,15 @@
+{
+  "object": "white milk carton",
+  "pixel_center_uv": [
+    277,
+    252
+  ],
+  "median_depth_m": 0.4490000307559967,
+  "point_camera_m": [
+    -0.057680448759571776,
+    0.008306891034226336,
+    0.4490000307559967
+  ],
+  "frame": "RealSense D455 aligned color camera frame",
+  "note": "Belum ditransformasikan ke base frame UR5."
+}

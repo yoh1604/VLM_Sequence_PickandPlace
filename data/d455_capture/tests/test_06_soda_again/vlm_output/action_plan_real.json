@@ -1,0 +1,129 @@
+{
+  "resolved_primary_target": "red soda can",
+  "target_visibility": "obstructed",
+  "plan_intent": "search_for_hidden_or_blocked_target",
+  "visual_analysis": [
+    {
+      "object": "red soda can",
+      "bbox": [
+        419,
+        532,
+        631,
+        630
+      ],
+      "description": "A red and brown soda can with 'A&W' logo, located behind a yellow lemon.",
+      "status": "target",
+      "target_role": "primary_target"
+    },
+    {
+      "object": "yellow lemon",
+      "bbox": [
+        556,
+        509,
+        680,
+        630
+      ],
+      "description": "A yellow lemon sitting on the table, in front of the red soda can.",
+      "status": "obstructing",
+      "target_role": "search_occluder"
+    },
+    {
+      "object": "white milk carton",
+      "bbox": [
+        420,
+        370,
+        620,
+        465
+      ],
+      "description": "A white milk carton with 'ULTRA MILK' text, to the left of the red soda can.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "red apple",
+      "bbox": [
+        526,
+        360,
+        656,
+        460
+      ],
+      "description": "A red apple in front of the white milk carton.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "brown potato",
+      "bbox": [
+        570,
+        220,
+        680,
+        340
+      ],
+      "description": "A brown potato on the left side of the table.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "white garlic",
+      "bbox": [
+        620,
+        430,
+        690,
+        510
+      ],
+      "description": "A white garlic bulb in the center of the table.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "orange orange",
+      "bbox": [
+        580,
+        630,
+        690,
+        740
+      ],
+      "description": "An orange fruit on the right side of the table.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "wood table",
+      "bbox": [
+        650,
+        180,
+        780,
+        820
+      ],
+      "description": "A light brown wooden table surface where all objects are placed.",
+      "status": "clear_background",
+      "target_role": "background"
+    }
+  ],
+  "action_plan": [
+    {
+      "step": 1,
+      "action": "remove",
+      "target": "yellow lemon",
+      "target_role": "search_occluder",
+      "step_intent": "clear_occluder_to_reveal_primary_target",
+      "explanation": "Removing the yellow lemon because it is blocking access to the red soda can.",
+      "grasp_pixel_2d": [
+        570,
+        618
+      ]
+    },
+    {
+      "step": 2,
+      "action": "pick",
+      "target": "red soda can",
+      "target_role": "primary_target",
+      "step_intent": "pick_primary_target",
+      "explanation": "Picking the red soda can now that the path is clear.",
+      "grasp_pixel_2d": [
+        581,
+        525
+      ]
+    }
+  ]
+}

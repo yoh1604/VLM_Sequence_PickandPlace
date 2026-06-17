@@ -1,0 +1,90 @@
+[
+  {
+    "label": "red soda can",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      300,
+      400,
+      500,
+      800
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      400,
+      300,
+      800,
+      500
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "red can with white text",
+    "status": "target",
+    "target_role": "primary_target"
+  },
+  {
+    "label": "green soda can",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      500,
+      400,
+      700,
+      800
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      400,
+      500,
+      800,
+      700
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "green can with white text",
+    "status": "clear",
+    "target_role": "clear"
+  },
+  {
+    "label": "blue water bottle",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      700,
+      400,
+      900,
+      900
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      400,
+      700,
+      900,
+      900
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "transparent bottle with blue cap",
+    "status": "clear",
+    "target_role": "clear"
+  },
+  {
+    "label": "brown box",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      200,
+      200,
+      1000,
+      1000
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      200,
+      200,
+      1000,
+      1000
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "large brown box",
+    "status": "clear_background",
+    "target_role": "background"
+  }
+]

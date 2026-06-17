@@ -1,0 +1,84 @@
+{
+  "success": true,
+  "frame": "base",
+  "target_link": "tool0",
+  "source_target": "gripper_tip",
+  "translation_tool0_pregrasp": [
+    -0.7244323408803436,
+    0.4006440438121289,
+    0.3142941947598906
+  ],
+  "quaternion_tool0_xyzw": [
+    -0.28340175782789895,
+    0.6661598976406625,
+    0.6411123643592581,
+    -0.25473392137899675
+  ],
+  "rpy_tool0_rad": [
+    1.619,
+    0.024,
+    -2.36
+  ],
+  "gripper_tip_grasp_base": [
+    -0.7439035448458009,
+    0.4513070878251074,
+    0.20610510246793984
+  ],
+  "gripper_tip_pregrasp_base": [
+    -0.7439035448458009,
+    0.4513070878251074,
+    0.30610510246793987
+  ],
+  "tool0_to_gripper_tip_offset_tool_frame": [
+    0.0,
+    0.0,
+    0.17
+  ],
+  "pregrasp_z_m": 0.1,
+  "score": 1.0146024227142334,
+  "width": 0.08463502675294876,
+  "depth": 0.029999999329447746,
+  "height": 0.019999999552965164,
+  "source_file": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/test_grasp/vision_output/best_grasp_base.json",
+  "note": "Kirim translation_tool0_pregrasp + quaternion_tool0_xyzw ke MoveIt sebagai target tool0. Jangan kirim gripper_tip_grasp_base langsung ke MoveIt.",
+  "manual_nudge_base_m": {
+    "dx": -0.05,
+    "dy": 0.035,
+    "dz": 0.0
+  },
+  "manual_nudge_history": [
+    {
+      "from": [
+        -0.6244323408803435,
+        0.3306440438121289,
+        0.3142941947598906
+      ],
+      "to": [
+        -0.6744323408803435,
+        0.3656440438121289,
+        0.3142941947598906
+      ],
+      "dx": -0.05,
+      "dy": 0.035,
+      "dz": 0.0,
+      "frame": "base"
+    },
+    {
+      "from": [
+        -0.6744323408803435,
+        0.3656440438121289,
+        0.3142941947598906
+      ],
+      "to": [
+        -0.7244323408803436,
+        0.4006440438121289,
+        0.3142941947598906
+      ],
+      "dx": -0.05,
+      "dy": 0.035,
+      "dz": 0.0,
+      "frame": "base"
+    }
+  ],
+  "note_nudge": "translation_tool0_pregrasp digeser manual dalam frame base. dx/dy/dz satuannya meter."
+}

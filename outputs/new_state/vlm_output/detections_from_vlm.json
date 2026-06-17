@@ -1,0 +1,112 @@
+[
+  {
+    "label": "clear bottle",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      400,
+      300,
+      500,
+      600
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      300,
+      400,
+      600,
+      500
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "a clear bottle with a cap",
+    "status": "target",
+    "target_role": "primary_target"
+  },
+  {
+    "label": "red can",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      520,
+      320,
+      600,
+      580
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      320,
+      520,
+      580,
+      600
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "a red can",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "brown box",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      200,
+      100,
+      800,
+      700
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      100,
+      200,
+      700,
+      800
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "a brown box",
+    "status": "clear_background",
+    "target_role": "background"
+  },
+  {
+    "label": "orange fruit",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      100,
+      800,
+      200,
+      900
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      800,
+      100,
+      900,
+      200
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "an orange fruit",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "yellow fruit",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      300,
+      800,
+      400,
+      900
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      800,
+      300,
+      900,
+      400
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "a yellow fruit",
+    "status": "clear",
+    "target_role": "background"
+  }
+]

@@ -1,0 +1,200 @@
+[
+  {
+    "label": "white milk carton",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      320,
+      379,
+      405,
+      500
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      379,
+      320,
+      500,
+      405
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A small white carton of milk, partially obscured by a green pepper.",
+    "status": "obstructed",
+    "target_role": "primary_target"
+  },
+  {
+    "label": "green bell pepper",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      285,
+      430,
+      400,
+      555
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      430,
+      285,
+      555,
+      400
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A large green bell pepper sitting in front of the milk carton.",
+    "status": "obstructing",
+    "target_role": "search_occluder"
+  },
+  {
+    "label": "pink apple",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      395,
+      445,
+      465,
+      540
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      445,
+      395,
+      540,
+      465
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A pink apple to the right of the green pepper.",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "orange fruit",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      450,
+      440,
+      540,
+      550
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      440,
+      450,
+      550,
+      540
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "An orange fruit, likely an orange, next to the apple.",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "white pear",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      530,
+      425,
+      600,
+      540
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      425,
+      530,
+      540,
+      600
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A white pear to the right of the orange.",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "red soda can",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      480,
+      360,
+      535,
+      450
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      360,
+      480,
+      450,
+      535
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A red soda can behind the fruits.",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "brown paper bag",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      340,
+      295,
+      500,
+      460
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      295,
+      340,
+      460,
+      500
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A brown paper bag in the background.",
+    "status": "clear_background",
+    "target_role": "background"
+  },
+  {
+    "label": "brown onion",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      360,
+      920,
+      450,
+      1000
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      920,
+      360,
+      1000,
+      450
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A brown onion on a white surface on the floor.",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "yellow lemon",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      460,
+      940,
+      540,
+      1000
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      940,
+      460,
+      1000,
+      540
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A yellow lemon on a white surface on the floor.",
+    "status": "clear",
+    "target_role": "background"
+  }
+]

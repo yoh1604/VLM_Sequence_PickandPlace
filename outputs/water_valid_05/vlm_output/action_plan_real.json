@@ -1,0 +1,57 @@
+{
+  "resolved_primary_target": "blue water bottle",
+  "target_visibility": "obstructed",
+  "plan_intent": "search_for_hidden_or_blocked_target",
+  "visual_analysis": [
+    {
+      "object": "red soda can",
+      "bbox": [
+        400,
+        300,
+        700,
+        500
+      ],
+      "description": "red soda can in front",
+      "status": "obstructing",
+      "target_role": "search_occluder"
+    },
+    {
+      "object": "blue water bottle",
+      "bbox": [
+        400,
+        500,
+        700,
+        700
+      ],
+      "description": "blue water bottle behind soda can",
+      "status": "target",
+      "target_role": "primary_target"
+    }
+  ],
+  "action_plan": [
+    {
+      "step": 1,
+      "action": "remove",
+      "target": "red soda can",
+      "target_role": "search_occluder",
+      "step_intent": "clear_occluder_to_reveal_primary_target",
+      "explanation": "remove soda can to access water bottle",
+      "grasp_pixel_2d": [
+        400,
+        400
+      ]
+    },
+    {
+      "step": 2,
+      "action": "pick",
+      "target": "blue water bottle",
+      "target_role": "primary_target",
+      "step_intent": "pick_primary_target",
+      "explanation": "pick the water bottle to drink",
+      "grasp_pixel_2d": [
+        600,
+        600
+      ]
+    }
+  ]
+}

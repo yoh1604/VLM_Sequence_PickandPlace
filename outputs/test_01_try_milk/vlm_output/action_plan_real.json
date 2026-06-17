@@ -1,0 +1,117 @@
+{
+  "resolved_primary_target": "white milk carton",
+  "target_visibility": "obstructed",
+  "plan_intent": "search_for_hidden_or_blocked_target",
+  "visual_analysis": [
+    {
+      "object": "green bell pepper",
+      "bbox": [
+        428,
+        263,
+        570,
+        379
+      ],
+      "description": "A green bell pepper on the left side of the shelf.",
+      "status": "obstructing",
+      "target_role": "search_occluder"
+    },
+    {
+      "object": "red apple",
+      "bbox": [
+        456,
+        375,
+        563,
+        461
+      ],
+      "description": "A red apple in front of the milk carton.",
+      "status": "obstructing",
+      "target_role": "search_occluder"
+    },
+    {
+      "object": "white milk carton",
+      "bbox": [
+        349,
+        338,
+        494,
+        420
+      ],
+      "description": "A white carton of Ultra Milk, located behind the green pepper and red apple.",
+      "status": "target",
+      "target_role": "primary_target"
+    },
+    {
+      "object": "orange",
+      "bbox": [
+        470,
+        459,
+        574,
+        552
+      ],
+      "description": "An orange fruit to the right of the red apple.",
+      "status": "clear",
+      "target_role": null
+    },
+    {
+      "object": "red soda can",
+      "bbox": [
+        363,
+        529,
+        518,
+        592
+      ],
+      "description": "A red soda can behind the orange.",
+      "status": "clear",
+      "target_role": null
+    },
+    {
+      "object": "yellow pear",
+      "bbox": [
+        420,
+        579,
+        570,
+        672
+      ],
+      "description": "A yellow pear on the right side of the shelf.",
+      "status": "clear",
+      "target_role": null
+    }
+  ],
+  "action_plan": [
+    {
+      "step": 1,
+      "action": "remove",
+      "target": "green bell pepper",
+      "target_role": "search_occluder",
+      "step_intent": "clear_occluder_to_reveal_primary_target",
+      "explanation": "The green bell pepper is blocking the front-left side of the white milk carton.",
+      "grasp_pixel_2d": [
+        321,
+        499
+      ]
+    },
+    {
+      "step": 2,
+      "action": "remove",
+      "target": "red apple",
+      "target_role": "search_occluder",
+      "step_intent": "clear_occluder_to_reveal_primary_target",
+      "explanation": "The red apple is blocking the front-right side of the white milk carton.",
+      "grasp_pixel_2d": [
+        418,
+        509
+      ]
+    },
+    {
+      "step": 3,
+      "action": "pick",
+      "target": "white milk carton",
+      "target_role": "primary_target",
+      "step_intent": "pick_primary_target",
+      "explanation": "Pick the white milk carton now that the path is clear.",
+      "grasp_pixel_2d": [
+        379,
+        421
+      ]
+    }
+  ]
+}

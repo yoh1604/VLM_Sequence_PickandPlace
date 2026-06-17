@@ -1,0 +1,54 @@
+{
+  "validation_status": "PASS",
+  "feedback": "The action_plan is logically valid and safe. The plan involves removing objects identified as occluders before picking the primary target, the red tea bag. This sequence ensures that the primary target is accessible and visible for picking. The steps are consistent with the plan intent to search for a hidden or blocked target, and there are no logical inconsistencies or safety concerns in the proposed actions.",
+  "final_action_plan": [
+    {
+      "step": 1,
+      "action": "remove",
+      "target": "red soda can",
+      "target_role": "search_occluder",
+      "step_intent": "clear_occluder_to_reveal_primary_target",
+      "explanation": "remove front object blocking access",
+      "grasp_pixel_2d": [
+        375,
+        550
+      ]
+    },
+    {
+      "step": 2,
+      "action": "remove",
+      "target": "green soda can",
+      "target_role": "search_occluder",
+      "step_intent": "clear_occluder_to_reveal_primary_target",
+      "explanation": "remove object blocking access",
+      "grasp_pixel_2d": [
+        525,
+        550
+      ]
+    },
+    {
+      "step": 3,
+      "action": "remove",
+      "target": "blue water bottle",
+      "target_role": "search_occluder",
+      "step_intent": "clear_occluder_to_reveal_primary_target",
+      "explanation": "remove object blocking access",
+      "grasp_pixel_2d": [
+        675,
+        500
+      ]
+    },
+    {
+      "step": 4,
+      "action": "pick",
+      "target": "red tea bag",
+      "target_role": "primary_target",
+      "step_intent": "pick_primary_target",
+      "explanation": "pick the primary target",
+      "grasp_pixel_2d": [
+        575,
+        600
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "test_name": "water_valid_02",
+  "step_index": 2,
+  "target": "red soda can",
+  "post_check_status": "REMOVED_SUCCESS",
+  "target_found_after_action": false,
+  "best_detection": null,
+  "all_detections": [],
+  "post_image_path": "/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/post_scene_rgb.jpg",
+  "post_yolo_image": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_post_check_yolo_result.jpg",
+  "post_fastsam_mask": null,
+  "post_fastsam_image": null,
+  "note": "Target tidak ditemukan setelah aksi robot. Step dianggap berhasil."
+}

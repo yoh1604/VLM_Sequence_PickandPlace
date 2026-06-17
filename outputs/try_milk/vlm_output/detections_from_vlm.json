@@ -1,0 +1,90 @@
+[
+  {
+    "label": "red soda can",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      450,
+      300,
+      550,
+      700
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      300,
+      450,
+      700,
+      550
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "red soda can in the center",
+    "status": "obstructing",
+    "target_role": "search_occluder"
+  },
+  {
+    "label": "white pear",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      250,
+      300,
+      350,
+      700
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      300,
+      250,
+      700,
+      350
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "white pear on the left",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "orange fruit",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      650,
+      300,
+      750,
+      700
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      300,
+      650,
+      700,
+      750
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "orange fruit on the right",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "brown box",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      400,
+      0,
+      600,
+      300
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      0,
+      400,
+      300,
+      600
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "brown box in the back",
+    "status": "clear_background",
+    "target_role": "background"
+  }
+]

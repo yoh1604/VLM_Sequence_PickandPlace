@@ -1,0 +1,179 @@
+{
+  "target_original": "red soda can",
+  "aliases": [
+    "red soda can",
+    "soda can",
+    "can",
+    "drink can",
+    "beverage can"
+  ],
+  "conf_list": [
+    0.5,
+    0.4,
+    0.3,
+    0.2
+  ],
+  "last_error": "Expected all tensors to be on the same device, but got index is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA__index_select)",
+  "debug_results": [
+    {
+      "query": "red soda can",
+      "conf": 0.5,
+      "status": "FAILED",
+      "error": "YOLO-World tidak menemukan target: red soda can",
+      "output_json": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_red_soda_can_conf_0_5.json",
+      "output_image": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_red_soda_can_conf_0_5.jpg"
+    },
+    {
+      "query": "soda can",
+      "conf": 0.5,
+      "status": "FAILED",
+      "error": "Expected all tensors to be on the same device, but got index is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA__index_select)",
+      "output_json": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_soda_can_conf_0_5.json",
+      "output_image": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_soda_can_conf_0_5.jpg"
+    },
+    {
+      "query": "can",
+      "conf": 0.5,
+      "status": "FAILED",
+      "error": "Expected all tensors to be on the same device, but got index is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA__index_select)",
+      "output_json": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_can_conf_0_5.json",
+      "output_image": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_can_conf_0_5.jpg"
+    },
+    {
+      "query": "drink can",
+      "conf": 0.5,
+      "status": "FAILED",
+      "error": "Expected all tensors to be on the same device, but got index is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA__index_select)",
+      "output_json": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_drink_can_conf_0_5.json",
+      "output_image": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_drink_can_conf_0_5.jpg"
+    },
+    {
+      "query": "beverage can",
+      "conf": 0.5,
+      "status": "FAILED",
+      "error": "Expected all tensors to be on the same device, but got index is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA__index_select)",
+      "output_json": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_beverage_can_conf_0_5.json",
+      "output_image": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_beverage_can_conf_0_5.jpg"
+    },
+    {
+      "query": "red soda can",
+      "conf": 0.4,
+      "status": "FAILED",
+      "error": "Expected all tensors to be on the same device, but got index is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA__index_select)",
+      "output_json": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_red_soda_can_conf_0_4.json",
+      "output_image": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_red_soda_can_conf_0_4.jpg"
+    },
+    {
+      "query": "soda can",
+      "conf": 0.4,
+      "status": "FAILED",
+      "error": "Expected all tensors to be on the same device, but got index is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA__index_select)",
+      "output_json": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_soda_can_conf_0_4.json",
+      "output_image": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_soda_can_conf_0_4.jpg"
+    },
+    {
+      "query": "can",
+      "conf": 0.4,
+      "status": "FAILED",
+      "error": "Expected all tensors to be on the same device, but got index is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA__index_select)",
+      "output_json": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_can_conf_0_4.json",
+      "output_image": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_can_conf_0_4.jpg"
+    },
+    {
+      "query": "drink can",
+      "conf": 0.4,
+      "status": "FAILED",
+      "error": "Expected all tensors to be on the same device, but got index is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA__index_select)",
+      "output_json": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_drink_can_conf_0_4.json",
+      "output_image": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_drink_can_conf_0_4.jpg"
+    },
+    {
+      "query": "beverage can",
+      "conf": 0.4,
+      "status": "FAILED",
+      "error": "Expected all tensors to be on the same device, but got index is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA__index_select)",
+      "output_json": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_beverage_can_conf_0_4.json",
+      "output_image": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_beverage_can_conf_0_4.jpg"
+    },
+    {
+      "query": "red soda can",
+      "conf": 0.3,
+      "status": "FAILED",
+      "error": "Expected all tensors to be on the same device, but got index is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA__index_select)",
+      "output_json": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_red_soda_can_conf_0_3.json",
+      "output_image": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_red_soda_can_conf_0_3.jpg"
+    },
+    {
+      "query": "soda can",
+      "conf": 0.3,
+      "status": "FAILED",
+      "error": "Expected all tensors to be on the same device, but got index is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA__index_select)",
+      "output_json": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_soda_can_conf_0_3.json",
+      "output_image": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_soda_can_conf_0_3.jpg"
+    },
+    {
+      "query": "can",
+      "conf": 0.3,
+      "status": "FAILED",
+      "error": "Expected all tensors to be on the same device, but got index is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA__index_select)",
+      "output_json": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_can_conf_0_3.json",
+      "output_image": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_can_conf_0_3.jpg"
+    },
+    {
+      "query": "drink can",
+      "conf": 0.3,
+      "status": "FAILED",
+      "error": "Expected all tensors to be on the same device, but got index is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA__index_select)",
+      "output_json": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_drink_can_conf_0_3.json",
+      "output_image": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_drink_can_conf_0_3.jpg"
+    },
+    {
+      "query": "beverage can",
+      "conf": 0.3,
+      "status": "FAILED",
+      "error": "Expected all tensors to be on the same device, but got index is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA__index_select)",
+      "output_json": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_beverage_can_conf_0_3.json",
+      "output_image": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_beverage_can_conf_0_3.jpg"
+    },
+    {
+      "query": "red soda can",
+      "conf": 0.2,
+      "status": "FAILED",
+      "error": "Expected all tensors to be on the same device, but got index is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA__index_select)",
+      "output_json": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_red_soda_can_conf_0_2.json",
+      "output_image": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_red_soda_can_conf_0_2.jpg"
+    },
+    {
+      "query": "soda can",
+      "conf": 0.2,
+      "status": "FAILED",
+      "error": "Expected all tensors to be on the same device, but got index is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA__index_select)",
+      "output_json": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_soda_can_conf_0_2.json",
+      "output_image": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_soda_can_conf_0_2.jpg"
+    },
+    {
+      "query": "can",
+      "conf": 0.2,
+      "status": "FAILED",
+      "error": "Expected all tensors to be on the same device, but got index is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA__index_select)",
+      "output_json": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_can_conf_0_2.json",
+      "output_image": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_can_conf_0_2.jpg"
+    },
+    {
+      "query": "drink can",
+      "conf": 0.2,
+      "status": "FAILED",
+      "error": "Expected all tensors to be on the same device, but got index is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA__index_select)",
+      "output_json": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_drink_can_conf_0_2.json",
+      "output_image": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_drink_can_conf_0_2.jpg"
+    },
+    {
+      "query": "beverage can",
+      "conf": 0.2,
+      "status": "FAILED",
+      "error": "Expected all tensors to be on the same device, but got index is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA__index_select)",
+      "output_json": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_beverage_can_conf_0_2.json",
+      "output_image": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_02/post_check_output/STEP_2_next_target/STEP_2_next_yolo_beverage_can_conf_0_2.jpg"
+    }
+  ]
+}

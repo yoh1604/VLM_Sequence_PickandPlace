@@ -1,0 +1,105 @@
+{
+  "resolved_primary_target": "white milk carton",
+  "target_visibility": "obstructed",
+  "plan_intent": "pick_target",
+  "visual_analysis": [
+    {
+      "object": "white milk carton",
+      "bbox": [
+        478,
+        329,
+        616,
+        401
+      ],
+      "description": "A white carton of Ultra Milk, partially obscured by a green bell pepper.",
+      "status": "target",
+      "target_role": "primary_target"
+    },
+    {
+      "object": "green bell pepper",
+      "bbox": [
+        500,
+        381,
+        626,
+        485
+      ],
+      "description": "A large green bell pepper sitting in front of the milk carton.",
+      "status": "obstructing",
+      "target_role": "search_occluder"
+    },
+    {
+      "object": "white pear",
+      "bbox": [
+        504,
+        483,
+        626,
+        568
+      ],
+      "description": "A white pear to the right of the green bell pepper.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "red apple",
+      "bbox": [
+        526,
+        563,
+        616,
+        630
+      ],
+      "description": "A red apple to the right of the white pear.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "pink soda can",
+      "bbox": [
+        462,
+        480,
+        572,
+        526
+      ],
+      "description": "A pink soda can behind the white pear.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "orange tomato",
+      "bbox": [
+        540,
+        349,
+        616,
+        389
+      ],
+      "description": "An orange tomato partially visible behind the green bell pepper.",
+      "status": "clear",
+      "target_role": "background"
+    }
+  ],
+  "action_plan": [
+    {
+      "step": 1,
+      "action": "pick",
+      "target": "green bell pepper",
+      "target_role": "search_occluder",
+      "step_intent": "clear_occluder_to_reveal_primary_target",
+      "explanation": "The green bell pepper is blocking the front of the white milk carton, preventing a safe grasp. It must be moved first.",
+      "grasp_pixel_2d": [
+        433,
+        563
+      ]
+    },
+    {
+      "step": 2,
+      "action": "pick",
+      "target": "white milk carton",
+      "target_role": "primary_target",
+      "step_intent": "pick_primary_target",
+      "explanation": "The milk carton is now clear to be picked.",
+      "grasp_pixel_2d": [
+        365,
+        547
+      ]
+    }
+  ]
+}

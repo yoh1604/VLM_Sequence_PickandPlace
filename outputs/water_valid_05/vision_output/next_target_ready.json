@@ -1,0 +1,29 @@
+{
+  "ready": true,
+  "test_name": "water_valid_05",
+  "completed_step_index": 1,
+  "next_step_number": 2,
+  "next_target": "blue water bottle",
+  "target_query_used": "blue water bottle",
+  "confidence_threshold_used": 0.5,
+  "vision_output_dir": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_05/vision_output",
+  "next_rgb_image_used": "/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/current_scene_rgb.jpg",
+  "next_depth_used": "/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/depth_raw.npy",
+  "sanity_check_object_position": {
+    "ok": true,
+    "point_camera_m": [
+      0.013593337498605251,
+      -0.07637058943510056,
+      0.4660000205039978
+    ],
+    "warnings": []
+  },
+  "standard_outputs": {
+    "detections_yolo": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_05/vision_output/detections_yolo.json",
+    "yolo_world_result": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_05/vision_output/yolo_world_result.jpg",
+    "fastsam_mask": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_05/vision_output/fastsam_mask.png",
+    "fastsam_result": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_05/vision_output/fastsam_result.jpg",
+    "object_position_camera": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_05/vision_output/object_position_camera.json"
+  },
+  "note": "Output next target sudah dicopy ke VISION_OUTPUT_DIR utama. Lanjutkan ke GraspNet untuk step berikutnya."
+}

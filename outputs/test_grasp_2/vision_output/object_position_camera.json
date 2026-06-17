@@ -1,0 +1,39 @@
+{
+  "object": "green bell pepper",
+  "pixel_center_uv": [
+    222,
+    242
+  ],
+  "pixel_center_uv_mean": [
+    221,
+    242
+  ],
+  "median_depth_m": 0.41100001335144043,
+  "mean_depth_m": 0.41326069831848145,
+  "point_camera_m": [
+    -0.11123305559158325,
+    -0.0030165088828653097,
+    0.41100001335144043
+  ],
+  "point_camera_mean_m": [
+    -0.11216019839048386,
+    -0.002209901576861739,
+    0.4127194881439209
+  ],
+  "debug": {
+    "mask_pixels": 4814,
+    "valid_depth_pixels": 3652,
+    "valid_depth_ratio": 0.7586206896551724,
+    "used_pixels_after_depth_fill": 4814,
+    "min_depth_m": 0.1,
+    "max_depth_m": 2.0,
+    "depth_scale": 0.0010000000474974513,
+    "fx": 386.0396728515625,
+    "fy": 385.5952453613281,
+    "ppx": 326.5517883300781,
+    "ppy": 244.87197875976562,
+    "method": "all_mask_pixels_with_invalid_depth_filled_by_median_depth"
+  },
+  "frame": "RealSense D455 aligned color camera frame",
+  "note": "Belum ditransformasikan ke base frame UR5."
+}

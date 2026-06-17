@@ -1,0 +1,8 @@
+<launch>
+  <!-- Static TF: tool0 -> gripper_tip -->
+  <!-- Ubah xyz jika arah/panjang gripper_tip berbeda -->
+  <node pkg="tf"
+        type="static_transform_publisher"
+        name="tool0_to_gripper_tip"
+        args="0 0 0.17 0 0 0 1 tool0 gripper_tip 100" />
+</launch>

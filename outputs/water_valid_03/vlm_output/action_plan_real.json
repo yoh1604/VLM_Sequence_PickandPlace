@@ -1,0 +1,93 @@
+{
+  "resolved_primary_target": "blue water bottle",
+  "target_visibility": "obstructed",
+  "plan_intent": "pick_target",
+  "visual_analysis": [
+    {
+      "object": "yellow lemon",
+      "bbox": [
+        600,
+        400,
+        800,
+        600
+      ],
+      "description": "a yellow lemon in front",
+      "status": "obstructing",
+      "target_role": "search_occluder"
+    },
+    {
+      "object": "red soda can",
+      "bbox": [
+        400,
+        500,
+        700,
+        600
+      ],
+      "description": "a red soda can behind the lemon",
+      "status": "obstructing",
+      "target_role": "search_occluder"
+    },
+    {
+      "object": "green soda can",
+      "bbox": [
+        400,
+        300,
+        700,
+        400
+      ],
+      "description": "a green soda can next to the red can",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "blue water bottle",
+      "bbox": [
+        300,
+        600,
+        700,
+        700
+      ],
+      "description": "a blue water bottle behind the cans",
+      "status": "target",
+      "target_role": "primary_target"
+    }
+  ],
+  "action_plan": [
+    {
+      "step": 1,
+      "action": "pick",
+      "target": "yellow lemon",
+      "target_role": "search_occluder",
+      "step_intent": "clear_occluder_to_reveal_primary_target",
+      "explanation": "remove lemon to access the cans",
+      "grasp_pixel_2d": [
+        500,
+        700
+      ]
+    },
+    {
+      "step": 2,
+      "action": "pick",
+      "target": "red soda can",
+      "target_role": "search_occluder",
+      "step_intent": "clear_occluder_to_reveal_primary_target",
+      "explanation": "remove red can to access the water bottle",
+      "grasp_pixel_2d": [
+        550,
+        550
+      ]
+    },
+    {
+      "step": 3,
+      "action": "pick",
+      "target": "blue water bottle",
+      "target_role": "primary_target",
+      "step_intent": "pick_primary_target",
+      "explanation": "pick the water bottle",
+      "grasp_pixel_2d": [
+        650,
+        650
+      ]
+    }
+  ]
+}

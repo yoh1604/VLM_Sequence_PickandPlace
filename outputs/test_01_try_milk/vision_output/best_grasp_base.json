@@ -1,0 +1,33 @@
+{
+  "success": true,
+  "method": "camera_to_base_transform",
+  "source_file": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/test_01_try_milk/vision_output/best_grasp_camera.json",
+  "translation_base": [
+    -0.7281528430056429,
+    0.40478476801962704,
+    0.20531513927064052
+  ],
+  "rotation_matrix_base": [
+    [
+      -0.5908573060081469,
+      -0.4030020238413873,
+      -0.6989113169523333
+    ],
+    [
+      0.6624794322936512,
+      0.2520590874201856,
+      -0.7053986328550518
+    ],
+    [
+      0.4604440592325484,
+      -0.8798042972671694,
+      0.11804959236917206
+    ]
+  ],
+  "width": 0.0769013836979866,
+  "height": 0.019999999552965164,
+  "depth": 0.029999999329447746,
+  "score": 0.4515334367752075,
+  "frame": "UR5 base frame",
+  "note": "Pose grasp sudah ditransformasikan dari camera frame ke UR5 base frame."
+}

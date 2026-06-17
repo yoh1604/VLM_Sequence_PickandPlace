@@ -1,0 +1,178 @@
+[
+  {
+    "label": "white milk carton",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      345,
+      383,
+      431,
+      490
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      383,
+      345,
+      490,
+      431
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A small white carton of Ultra Milk, located behind a green pepper and a red apple.",
+    "status": "target",
+    "target_role": "primary_target"
+  },
+  {
+    "label": "green bell pepper",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      286,
+      432,
+      401,
+      579
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      432,
+      286,
+      579,
+      401
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A green bell pepper on the shelf, in front of the white milk carton.",
+    "status": "obstructing",
+    "target_role": "search_occluder"
+  },
+  {
+    "label": "red apple",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      394,
+      463,
+      480,
+      570
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      463,
+      394,
+      570,
+      480
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A red apple on the shelf, next to the green pepper and in front of the milk carton.",
+    "status": "obstructing",
+    "target_role": "search_occluder"
+  },
+  {
+    "label": "red soda can",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      475,
+      363,
+      531,
+      480
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      363,
+      475,
+      480,
+      531
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A red soda can on the shelf, to the right of the red apple.",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "orange fruit",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      503,
+      484,
+      611,
+      599
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      484,
+      503,
+      599,
+      611
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "An orange fruit on the shelf, in front of the red soda can.",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "yellow pear",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      586,
+      464,
+      641,
+      560
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      464,
+      586,
+      560,
+      641
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A yellow pear on the shelf, behind the orange fruit.",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "brown onion",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      327,
+      874,
+      419,
+      969
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      874,
+      327,
+      969,
+      419
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A brown onion on the lower shelf.",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "yellow lemon",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      446,
+      884,
+      529,
+      958
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      884,
+      446,
+      958,
+      529
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A yellow lemon on the lower shelf.",
+    "status": "clear",
+    "target_role": "background"
+  }
+]

@@ -1,0 +1,69 @@
+{
+  "resolved_primary_target": "red soda can",
+  "target_visibility": "obstructed",
+  "plan_intent": "search_for_hidden_or_blocked_target",
+  "visual_analysis": [
+    {
+      "object": "yellow lemon",
+      "bbox": [
+        500,
+        400,
+        600,
+        500
+      ],
+      "description": "yellow lemon in front of the red soda can",
+      "status": "obstructing",
+      "target_role": "search_occluder"
+    },
+    {
+      "object": "red soda can",
+      "bbox": [
+        450,
+        450,
+        700,
+        550
+      ],
+      "description": "red soda can behind the yellow lemon",
+      "status": "target",
+      "target_role": "primary_target"
+    },
+    {
+      "object": "blue water bottle",
+      "bbox": [
+        400,
+        600,
+        800,
+        700
+      ],
+      "description": "blue water bottle behind the red soda can",
+      "status": "clear_background",
+      "target_role": "background"
+    }
+  ],
+  "action_plan": [
+    {
+      "step": 1,
+      "action": "remove",
+      "target": "yellow lemon",
+      "target_role": "search_occluder",
+      "step_intent": "clear_occluder_to_reveal_primary_target",
+      "explanation": "remove the lemon to access the red soda can",
+      "grasp_pixel_2d": [
+        450,
+        550
+      ]
+    },
+    {
+      "step": 2,
+      "action": "pick",
+      "target": "red soda can",
+      "target_role": "primary_target",
+      "step_intent": "pick_primary_target",
+      "explanation": "pick the red soda can to fulfill the user request",
+      "grasp_pixel_2d": [
+        500,
+        600
+      ]
+    }
+  ]
+}

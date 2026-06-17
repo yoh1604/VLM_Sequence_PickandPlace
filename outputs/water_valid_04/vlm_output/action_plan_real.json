@@ -1,0 +1,93 @@
+{
+  "resolved_primary_target": "blue water bottle",
+  "target_visibility": "obstructed",
+  "plan_intent": "pick_target",
+  "visual_analysis": [
+    {
+      "object": "yellow lemon",
+      "bbox": [
+        600,
+        400,
+        800,
+        600
+      ],
+      "description": "yellow lemon on the shelf",
+      "status": "obstructing",
+      "target_role": "search_occluder"
+    },
+    {
+      "object": "red soda can",
+      "bbox": [
+        300,
+        200,
+        700,
+        400
+      ],
+      "description": "red soda can behind lemon",
+      "status": "obstructing",
+      "target_role": "search_occluder"
+    },
+    {
+      "object": "green soda can",
+      "bbox": [
+        300,
+        400,
+        700,
+        600
+      ],
+      "description": "green soda can behind lemon",
+      "status": "obstructing",
+      "target_role": "search_occluder"
+    },
+    {
+      "object": "blue water bottle",
+      "bbox": [
+        200,
+        500,
+        600,
+        700
+      ],
+      "description": "blue water bottle behind cans",
+      "status": "target",
+      "target_role": "primary_target"
+    }
+  ],
+  "action_plan": [
+    {
+      "step": 1,
+      "action": "pick",
+      "target": "yellow lemon",
+      "target_role": "search_occluder",
+      "step_intent": "clear_occluder_to_reveal_primary_target",
+      "explanation": "remove lemon to access cans",
+      "grasp_pixel_2d": [
+        500,
+        700
+      ]
+    },
+    {
+      "step": 2,
+      "action": "pick",
+      "target": "red soda can",
+      "target_role": "search_occluder",
+      "step_intent": "clear_occluder_to_reveal_primary_target",
+      "explanation": "remove red can to access water bottle",
+      "grasp_pixel_2d": [
+        300,
+        300
+      ]
+    },
+    {
+      "step": 3,
+      "action": "pick",
+      "target": "blue water bottle",
+      "target_role": "primary_target",
+      "step_intent": "pick_primary_target",
+      "explanation": "pick the water bottle",
+      "grasp_pixel_2d": [
+        400,
+        600
+      ]
+    }
+  ]
+}

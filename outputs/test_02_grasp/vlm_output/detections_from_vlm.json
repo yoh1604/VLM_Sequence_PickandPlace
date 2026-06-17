@@ -1,0 +1,134 @@
+[
+  {
+    "label": "white milk carton",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      316,
+      352,
+      412,
+      506
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      352,
+      316,
+      506,
+      412
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A white carton of Ultra Milk, located in the background.",
+    "status": "target",
+    "target_role": "primary_target"
+  },
+  {
+    "label": "green bell pepper",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      260,
+      430,
+      360,
+      566
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      430,
+      260,
+      566,
+      360
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A green bell pepper on the left, in front of the milk carton.",
+    "status": "obstructing",
+    "target_role": "search_occluder"
+  },
+  {
+    "label": "red apple",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      360,
+      450,
+      440,
+      556
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      450,
+      360,
+      556,
+      440
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A red apple in the center-left, in front of the milk carton.",
+    "status": "obstructing",
+    "target_role": "search_occluder"
+  },
+  {
+    "label": "orange fruit",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      440,
+      460,
+      530,
+      566
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      460,
+      440,
+      566,
+      530
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "An orange fruit in the center, in front of the soda can and milk carton.",
+    "status": "obstructing",
+    "target_role": "search_occluder"
+  },
+  {
+    "label": "red soda can",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      510,
+      370,
+      575,
+      520
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      370,
+      510,
+      520,
+      575
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A red soda can, behind the orange fruit and in front of the milk carton.",
+    "status": "obstructing",
+    "target_role": "search_occluder"
+  },
+  {
+    "label": "white pear",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      570,
+      420,
+      650,
+      560
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      420,
+      570,
+      560,
+      650
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A white pear on the right side of the table.",
+    "status": "clear",
+    "target_role": "background"
+  }
+]

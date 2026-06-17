@@ -1,0 +1,40 @@
+{
+  "test_name": "soda_valid_07",
+  "step_index": 1,
+  "target": "yellow lemon",
+  "post_check_status": "STILL_FOUND",
+  "target_found_after_action": true,
+  "best_detection": {
+    "label": "yellow lemon",
+    "confidence": 0.6477590799331665,
+    "bbox": [
+      342,
+      224,
+      414,
+      285
+    ],
+    "bbox_format": "xyxy_pixel",
+    "source": "yolo_world",
+    "target_query": "yellow lemon"
+  },
+  "all_detections": [
+    {
+      "label": "yellow lemon",
+      "confidence": 0.6477590799331665,
+      "bbox": [
+        342,
+        224,
+        414,
+        285
+      ],
+      "bbox_format": "xyxy_pixel",
+      "source": "yolo_world",
+      "target_query": "yellow lemon"
+    }
+  ],
+  "post_image_path": "/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/post_scene_rgb.jpg",
+  "post_yolo_image": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/soda_valid_07/post_check_output/STEP_1_post_check_yolo_result.jpg",
+  "post_fastsam_mask": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/soda_valid_07/post_check_output/STEP_1_post_check_fastsam_mask.png",
+  "post_fastsam_image": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/soda_valid_07/post_check_output/STEP_1_post_check_fastsam_result.jpg",
+  "note": "Target masih terdeteksi setelah aksi robot. Step belum dianggap selesai."
+}

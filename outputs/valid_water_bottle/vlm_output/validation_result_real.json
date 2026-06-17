@@ -1,0 +1,18 @@
+{
+  "validation_status": "PASS",
+  "feedback": "The action_plan is safe and logically valid. The user's primary target 'water' is semantically matched to the 'blue bottle', which is identified as the primary target in the plan. The plan directly picks the primary target without unnecessary steps, and there are no obstacles requiring removal. The action is consistent with the user's request and the context provided.",
+  "final_action_plan": [
+    {
+      "step": 1,
+      "action": "pick",
+      "target": "blue bottle",
+      "target_role": "primary_target",
+      "step_intent": "pick_primary_target",
+      "explanation": "The blue bottle is the requested target and is clear.",
+      "grasp_pixel_2d": [
+        500,
+        400
+      ]
+    }
+  ]
+}

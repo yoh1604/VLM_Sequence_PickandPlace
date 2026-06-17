@@ -1,0 +1,134 @@
+[
+  {
+    "label": "white milk carton",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      329,
+      478,
+      401,
+      616
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      478,
+      329,
+      616,
+      401
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A white carton of Ultra Milk, partially obscured by a green bell pepper.",
+    "status": "target",
+    "target_role": "primary_target"
+  },
+  {
+    "label": "green bell pepper",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      381,
+      500,
+      485,
+      626
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      500,
+      381,
+      626,
+      485
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A large green bell pepper sitting in front of the milk carton.",
+    "status": "obstructing",
+    "target_role": "search_occluder"
+  },
+  {
+    "label": "white pear",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      483,
+      504,
+      568,
+      626
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      504,
+      483,
+      626,
+      568
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A white pear to the right of the green bell pepper.",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "red apple",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      563,
+      526,
+      630,
+      616
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      526,
+      563,
+      616,
+      630
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A red apple to the right of the white pear.",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "pink soda can",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      480,
+      462,
+      526,
+      572
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      462,
+      480,
+      572,
+      526
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A pink soda can behind the white pear.",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "orange tomato",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      349,
+      540,
+      389,
+      616
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      540,
+      349,
+      616,
+      389
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "An orange tomato partially visible behind the green bell pepper.",
+    "status": "clear",
+    "target_role": "background"
+  }
+]

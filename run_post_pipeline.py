@@ -3,9 +3,9 @@ import json
 import shutil
 from dotenv import load_dotenv
 
-from yolo_world_engine import YoloWorldEngine
-from fastsam_engine import FastSAMEngine
-from depth_engine import DepthEngine
+from perception.yolo_world_engine import YoloWorldEngine
+from perception.fastsam_engine import FastSAMEngine
+from perception.depth_engine import DepthEngine
 
 from capture_config import (
     PROJECT_DIR,
@@ -17,6 +17,9 @@ from capture_config import (
     IMAGE_PATH,
     DEPTH_PATH,
     INTRINSICS_PATH,
+
+    YOLO_WORLD_MODEL_PATH,
+    FASTSAM_MODEL_PATH,
 
     POST_IMAGE_PATH,
     VALIDATION_JSON,
@@ -131,7 +134,7 @@ def run_post_check(target):
         )
 
     yolo = YoloWorldEngine(
-        model_name="yolov8l-worldv2.pt",
+        model_name=YOLO_WORLD_MODEL_PATH,
         conf=0.5,
         output_dir=POST_OUTPUT_DIR
     )
@@ -155,7 +158,7 @@ def run_post_check(target):
       bbox = best_detection["bbox"]
 
       fastsam = FastSAMEngine(
-          model_name="FastSAM-s.pt",
+          model_name=FASTSAM_MODEL_PATH,
           device="cpu",
           imgsz=640,
           conf=0.4,
@@ -254,7 +257,7 @@ def process_next_target_after_success(remaining_plan):
     # YOLO-WORLD NEXT TARGET
     # ============================================================
     yolo = YoloWorldEngine(
-        model_name="yolov8l-worldv2.pt",
+        model_name=YOLO_WORLD_MODEL_PATH,
         conf=0.6,
         output_dir=next_output_dir
     )
@@ -274,7 +277,7 @@ def process_next_target_after_success(remaining_plan):
     # FASTSAM NEXT TARGET
     # ============================================================
     fastsam = FastSAMEngine(
-        model_name="FastSAM-s.pt",
+        model_name="FASTSAM_MODEL_PATH",
         device="cpu",
         imgsz=640,
         conf=0.4,

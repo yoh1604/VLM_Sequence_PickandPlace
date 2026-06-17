@@ -1,0 +1,69 @@
+{
+  "success": true,
+  "method": "graspnet_baseline_d455",
+  "best_grasp": {
+    "score": 0.7093101143836975,
+    "translation_camera": [
+      -0.0405653677880764,
+      0.025277655571699142,
+      0.4400000274181366
+    ],
+    "rotation_matrix_camera": [
+      [
+        0.7653300762176514,
+        0.6276130676269531,
+        0.14272965490818024
+      ],
+      [
+        -0.6169755458831787,
+        0.7785254120826721,
+        -0.1150624006986618
+      ],
+      [
+        -0.18333333730697632,
+        0.0,
+        0.9830508232116699
+      ]
+    ],
+    "width": 0.07882046699523926,
+    "height": 0.019999999552965164,
+    "depth": 0.029999999329447746,
+    "object_id": -1,
+    "frame": "RealSense D455 aligned color camera frame",
+    "rank": 0,
+    "distance_to_object_center": 0.14876372807411062
+  },
+  "object_center_camera": [
+    -0.028650812488806833,
+    -0.12252183797998935,
+    0.4520000219345093
+  ],
+  "frame": "RealSense D455 aligned color camera frame",
+  "note": "Masih camera frame. Perlu transform camera-to-base sebelum eksekusi UR5.",
+  "meta": {
+    "object_center_camera": [
+      -0.028650812488806833,
+      -0.12252183797998935,
+      0.4520000219345093
+    ],
+    "num_mask_points": 8007,
+    "num_workspace_points": 3631,
+    "num_cloud_masked": 3631,
+    "rgb_path": "/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/current_scene_rgb.jpg",
+    "depth_path": "/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/depth_raw.npy",
+    "intrinsics_path": "/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/camera_intrinsics.json",
+    "mask_path": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water/vision_output/fastsam_mask.png",
+    "intrinsics": {
+      "width": 640,
+      "height": 480,
+      "fx": 385.6192626953125,
+      "fy": 385.17535400390625,
+      "ppx": 326.5517883300781,
+      "ppy": 244.87197875976562,
+      "depth_scale": 0.0010000000474974513
+    },
+    "depth_scale": 0.0010000000474974513,
+    "factor_depth": 999.999952502551,
+    "frame": "RealSense D455 aligned color camera frame"
+  }
+}

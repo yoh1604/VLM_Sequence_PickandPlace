@@ -1,0 +1,141 @@
+{
+  "resolved_primary_target": "white milk carton",
+  "target_visibility": "obstructed",
+  "plan_intent": "search_for_hidden_or_blocked_target",
+  "visual_analysis": [
+    {
+      "object": "white milk carton",
+      "bbox": [
+        379,
+        320,
+        500,
+        405
+      ],
+      "description": "A small white carton of milk, partially obscured by a green pepper.",
+      "status": "obstructed",
+      "target_role": "primary_target"
+    },
+    {
+      "object": "green bell pepper",
+      "bbox": [
+        430,
+        285,
+        555,
+        400
+      ],
+      "description": "A large green bell pepper sitting in front of the milk carton.",
+      "status": "obstructing",
+      "target_role": "search_occluder"
+    },
+    {
+      "object": "pink apple",
+      "bbox": [
+        445,
+        395,
+        540,
+        465
+      ],
+      "description": "A pink apple to the right of the green pepper.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "orange fruit",
+      "bbox": [
+        440,
+        450,
+        550,
+        540
+      ],
+      "description": "An orange fruit, likely an orange, next to the apple.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "white pear",
+      "bbox": [
+        425,
+        530,
+        540,
+        600
+      ],
+      "description": "A white pear to the right of the orange.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "red soda can",
+      "bbox": [
+        360,
+        480,
+        450,
+        535
+      ],
+      "description": "A red soda can behind the fruits.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "brown paper bag",
+      "bbox": [
+        295,
+        340,
+        460,
+        500
+      ],
+      "description": "A brown paper bag in the background.",
+      "status": "clear_background",
+      "target_role": "background"
+    },
+    {
+      "object": "brown onion",
+      "bbox": [
+        920,
+        360,
+        1000,
+        450
+      ],
+      "description": "A brown onion on a white surface on the floor.",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "yellow lemon",
+      "bbox": [
+        940,
+        460,
+        1000,
+        540
+      ],
+      "description": "A yellow lemon on a white surface on the floor.",
+      "status": "clear",
+      "target_role": "background"
+    }
+  ],
+  "action_plan": [
+    {
+      "step": 1,
+      "action": "remove",
+      "target": "green bell pepper",
+      "target_role": "search_occluder",
+      "step_intent": "clear_occluder_to_reveal_primary_target",
+      "explanation": "The green bell pepper is blocking frontal access to the white milk carton. It must be moved first.",
+      "grasp_pixel_2d": [
+        342,
+        492
+      ]
+    },
+    {
+      "step": 2,
+      "action": "pick",
+      "target": "white milk carton",
+      "target_role": "primary_target",
+      "step_intent": "pick_primary_target",
+      "explanation": "Now that the path is clear, pick the white milk carton.",
+      "grasp_pixel_2d": [
+        362,
+        439
+      ]
+    }
+  ]
+}

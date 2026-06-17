@@ -1,0 +1,37 @@
+{
+  "pointcloud_path": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/test_grasp/vision_output/masked_object_pointcloud_valid_only.ply",
+  "clean_mask_path": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/test_grasp/vision_output/fastsam_mask_clean_debug.png",
+  "method": "valid_depth_only_near_median",
+  "use_median_fill": false,
+  "mask_pixels": 5597,
+  "valid_depth_pixels": 4527,
+  "zero_depth_pixels": 1070,
+  "points_before_outlier_removal": 4527,
+  "final_points": 4383,
+  "min_depth_m": 0.1,
+  "max_depth_m": 2.0,
+  "depth_tolerance_m": 0.5,
+  "depth_min_m": 0.359000027179718,
+  "depth_max_m": 0.6010000109672546,
+  "depth_median_m": 0.3700000047683716,
+  "depth_mean_m": 0.3742913603782654,
+  "center_mean_camera_m": [
+    -0.0899879424614964,
+    -0.0026723560143024614,
+    0.37061945503497273
+  ],
+  "center_median_camera_m": [
+    -0.08971680700778961,
+    -0.001999436877667904,
+    0.3700000047683716
+  ],
+  "intrinsics": {
+    "fx": 385.724365234375,
+    "fy": 385.28033447265625,
+    "cx_or_ppx": 326.5517883300781,
+    "cy_or_ppy": 244.87197875976562,
+    "depth_scale": 0.0010000000474974513
+  },
+  "frame": "RealSense D455 aligned color camera frame",
+  "note": "valid_only lebih aman untuk GraspNet/AnyGrasp. median_fill lebih penuh untuk visualisasi/centroid, tetapi bentuk 3D lebih flat."
+}

@@ -1,0 +1,45 @@
+{
+  "target_original": "blue water bottle",
+  "aliases": [
+    "blue water bottle",
+    "pink lotion bottle",
+    "lotion bottle",
+    "body lotion",
+    "pink bottle",
+    "bottle",
+    "lotion"
+  ],
+  "conf_list": [
+    0.5,
+    0.4,
+    0.3,
+    0.2
+  ],
+  "used_query": "blue water bottle",
+  "used_conf": 0.5,
+  "debug_results": [
+    {
+      "query": "blue water bottle",
+      "conf": 0.5,
+      "status": "FOUND",
+      "best_detection": {
+        "label": "bottle",
+        "confidence": 0.8861993551254272,
+        "bbox": [
+          285,
+          80,
+          341,
+          282
+        ],
+        "bbox_format": "xyxy_pixel",
+        "source": "yolo_world",
+        "target_query": "blue water bottle",
+        "target_query_original": "blue water bottle",
+        "target_query_used": "blue water bottle",
+        "confidence_threshold_used": 0.5
+      },
+      "output_json": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_new_01/post_check_output/STEP_2_next_target/STEP_2_next_yolo_blue_water_bottle_conf_0_5.json",
+      "output_image": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_new_01/post_check_output/STEP_2_next_target/STEP_2_next_yolo_blue_water_bottle_conf_0_5.jpg"
+    }
+  ]
+}

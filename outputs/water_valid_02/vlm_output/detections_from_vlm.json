@@ -1,0 +1,90 @@
+[
+  {
+    "label": "red soda can",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      500,
+      300,
+      600,
+      700
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      300,
+      500,
+      700,
+      600
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "red can with white text",
+    "status": "target",
+    "target_role": "primary_target"
+  },
+  {
+    "label": "yellow lemon",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      450,
+      500,
+      550,
+      650
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      500,
+      450,
+      650,
+      550
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "round yellow fruit",
+    "status": "obstructing",
+    "target_role": "search_occluder"
+  },
+  {
+    "label": "green soda can",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      400,
+      300,
+      500,
+      700
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      300,
+      400,
+      700,
+      500
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "green can with white text",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "brown shelf",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      300,
+      200,
+      700,
+      800
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      200,
+      300,
+      800,
+      700
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "wooden shelf",
+    "status": "clear_background",
+    "target_role": "background"
+  }
+]

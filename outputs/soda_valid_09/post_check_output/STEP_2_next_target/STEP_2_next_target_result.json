@@ -1,0 +1,109 @@
+{
+  "test_name": "soda_valid_09",
+  "current_step_index_completed": 1,
+  "next_step": {
+    "step": 2,
+    "action": "pick",
+    "target": "red soda can",
+    "target_role": "primary_target",
+    "step_intent": "pick_primary_target",
+    "explanation": "pick the soda can",
+    "grasp_pixel_2d": [
+      600,
+      600
+    ]
+  },
+  "next_target": "red soda can",
+  "target_query_used": "red soda can",
+  "confidence_threshold_used": 0.5,
+  "best_detection": {
+    "label": "red soda can",
+    "confidence": 0.8050429821014404,
+    "bbox": [
+      299,
+      151,
+      348,
+      277
+    ],
+    "bbox_format": "xyxy_pixel",
+    "source": "yolo_world",
+    "target_query": "red soda can",
+    "target_query_original": "red soda can",
+    "target_query_used": "red soda can",
+    "confidence_threshold_used": 0.5
+  },
+  "all_detections": [
+    {
+      "label": "red soda can",
+      "confidence": 0.8050429821014404,
+      "bbox": [
+        299,
+        151,
+        348,
+        277
+      ],
+      "bbox_format": "xyxy_pixel",
+      "source": "yolo_world",
+      "target_query": "red soda can",
+      "target_query_original": "red soda can",
+      "target_query_used": "red soda can",
+      "confidence_threshold_used": 0.5
+    }
+  ],
+  "next_rgb_image_used": "/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/current_scene_rgb.jpg",
+  "next_depth_used": "/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/depth_raw.npy",
+  "next_yolo_json": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/soda_valid_09/post_check_output/STEP_2_next_target/STEP_2_next_detections_yolo.json",
+  "next_yolo_image": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/soda_valid_09/post_check_output/STEP_2_next_target/STEP_2_next_yolo_result.jpg",
+  "next_fastsam_mask": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/soda_valid_09/post_check_output/STEP_2_next_target/STEP_2_next_fastsam_mask.png",
+  "next_fastsam_image": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/soda_valid_09/post_check_output/STEP_2_next_target/STEP_2_next_fastsam_result.jpg",
+  "next_object_position_json": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/soda_valid_09/post_check_output/STEP_2_next_target/STEP_2_next_object_position_camera.json",
+  "object_position": {
+    "object": "red soda can",
+    "pixel_center_uv": [
+      324,
+      213
+    ],
+    "pixel_center_uv_mean": [
+      323,
+      212
+    ],
+    "median_depth_m": 0.45900002121925354,
+    "mean_depth_m": 0.4600081741809845,
+    "point_camera_m": [
+      -0.003053087741136551,
+      -0.03805309906601906,
+      0.45900002121925354
+    ],
+    "point_camera_mean_m": [
+      -0.003624760312959552,
+      -0.03822428360581398,
+      0.4598173499107361
+    ],
+    "debug": {
+      "mask_pixels": 5596,
+      "valid_depth_pixels": 4543,
+      "valid_depth_ratio": 0.8118298784846318,
+      "used_pixels_after_depth_fill": 5596,
+      "min_depth_m": 0.1,
+      "max_depth_m": 2.0,
+      "depth_scale": 0.0010000000474974513,
+      "fx": 385.724365234375,
+      "fy": 385.28033447265625,
+      "ppx": 326.5517883300781,
+      "ppy": 244.87197875976562,
+      "method": "all_mask_pixels_with_invalid_depth_filled_by_median_depth"
+    },
+    "frame": "RealSense D455 aligned color camera frame",
+    "note": "Belum ditransformasikan ke base frame UR5."
+  },
+  "sanity_check_object_position": {
+    "ok": true,
+    "point_camera_m": [
+      -0.003053087741136551,
+      -0.03805309906601906,
+      0.45900002121925354
+    ],
+    "warnings": []
+  },
+  "note": "Next target has been detected, segmented, and localized using current_scene_rgb.jpg and depth_raw.npy from the same capture. YOLO-World alias fallback is enabled."
+}

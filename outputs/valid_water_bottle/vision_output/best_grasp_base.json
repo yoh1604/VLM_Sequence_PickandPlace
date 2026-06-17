@@ -1,0 +1,73 @@
+{
+  "success": true,
+  "method": "camera_to_base_transform",
+  "translation_base": [
+    -0.6876790131520758,
+    0.5083741862271631,
+    0.1869258181229359
+  ],
+  "rotation_matrix_base": [
+    [
+      0.6757530587866856,
+      0.43594306248603476,
+      -0.5944001182639683
+    ],
+    [
+      0.39787119171928326,
+      0.4631087202098714,
+      0.7919778106820899
+    ],
+    [
+      0.6205291134907308,
+      -0.771676058622063,
+      0.139497950726436
+    ]
+  ],
+  "score": 0.40551745891571045,
+  "width": 0.08450554311275482,
+  "height": 0.019999999552965164,
+  "depth": 0.029999999329447746,
+  "object_id": -1,
+  "frame": "UR5 base frame",
+  "source_frame": "RealSense D455 aligned color camera frame",
+  "rotation_validation": {
+    "determinant": 1.0000000368628876,
+    "orthonormal_error": 7.666601558395266e-08
+  },
+  "camera_grasp_used": {
+    "translation_camera": [
+      -0.031105181202292442,
+      0.024371804669499397,
+      0.406000018119812
+    ],
+    "rotation_matrix_camera": [
+      [
+        0.7653300762176514,
+        0.6276130676269531,
+        0.14272965490818024
+      ],
+      [
+        -0.6169755458831787,
+        0.7785254120826721,
+        -0.1150624006986618
+      ],
+      [
+        -0.18333333730697632,
+        0.0,
+        0.9830508232116699
+      ]
+    ]
+  },
+  "note": "Pose grasp sudah ditransformasikan dari camera frame ke UR5 base frame. Untuk test pertama, gunakan pre-grasp dengan z ditambah 0.10 m dan jangan langsung descend.",
+  "pre_grasp_preview": {
+    "translation_base": [
+      -0.6876790131520758,
+      0.5083741862271631,
+      0.28692581812293594
+    ],
+    "offset_z_m": 0.1,
+    "note": "Gunakan pose ini untuk test pertama agar robot hanya bergerak ke atas objek."
+  },
+  "source_file": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/valid_water_bottle/vision_output/best_grasp_camera.json",
+  "source_transform": "/home/b401/Documents/pick_place_occlusion_noetic/configs/T_base_camera.json"
+}

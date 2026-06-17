@@ -1,0 +1,14 @@
+[
+  {
+    "step": 2,
+    "action": "pick",
+    "target": "red soda can",
+    "target_role": "primary_target",
+    "step_intent": "pick_primary_target",
+    "explanation": "pick the soda can",
+    "grasp_pixel_2d": [
+      600,
+      600
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+project_dir: /home/b401/pick_place_occlusion_noetic
+
+input:
+  current_rgb: data/d455_capture/current_scene_rgb.jpg
+  current_depth_png: data/d455_capture/current_scene_depth.png
+  depth_raw: data/d455_capture/depth_raw.npy
+  camera_intrinsics: configs/camera_intrinsics.json
+  post_rgb: data/d455_capture/post_scene_rgb.jpg
+
+output:
+  action_plan: outputs/action_plan_real.json
+  validation: outputs/validation_result_real.json
+  yolo_result: outputs/yolo_result.json
+  segmentation: outputs/segmentation_result.json
+  depth_result: outputs/depth_result.json
+  robot_request: outputs/robot_target_request.json
+  post_check: outputs/post_check_result.json
+  remaining_plan: outputs/remaining_plan.json
+
+robot:
+  execution_mode: fixed_waypoint
+  waypoints: configs/waypoints_ur5.json
+  calibration: configs/ur5_calibration.yaml

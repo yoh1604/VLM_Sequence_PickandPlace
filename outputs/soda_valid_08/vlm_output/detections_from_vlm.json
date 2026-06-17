@@ -1,0 +1,90 @@
+[
+  {
+    "label": "yellow lemon",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      400,
+      600,
+      600,
+      800
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      600,
+      400,
+      800,
+      600
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "yellow lemon on the shelf",
+    "status": "obstructing",
+    "target_role": "search_occluder"
+  },
+  {
+    "label": "red soda can",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      450,
+      400,
+      550,
+      700
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      400,
+      450,
+      700,
+      550
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "red soda can behind the lemon",
+    "status": "target",
+    "target_role": "primary_target"
+  },
+  {
+    "label": "blue water bottle",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      550,
+      300,
+      650,
+      700
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      300,
+      550,
+      700,
+      650
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "blue water bottle next to the soda can",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "brown box",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      300,
+      200,
+      700,
+      800
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      200,
+      300,
+      800,
+      700
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "brown box behind the objects",
+    "status": "clear_background",
+    "target_role": "background"
+  }
+]

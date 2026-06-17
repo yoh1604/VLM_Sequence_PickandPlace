@@ -1,0 +1,73 @@
+{
+  "success": true,
+  "method": "camera_to_base_transform",
+  "translation_base": [
+    -0.6127048079368328,
+    0.5494558597218203,
+    0.19163544747789954
+  ],
+  "rotation_matrix_base": [
+    [
+      -0.024098185136625882,
+      0.2940681620738527,
+      -0.9554806809158134
+    ],
+    [
+      0.9426636329109814,
+      0.3249229421764168,
+      0.07622658603859457
+    ],
+    [
+      0.3328734032582648,
+      -0.8988598151526914,
+      -0.28503742943655574
+    ]
+  ],
+  "score": 0.39131736755371094,
+  "width": 0.08480340242385864,
+  "height": 0.019999999552965164,
+  "depth": 0.029999999329447746,
+  "object_id": -1,
+  "frame": "UR5 base frame",
+  "source_frame": "RealSense D455 aligned color camera frame",
+  "rotation_validation": {
+    "determinant": 1.0000001398665956,
+    "orthonormal_error": 2.2216411563760323e-07
+  },
+  "camera_grasp_used": {
+    "translation_camera": [
+      0.05096534267067909,
+      0.019962089136242867,
+      0.38200002908706665
+    ],
+    "rotation_matrix_camera": [
+      [
+        0.6540746092796326,
+        0.42825940251350403,
+        -0.6235225796699524
+      ],
+      [
+        -0.309978187084198,
+        0.9036558270454407,
+        0.2954990267753601
+      ],
+      [
+        0.690000057220459,
+        0.0,
+        0.7238094210624695
+      ]
+    ]
+  },
+  "note": "Pose grasp sudah ditransformasikan dari camera frame ke UR5 base frame. Untuk test pertama, gunakan pre-grasp dengan z ditambah 0.10 m dan jangan langsung descend.",
+  "pre_grasp_preview": {
+    "translation_base": [
+      -0.6127048079368328,
+      0.5494558597218203,
+      0.29163544747789955
+    ],
+    "offset_z_m": 0.1,
+    "note": "Gunakan pose ini untuk test pertama agar robot hanya bergerak ke atas objek."
+  },
+  "source_file": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/soda_valid_07/vision_output/best_grasp_camera.json",
+  "source_transform": "/home/b401/Documents/pick_place_occlusion_noetic/configs/T_base_camera.json"
+}

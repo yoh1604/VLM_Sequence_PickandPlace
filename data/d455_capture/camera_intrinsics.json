@@ -5,14 +5,5 @@
   "fy": 385.28033447265625,
   "ppx": 326.5517883300781,
   "ppy": 244.87197875976562,
-  "model": "distortion.inverse_brown_conrady",
-  "coeffs": [
-    -0.0547373965382576,
-    0.06501743942499161,
-    -0.0009451747755520046,
-    0.000996481510810554,
-    -0.02138402685523033
-  ],
-  "depth_scale": 0.0010000000474974513,
-  "note": "Depth is aligned to color frame. Captured on Windows laptop using Intel RealSense D455."
+  "depth_scale": 0.0010000000474974513
 }

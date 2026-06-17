@@ -1,0 +1,70 @@
+{
+  "success": true,
+  "frame": "base",
+  "target_link": "tool0",
+  "source_target": "gripper_tip",
+  "active_test_name": "water_valid_08",
+  "translation_tool0_pregrasp": [
+    -0.6015114292713243,
+    0.5287271030565163,
+    0.5020676146925954
+  ],
+  "quaternion_tool0_xyzw": [
+    -0.28340175782789895,
+    0.6661598976406625,
+    0.6411123643592581,
+    -0.25473392137899675
+  ],
+  "rpy_tool0_rad": [
+    1.619,
+    0.024,
+    -2.36
+  ],
+  "orientation_source": "fixed_rpy",
+  "gripper_tip_grasp_base": [
+    -0.6709826332367816,
+    0.6113901470694948,
+    0.3638785224006446
+  ],
+  "gripper_tip_pregrasp_base": [
+    -0.6709826332367816,
+    0.6113901470694948,
+    0.4938785224006446
+  ],
+  "tool0_to_gripper_tip_offset_tool_frame": [
+    0.0,
+    0.0,
+    0.17
+  ],
+  "pregrasp_z_m": 0.13,
+  "score": 0.41210025548934937,
+  "width": 0.08472554385662079,
+  "depth": 0.029999999329447746,
+  "height": 0.019999999552965164,
+  "source_file": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_08/vision_output/best_grasp_base.json",
+  "note": "Kirim translation_tool0_pregrasp + quaternion_tool0_xyzw ke MoveIt sebagai target tool0. Jangan kirim gripper_tip_grasp_base langsung ke MoveIt.",
+  "manual_nudge_base_m": {
+    "dx": -0.05,
+    "dy": 0.038,
+    "dz": 0.0
+  },
+  "manual_nudge_history": [
+    {
+      "from": [
+        -0.5515114292713242,
+        0.4907271030565163,
+        0.5020676146925954
+      ],
+      "to": [
+        -0.6015114292713243,
+        0.5287271030565163,
+        0.5020676146925954
+      ],
+      "dx": -0.05,
+      "dy": 0.038,
+      "dz": 0.0,
+      "frame": "base"
+    }
+  ],
+  "note_nudge": "translation_tool0_pregrasp digeser manual dalam frame base. dx/dy/dz satuannya meter."
+}

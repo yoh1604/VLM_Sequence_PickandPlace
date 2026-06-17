@@ -1,0 +1,68 @@
+[
+  {
+    "label": "yellow lemon",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      400,
+      600,
+      600,
+      800
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      600,
+      400,
+      800,
+      600
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "a yellow lemon in front",
+    "status": "obstructing",
+    "target_role": "search_occluder"
+  },
+  {
+    "label": "red soda can",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      500,
+      400,
+      700,
+      700
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      400,
+      500,
+      700,
+      700
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "a red soda can behind the lemon",
+    "status": "target",
+    "target_role": "primary_target"
+  },
+  {
+    "label": "blue water bottle",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      700,
+      300,
+      900,
+      700
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      300,
+      700,
+      700,
+      900
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "a blue water bottle behind the soda can",
+    "status": "clear",
+    "target_role": "background"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "step": 2,
+    "action": "pick",
+    "target": "blue water bottle",
+    "target_role": "primary_target",
+    "step_intent": "pick_primary_target",
+    "explanation": "pick the blue water bottle",
+    "grasp_pixel_2d": [
+      725,
+      675
+    ]
+  }
+]

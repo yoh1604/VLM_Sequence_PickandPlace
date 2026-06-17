@@ -1,0 +1,105 @@
+{
+  "resolved_primary_target": "red tea bag",
+  "target_visibility": "obstructed",
+  "plan_intent": "search_for_hidden_or_blocked_target",
+  "visual_analysis": [
+    {
+      "object": "red soda can",
+      "bbox": [
+        400,
+        300,
+        700,
+        450
+      ],
+      "description": "red soda can",
+      "status": "obstructing",
+      "target_role": "search_occluder"
+    },
+    {
+      "object": "green soda can",
+      "bbox": [
+        400,
+        450,
+        700,
+        600
+      ],
+      "description": "green soda can",
+      "status": "obstructing",
+      "target_role": "search_occluder"
+    },
+    {
+      "object": "blue water bottle",
+      "bbox": [
+        300,
+        600,
+        700,
+        750
+      ],
+      "description": "blue water bottle",
+      "status": "obstructing",
+      "target_role": "search_occluder"
+    },
+    {
+      "object": "red tea bag",
+      "bbox": [
+        500,
+        500,
+        700,
+        650
+      ],
+      "description": "red tea bag",
+      "status": "target",
+      "target_role": "primary_target"
+    }
+  ],
+  "action_plan": [
+    {
+      "step": 1,
+      "action": "remove",
+      "target": "red soda can",
+      "target_role": "search_occluder",
+      "step_intent": "clear_occluder_to_reveal_primary_target",
+      "explanation": "remove front object blocking access",
+      "grasp_pixel_2d": [
+        375,
+        550
+      ]
+    },
+    {
+      "step": 2,
+      "action": "remove",
+      "target": "green soda can",
+      "target_role": "search_occluder",
+      "step_intent": "clear_occluder_to_reveal_primary_target",
+      "explanation": "remove object blocking access",
+      "grasp_pixel_2d": [
+        525,
+        550
+      ]
+    },
+    {
+      "step": 3,
+      "action": "remove",
+      "target": "blue water bottle",
+      "target_role": "search_occluder",
+      "step_intent": "clear_occluder_to_reveal_primary_target",
+      "explanation": "remove object blocking access",
+      "grasp_pixel_2d": [
+        675,
+        500
+      ]
+    },
+    {
+      "step": 4,
+      "action": "pick",
+      "target": "red tea bag",
+      "target_role": "primary_target",
+      "step_intent": "pick_primary_target",
+      "explanation": "pick the primary target",
+      "grasp_pixel_2d": [
+        575,
+        600
+      ]
+    }
+  ]
+}

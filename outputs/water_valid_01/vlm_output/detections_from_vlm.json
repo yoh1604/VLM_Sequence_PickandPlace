@@ -1,0 +1,90 @@
+[
+  {
+    "label": "green bottle",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      300,
+      200,
+      450,
+      600
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      200,
+      300,
+      600,
+      450
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "green bottle with blue cap",
+    "status": "target",
+    "target_role": "primary_target"
+  },
+  {
+    "label": "red can",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      460,
+      200,
+      580,
+      600
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      200,
+      460,
+      600,
+      580
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "red soda can",
+    "status": "clear",
+    "target_role": "clear"
+  },
+  {
+    "label": "yellow lemon",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      400,
+      700,
+      500,
+      800
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      700,
+      400,
+      800,
+      500
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "yellow lemon",
+    "status": "clear",
+    "target_role": "clear"
+  },
+  {
+    "label": "brown envelope",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      250,
+      100,
+      700,
+      650
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      100,
+      250,
+      650,
+      700
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "brown envelope",
+    "status": "clear_background",
+    "target_role": "background"
+  }
+]

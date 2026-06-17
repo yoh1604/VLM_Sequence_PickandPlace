@@ -1,0 +1,68 @@
+[
+  {
+    "label": "blue water bottle",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      300,
+      200,
+      400,
+      600
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      200,
+      300,
+      600,
+      400
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "a blue water bottle",
+    "status": "target",
+    "target_role": "primary_target"
+  },
+  {
+    "label": "red soda can",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      400,
+      200,
+      500,
+      600
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      200,
+      400,
+      600,
+      500
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "a red soda can",
+    "status": "clear",
+    "target_role": "clear"
+  },
+  {
+    "label": "brown envelope",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      200,
+      100,
+      600,
+      700
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      100,
+      200,
+      700,
+      600
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "a brown envelope",
+    "status": "clear_background",
+    "target_role": "background"
+  }
+]

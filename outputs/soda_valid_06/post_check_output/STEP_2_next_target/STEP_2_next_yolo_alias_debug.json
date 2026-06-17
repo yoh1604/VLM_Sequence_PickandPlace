@@ -1,0 +1,43 @@
+{
+  "target_original": "red soda can",
+  "aliases": [
+    "red soda can",
+    "soda can",
+    "can",
+    "drink can",
+    "beverage can"
+  ],
+  "conf_list": [
+    0.5,
+    0.4,
+    0.3,
+    0.2
+  ],
+  "used_query": "red soda can",
+  "used_conf": 0.5,
+  "debug_results": [
+    {
+      "query": "red soda can",
+      "conf": 0.5,
+      "status": "FOUND",
+      "best_detection": {
+        "label": "red soda can",
+        "confidence": 0.772490918636322,
+        "bbox": [
+          288,
+          148,
+          340,
+          278
+        ],
+        "bbox_format": "xyxy_pixel",
+        "source": "yolo_world",
+        "target_query": "red soda can",
+        "target_query_original": "red soda can",
+        "target_query_used": "red soda can",
+        "confidence_threshold_used": 0.5
+      },
+      "output_json": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/soda_valid_06/post_check_output/STEP_2_next_target/STEP_2_next_yolo_red_soda_can_conf_0_5.json",
+      "output_image": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/soda_valid_06/post_check_output/STEP_2_next_target/STEP_2_next_yolo_red_soda_can_conf_0_5.jpg"
+    }
+  ]
+}

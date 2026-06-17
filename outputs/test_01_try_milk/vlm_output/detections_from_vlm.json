@@ -1,0 +1,134 @@
+[
+  {
+    "label": "green bell pepper",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      263,
+      428,
+      379,
+      570
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      428,
+      263,
+      570,
+      379
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A green bell pepper on the left side of the shelf.",
+    "status": "obstructing",
+    "target_role": "search_occluder"
+  },
+  {
+    "label": "red apple",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      375,
+      456,
+      461,
+      563
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      456,
+      375,
+      563,
+      461
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A red apple in front of the milk carton.",
+    "status": "obstructing",
+    "target_role": "search_occluder"
+  },
+  {
+    "label": "white milk carton",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      338,
+      349,
+      420,
+      494
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      349,
+      338,
+      494,
+      420
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A white carton of Ultra Milk, located behind the green pepper and red apple.",
+    "status": "target",
+    "target_role": "primary_target"
+  },
+  {
+    "label": "orange",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      459,
+      470,
+      552,
+      574
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      470,
+      459,
+      574,
+      552
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "An orange fruit to the right of the red apple.",
+    "status": "clear",
+    "target_role": null
+  },
+  {
+    "label": "red soda can",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      529,
+      363,
+      592,
+      518
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      363,
+      529,
+      518,
+      592
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A red soda can behind the orange.",
+    "status": "clear",
+    "target_role": null
+  },
+  {
+    "label": "yellow pear",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      579,
+      420,
+      672,
+      570
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      420,
+      579,
+      570,
+      672
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "A yellow pear on the right side of the shelf.",
+    "status": "clear",
+    "target_role": null
+  }
+]

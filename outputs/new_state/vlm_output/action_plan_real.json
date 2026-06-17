@@ -1,0 +1,81 @@
+{
+  "resolved_primary_target": "clear bottle",
+  "target_visibility": "clear",
+  "plan_intent": "pick_target",
+  "visual_analysis": [
+    {
+      "object": "clear bottle",
+      "bbox": [
+        300,
+        400,
+        600,
+        500
+      ],
+      "description": "a clear bottle with a cap",
+      "status": "target",
+      "target_role": "primary_target"
+    },
+    {
+      "object": "red can",
+      "bbox": [
+        320,
+        520,
+        580,
+        600
+      ],
+      "description": "a red can",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "brown box",
+      "bbox": [
+        100,
+        200,
+        700,
+        800
+      ],
+      "description": "a brown box",
+      "status": "clear_background",
+      "target_role": "background"
+    },
+    {
+      "object": "orange fruit",
+      "bbox": [
+        800,
+        100,
+        900,
+        200
+      ],
+      "description": "an orange fruit",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "yellow fruit",
+      "bbox": [
+        800,
+        300,
+        900,
+        400
+      ],
+      "description": "a yellow fruit",
+      "status": "clear",
+      "target_role": "background"
+    }
+  ],
+  "action_plan": [
+    {
+      "step": 1,
+      "action": "pick",
+      "target": "clear bottle",
+      "target_role": "primary_target",
+      "step_intent": "pick_primary_target",
+      "explanation": "The clear bottle is the primary target and is unobstructed.",
+      "grasp_pixel_2d": [
+        450,
+        450
+      ]
+    }
+  ]
+}

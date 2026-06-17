@@ -1,0 +1,78 @@
+{
+  "success": true,
+  "method": "graspnet_baseline_d455",
+  "best_grasp": {
+    "score": 0.4515334367752075,
+    "translation_camera": [
+      -0.13284550607204437,
+      0.0038785883225500584,
+      0.3620000183582306
+    ],
+    "rotation_matrix_camera": [
+      [
+        0.05689249932765961,
+        -0.11523131281137466,
+        -0.9917080998420715
+      ],
+      [
+        -0.43903547525405884,
+        0.8892316222190857,
+        -0.1285107433795929
+      ],
+      [
+        0.8966667056083679,
+        0.44270631670951843,
+        -1.9351308111481558e-08
+      ]
+    ],
+    "width": 0.0769013836979866,
+    "height": 0.019999999552965164,
+    "depth": 0.029999999329447746,
+    "object_id": -1,
+    "frame": "RealSense D455 aligned color camera frame",
+    "rank": 0,
+    "distance_to_object_center": 0.0179887723189081
+  },
+  "object_center_camera": [
+    -0.11533184703316239,
+    0.0029471315273187503,
+    0.3660000264644623
+  ],
+  "frame": "RealSense D455 aligned color camera frame",
+  "note": "Masih camera frame. Perlu transform camera-to-base sebelum eksekusi UR5.",
+  "meta": {
+    "object_center_camera": [
+      -0.11533184703316239,
+      0.0029471315273187503,
+      0.3660000264644623
+    ],
+    "num_mask_points": 6902,
+    "num_workspace_points": 4884,
+    "num_cloud_masked": 4884,
+    "rgb_path": "/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/current_scene_rgb.jpg",
+    "depth_path": "/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/depth_raw.npy",
+    "intrinsics_path": "/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/camera_intrinsics.json",
+    "mask_path": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/test_01_try_milk/vision_output/fastsam_mask.png",
+    "intrinsics": {
+      "width": 640,
+      "height": 480,
+      "fx": 385.724365234375,
+      "fy": 385.28033447265625,
+      "ppx": 326.5517883300781,
+      "ppy": 244.87197875976562,
+      "model": "distortion.inverse_brown_conrady",
+      "coeffs": [
+        -0.0547373965382576,
+        0.06501743942499161,
+        -0.0009451747755520046,
+        0.000996481510810554,
+        -0.02138402685523033
+      ],
+      "depth_scale": 0.0010000000474974513,
+      "note": "Depth is aligned to color frame. Captured on Windows laptop using Intel RealSense D455."
+    },
+    "depth_scale": 0.0010000000474974513,
+    "factor_depth": 999.999952502551,
+    "frame": "RealSense D455 aligned color camera frame"
+  }
+}

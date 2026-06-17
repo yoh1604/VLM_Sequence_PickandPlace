@@ -1,0 +1,134 @@
+[
+  {
+    "label": "green bell pepper",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      450,
+      400,
+      550,
+      600
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      400,
+      450,
+      600,
+      550
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "green bell pepper",
+    "status": "target",
+    "target_role": "primary_target"
+  },
+  {
+    "label": "red soda can",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      400,
+      300,
+      500,
+      700
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      300,
+      400,
+      700,
+      500
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "red soda can",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "white pear",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      300,
+      300,
+      400,
+      600
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      300,
+      300,
+      600,
+      400
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "white pear",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "orange",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      550,
+      400,
+      650,
+      600
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      400,
+      550,
+      600,
+      650
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "orange",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "brown egg",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      300,
+      800,
+      400,
+      900
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      800,
+      300,
+      900,
+      400
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "brown egg",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "yellow lemon",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      400,
+      800,
+      500,
+      900
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      800,
+      400,
+      900,
+      500
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "yellow lemon",
+    "status": "clear",
+    "target_role": "background"
+  }
+]

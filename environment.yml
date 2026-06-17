@@ -14,3 +14,4 @@ dependencies:
       - openai
       - ollama
       - ultralytics
+      - dotenv

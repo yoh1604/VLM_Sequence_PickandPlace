@@ -1,0 +1,109 @@
+{
+  "test_name": "water_valid_03",
+  "current_step_index_completed": 2,
+  "next_step": {
+    "step": 3,
+    "action": "pick",
+    "target": "blue water bottle",
+    "target_role": "primary_target",
+    "step_intent": "pick_primary_target",
+    "explanation": "pick the water bottle",
+    "grasp_pixel_2d": [
+      650,
+      650
+    ]
+  },
+  "next_target": "blue water bottle",
+  "target_query_used": "blue water bottle",
+  "confidence_threshold_used": 0.5,
+  "best_detection": {
+    "label": "bottle",
+    "confidence": 0.8717334270477295,
+    "bbox": [
+      310,
+      89,
+      365,
+      277
+    ],
+    "bbox_format": "xyxy_pixel",
+    "source": "yolo_world",
+    "target_query": "blue water bottle",
+    "target_query_original": "blue water bottle",
+    "target_query_used": "blue water bottle",
+    "confidence_threshold_used": 0.5
+  },
+  "all_detections": [
+    {
+      "label": "bottle",
+      "confidence": 0.8717334270477295,
+      "bbox": [
+        310,
+        89,
+        365,
+        277
+      ],
+      "bbox_format": "xyxy_pixel",
+      "source": "yolo_world",
+      "target_query": "blue water bottle",
+      "target_query_original": "blue water bottle",
+      "target_query_used": "blue water bottle",
+      "confidence_threshold_used": 0.5
+    }
+  ],
+  "next_rgb_image_used": "/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/current_scene_rgb.jpg",
+  "next_depth_used": "/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/depth_raw.npy",
+  "next_yolo_json": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_03/post_check_output/STEP_3_next_target/STEP_3_next_detections_yolo.json",
+  "next_yolo_image": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_03/post_check_output/STEP_3_next_target/STEP_3_next_yolo_result.jpg",
+  "next_fastsam_mask": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_03/post_check_output/STEP_3_next_target/STEP_3_next_fastsam_mask.png",
+  "next_fastsam_image": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_03/post_check_output/STEP_3_next_target/STEP_3_next_fastsam_result.jpg",
+  "next_object_position_json": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_03/post_check_output/STEP_3_next_target/STEP_3_next_object_position_camera.json",
+  "object_position": {
+    "object": "blue water bottle",
+    "pixel_center_uv": [
+      338,
+      187
+    ],
+    "pixel_center_uv_mean": [
+      337,
+      188
+    ],
+    "median_depth_m": 0.484000027179718,
+    "mean_depth_m": 0.48677369952201843,
+    "point_camera_m": [
+      0.01411273330450058,
+      -0.07270041108131409,
+      0.484000027179718
+    ],
+    "point_camera_mean_m": [
+      0.013870707713067532,
+      -0.07127907872200012,
+      0.4849484860897064
+    ],
+    "debug": {
+      "mask_pixels": 8672,
+      "valid_depth_pixels": 3133,
+      "valid_depth_ratio": 0.36127767527675275,
+      "used_pixels_after_depth_fill": 8672,
+      "min_depth_m": 0.1,
+      "max_depth_m": 2.0,
+      "depth_scale": 0.0010000000474974513,
+      "fx": 385.724365234375,
+      "fy": 385.28033447265625,
+      "ppx": 326.5517883300781,
+      "ppy": 244.87197875976562,
+      "method": "all_mask_pixels_with_invalid_depth_filled_by_median_depth"
+    },
+    "frame": "RealSense D455 aligned color camera frame",
+    "note": "Belum ditransformasikan ke base frame UR5."
+  },
+  "sanity_check_object_position": {
+    "ok": true,
+    "point_camera_m": [
+      0.01411273330450058,
+      -0.07270041108131409,
+      0.484000027179718
+    ],
+    "warnings": []
+  },
+  "note": "Next target has been detected, segmented, and localized using current_scene_rgb.jpg and depth_raw.npy from the same capture. YOLO-World alias fallback is enabled."
+}

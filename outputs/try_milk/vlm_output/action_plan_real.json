@@ -1,0 +1,81 @@
+{
+  "resolved_primary_target": "white milk carton",
+  "target_visibility": "hidden",
+  "plan_intent": "search_for_hidden_or_blocked_target",
+  "visual_analysis": [
+    {
+      "object": "red soda can",
+      "bbox": [
+        300,
+        450,
+        700,
+        550
+      ],
+      "description": "red soda can in the center",
+      "status": "obstructing",
+      "target_role": "search_occluder"
+    },
+    {
+      "object": "white pear",
+      "bbox": [
+        300,
+        250,
+        700,
+        350
+      ],
+      "description": "white pear on the left",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "orange fruit",
+      "bbox": [
+        300,
+        650,
+        700,
+        750
+      ],
+      "description": "orange fruit on the right",
+      "status": "clear",
+      "target_role": "background"
+    },
+    {
+      "object": "brown box",
+      "bbox": [
+        0,
+        400,
+        300,
+        600
+      ],
+      "description": "brown box in the back",
+      "status": "clear_background",
+      "target_role": "background"
+    }
+  ],
+  "action_plan": [
+    {
+      "step": 1,
+      "action": "remove",
+      "target": "red soda can",
+      "target_role": "search_occluder",
+      "step_intent": "clear_occluder_to_reveal_primary_target",
+      "explanation": "remove the soda can to search for the milk carton",
+      "grasp_pixel_2d": [
+        500,
+        500
+      ]
+    },
+    {
+      "step": 2,
+      "action": "search",
+      "target": "white milk carton",
+      "target_role": "primary_target",
+      "step_intent": "pick_or_search_primary_target",
+      "explanation": "search for the milk carton after removing the occluder",
+      "grasp_pixel_2d": [
+        500,
+        500
+      ]
+    }
+  ]
+}

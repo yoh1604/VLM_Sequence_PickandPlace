@@ -1,0 +1,38 @@
+{
+  "id": "P01",
+  "timestamp": "2026-06-01T15:17:02.200027",
+  "pixel_uv": [
+    209,
+    272
+  ],
+  "median_depth_m": 0.4020000100135803,
+  "valid_depth_count": 117,
+  "point_camera_m": [
+    -0.12251188761978248,
+    0.02830527238082226,
+    0.4020000100135803
+  ],
+  "rgb_path": "/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/current_scene_rgb.jpg",
+  "depth_path": "/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/depth_raw.npy",
+  "intrinsics_path": "/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/camera_intrinsics.json",
+  "intrinsics": {
+    "width": 640,
+    "height": 480,
+    "fx": 385.724365234375,
+    "fy": 385.28033447265625,
+    "ppx": 326.5517883300781,
+    "ppy": 244.87197875976562,
+    "model": "distortion.inverse_brown_conrady",
+    "coeffs": [
+      -0.0547373965382576,
+      0.06501743942499161,
+      -0.0009451747755520046,
+      0.000996481510810554,
+      -0.02138402685523033
+    ],
+    "depth_scale": 0.0010000000474974513,
+    "note": "Depth is aligned to color frame. Captured on Windows laptop using Intel RealSense D455."
+  },
+  "frame_camera": "RealSense D455 aligned color camera frame",
+  "note": "Camera point recorded from RGB-D files already transferred from laptop."
+}

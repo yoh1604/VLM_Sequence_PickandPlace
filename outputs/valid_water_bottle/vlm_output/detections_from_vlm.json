@@ -1,0 +1,90 @@
+[
+  {
+    "label": "blue bottle",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      400,
+      200,
+      600,
+      600
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      200,
+      400,
+      600,
+      600
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "a blue bottle on the shelf",
+    "status": "target",
+    "target_role": "primary_target"
+  },
+  {
+    "label": "red can",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      450,
+      300,
+      500,
+      550
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      300,
+      450,
+      550,
+      500
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "a red can next to the blue bottle",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "white marker",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      500,
+      350,
+      550,
+      500
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      350,
+      500,
+      500,
+      550
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "a white marker in front of the blue bottle",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "brown box",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      300,
+      100,
+      700,
+      700
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      100,
+      300,
+      700,
+      700
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "a brown box behind the blue bottle",
+    "status": "clear_background",
+    "target_role": "background"
+  }
+]

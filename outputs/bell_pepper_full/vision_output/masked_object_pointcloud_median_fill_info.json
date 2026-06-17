@@ -1,0 +1,24 @@
+{
+  "pointcloud_path": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/bell_pepper_full/vision_output/masked_object_pointcloud_median_fill.ply",
+  "clean_mask_path": null,
+  "method": "median_fill_all_mask_pixels",
+  "use_median_fill": true,
+  "mask_pixels": 1377,
+  "valid_depth_pixels": 668,
+  "zero_depth_pixels": 709,
+  "final_points": 1317,
+  "median_depth_m": 0.44600000977516174,
+  "mean_depth_m": 0.44552698731422424,
+  "center_mean_camera_m": [
+    -0.005397257906449824,
+    -0.003822143912066892,
+    0.44566820081020725
+  ],
+  "center_median_camera_m": [
+    -0.005335336085408926,
+    -0.004483419470489025,
+    0.44600000977516174
+  ],
+  "frame": "RealSense D455 aligned color camera frame",
+  "note": "Point cloud masih camera frame, belum base frame UR5."
+}

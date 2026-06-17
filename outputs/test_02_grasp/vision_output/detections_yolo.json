@@ -1,0 +1,15 @@
+[
+  {
+    "label": "green bell pepper",
+    "confidence": 0.9510928988456726,
+    "bbox": [
+      168,
+      197,
+      247,
+      291
+    ],
+    "bbox_format": "xyxy_pixel",
+    "source": "yolo_world",
+    "target_query": "green bell pepper"
+  }
+]

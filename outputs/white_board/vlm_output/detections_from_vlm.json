@@ -1,0 +1,90 @@
+[
+  {
+    "label": "red marker",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      450,
+      200,
+      550,
+      400
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      200,
+      450,
+      400,
+      550
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "red board marker",
+    "status": "target",
+    "target_role": "primary_target"
+  },
+  {
+    "label": "green pepper",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      200,
+      700,
+      300,
+      800
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      700,
+      200,
+      800,
+      300
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "green bell pepper",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "yellow lemon",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      350,
+      750,
+      450,
+      850
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      750,
+      350,
+      850,
+      450
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "yellow lemon",
+    "status": "clear",
+    "target_role": "background"
+  },
+  {
+    "label": "red can",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      400,
+      300,
+      600,
+      500
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      300,
+      400,
+      500,
+      600
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "red can of food",
+    "status": "clear",
+    "target_role": "background"
+  }
+]

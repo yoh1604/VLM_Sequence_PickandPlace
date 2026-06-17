@@ -1,0 +1,73 @@
+{
+  "success": true,
+  "method": "camera_to_base_transform",
+  "translation_base": [
+    -0.6709826332367816,
+    0.6113901470694948,
+    0.3638785224006446
+  ],
+  "rotation_matrix_base": [
+    [
+      -0.5908573060081469,
+      0.6989113310656581,
+      -0.4030019922834485
+    ],
+    [
+      0.6624794322936512,
+      0.7053986181304247,
+      0.2520591190789501
+    ],
+    [
+      0.4604440592325484,
+      -0.1180495481326036,
+      -0.8798042967975113
+    ]
+  ],
+  "score": 0.41210025548934937,
+  "width": 0.08472554385662079,
+  "height": 0.019999999552965164,
+  "depth": 0.029999999329447746,
+  "object_id": -1,
+  "frame": "UR5 base frame",
+  "source_frame": "RealSense D455 aligned color camera frame",
+  "rotation_validation": {
+    "determinant": 1.000000023441554,
+    "orthonormal_error": 9.825677463733046e-08
+  },
+  "camera_grasp_used": {
+    "translation_camera": [
+      0.05549586936831474,
+      -0.15020933747291565,
+      0.4710000157356262
+    ],
+    "rotation_matrix_camera": [
+      [
+        0.05689249932765961,
+        0.9917080998420715,
+        -0.11523126810789108
+      ],
+      [
+        -0.43903547525405884,
+        0.12851069867610931,
+        0.8892316222190857
+      ],
+      [
+        0.8966667056083679,
+        0.0,
+        0.44270631670951843
+      ]
+    ]
+  },
+  "note": "Pose grasp sudah ditransformasikan dari camera frame ke UR5 base frame. Untuk test pertama, gunakan pre-grasp dengan z ditambah 0.10 m dan jangan langsung descend.",
+  "pre_grasp_preview": {
+    "translation_base": [
+      -0.6709826332367816,
+      0.6113901470694948,
+      0.46387852240064464
+    ],
+    "offset_z_m": 0.1,
+    "note": "Gunakan pose ini untuk test pertama agar robot hanya bergerak ke atas objek."
+  },
+  "source_file": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/water_valid_08/vision_output/best_grasp_camera.json",
+  "source_transform": "/home/b401/Documents/pick_place_occlusion_noetic/configs/T_base_camera.json"
+}

@@ -1,0 +1,73 @@
+{
+  "success": true,
+  "method": "camera_to_base_transform",
+  "translation_base": [
+    -0.6359670707107632,
+    0.567836117528553,
+    0.1726373132033472
+  ],
+  "rotation_matrix_base": [
+    [
+      -0.024098185136625882,
+      -0.9554806806435027,
+      -0.29406811862826143
+    ],
+    [
+      0.9426636329109814,
+      0.07622658532517852,
+      -0.3249229433952095
+    ],
+    [
+      0.3328734032582648,
+      -0.28503739964401803,
+      0.8988598147264032
+    ]
+  ],
+  "score": 0.2721855342388153,
+  "width": 0.07102888822555542,
+  "height": 0.019999999552965164,
+  "depth": 0.019999999552965164,
+  "object_id": -1,
+  "frame": "UR5 base frame",
+  "source_frame": "RealSense D455 aligned color camera frame",
+  "rotation_validation": {
+    "determinant": 1.0000001182969125,
+    "orthonormal_error": 2.1802866005632725e-07
+  },
+  "camera_grasp_used": {
+    "translation_camera": [
+      0.04736080393195152,
+      0.03960653021931648,
+      0.41100001335144043
+    ],
+    "rotation_matrix_camera": [
+      [
+        0.6540746092796326,
+        -0.6235225796699524,
+        -0.42825937271118164
+      ],
+      [
+        -0.309978187084198,
+        0.2954989969730377,
+        -0.9036558270454407
+      ],
+      [
+        0.690000057220459,
+        0.7238094210624695,
+        -3.1638712982839934e-08
+      ]
+    ]
+  },
+  "note": "Pose grasp sudah ditransformasikan dari camera frame ke UR5 base frame. Untuk test pertama, gunakan pre-grasp dengan z ditambah 0.10 m dan jangan langsung descend.",
+  "pre_grasp_preview": {
+    "translation_base": [
+      -0.6359670707107632,
+      0.567836117528553,
+      0.27263731320334716
+    ],
+    "offset_z_m": 0.1,
+    "note": "Gunakan pose ini untuk test pertama agar robot hanya bergerak ke atas objek."
+  },
+  "source_file": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/soda_valid_08/vision_output/best_grasp_camera.json",
+  "source_transform": "/home/b401/Documents/pick_place_occlusion_noetic/configs/T_base_camera.json"
+}

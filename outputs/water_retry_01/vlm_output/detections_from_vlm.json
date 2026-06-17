@@ -1,0 +1,90 @@
+[
+  {
+    "label": "blue water bottle",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      450,
+      200,
+      550,
+      800
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      200,
+      450,
+      800,
+      550
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "tall bottle with blue cap",
+    "status": "target",
+    "target_role": "primary_target"
+  },
+  {
+    "label": "brown box",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      400,
+      150,
+      600,
+      850
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      150,
+      400,
+      850,
+      600
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "large brown box",
+    "status": "clear_background",
+    "target_role": "background"
+  },
+  {
+    "label": "yellow lemon",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      300,
+      900,
+      350,
+      950
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      900,
+      300,
+      950,
+      350
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "small yellow lemon",
+    "status": "clear_background",
+    "target_role": "background"
+  },
+  {
+    "label": "green pepper",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      200,
+      900,
+      250,
+      950
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      900,
+      200,
+      950,
+      250
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "small green pepper",
+    "status": "clear_background",
+    "target_role": "background"
+  }
+]

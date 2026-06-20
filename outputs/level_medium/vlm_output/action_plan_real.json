@@ -1,0 +1,45 @@
+{
+  "resolved_primary_target": "blue water bottle",
+  "target_visibility": "clear",
+  "plan_intent": "pick_target",
+  "visual_analysis": [
+    {
+      "object": "blue water bottle",
+      "description": "transparent bottle with blue cap",
+      "status": "target",
+      "target_role": "primary_target",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "object": "brown envelope",
+      "description": "large brown envelope",
+      "status": "clear_background",
+      "target_role": "background",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "action_plan": [
+    {
+      "step": 1,
+      "action": "pick",
+      "target": "blue water bottle",
+      "target_role": "primary_target",
+      "step_intent": "pick_primary_target",
+      "explanation": "The blue water bottle is clear and accessible.",
+      "grasp_pixel_2d": [
+        500,
+        500
+      ]
+    }
+  ]
+}

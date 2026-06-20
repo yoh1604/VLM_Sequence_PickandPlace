@@ -215,13 +215,13 @@ class RobotiqSocket:
     def get_var(self, name):
         return self.send_cmd(f"GET {name}")
 
-    def activate(self):
-        print("[GRIPPER] Activating...")
-        self.set_var("ACT", 1)
-        self.set_var("GTO", 1)
-        self.set_var("SPE", 255)
-        self.set_var("FOR", 150)
-        time.sleep(1.0)
+    # def activate(self):
+    #     print("[GRIPPER] Activating...")
+    #     self.set_var("ACT", 1)
+    #     self.set_var("GTO", 1)
+    #     self.set_var("SPE", 255)
+    #     self.set_var("FOR", 150)
+    #     time.sleep(1.0)
 
     def open(self, speed=255, force=150, wait=1.0):
         print("[GRIPPER] Opening...")
@@ -549,7 +549,7 @@ def main():
         # Gripper connect lebih awal supaya kalau gagal langsung ketahuan sebelum robot turun.
         gripper.connect()
         if not args.disable_gripper:
-            gripper.activate()
+            # gripper.activate()
             gripper.open(
                 speed=args.open_speed,
                 force=args.open_force,

@@ -91,19 +91,19 @@ class RobotiqSocket:
         except socket.timeout:
             resp = ""
 
-        print(f"[GRIPPER] >> {cmd}")
-        print(f"[GRIPPER] << {resp}")
+        # print(f"[GRIPPER] >> {cmd}")
+        # print(f"[GRIPPER] << {resp}")
         return resp
 
     def set_var(self, name, value):
         return self.send_cmd(f"SET {name} {value}")
 
-    def activate(self):
-        self.set_var("ACT", 1)
-        self.set_var("GTO", 1)
-        self.set_var("SPE", 255)
-        self.set_var("FOR", 150)
-        time.sleep(0.5)
+    # def activate(self):
+    #     self.set_var("ACT", 1)
+    #     self.set_var("GTO", 1)
+    #     self.set_var("SPE", 255)
+    #     self.set_var("FOR", 150)
+    #     time.sleep(0.5)
 
     def open(self, speed=255, force=150):
         print("[GRIPPER] Open")
@@ -247,7 +247,7 @@ def main():
         help="Naik relatif dari posisi sekarang sebelum discard. Default 0.03 m.",
     )
 
-    parser.add_argument("--velocity", type=float, default=0.05)
+    parser.add_argument("--velocity", type=float, default=0.08)
     parser.add_argument("--acceleration", type=float, default=0.05)
 
     parser.add_argument(
@@ -320,8 +320,8 @@ def main():
     print("8. group.go(DISCARD_TO_IDLE).")
     print()
 
-    if not args.execute:
-        input("Tekan ENTER untuk mulai, atau CTRL+C untuk batal... ")
+    # if not args.execute:
+    #     input("Tekan ENTER untuk mulai, atau CTRL+C untuk batal... ")
 
     do_execute = not args.plan_only
     gripper = None
@@ -369,7 +369,7 @@ def main():
         if not args.disable_gripper:
             gripper = RobotiqSocket(args.robot_ip)
             gripper.connect()
-            gripper.activate()
+            # gripper.activate()
             gripper.open()
         else:
             print("[GRIPPER] disabled, skip open.")

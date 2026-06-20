@@ -1,0 +1,7 @@
+{
+  "test_name": "level_medium",
+  "step_index": 1,
+  "attempt": 1,
+  "source": "vision_output",
+  "note": "PRE-check archive dibuat dari current_scene dan vision_output sebelum/sekitar aksi robot step ini."
+}

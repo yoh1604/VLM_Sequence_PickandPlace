@@ -1,0 +1,24 @@
+{
+  "pointcloud_path": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/level_easy_retry/vision_output/masked_object_pointcloud_valid_only.ply",
+  "clean_mask_path": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/level_easy_retry/vision_output/fastsam_mask_clean_debug.png",
+  "method": "valid_depth_only_near_median",
+  "use_median_fill": false,
+  "mask_pixels": 7129,
+  "valid_depth_pixels": 5695,
+  "zero_depth_pixels": 1434,
+  "final_points": 5693,
+  "median_depth_m": 0.4150000214576721,
+  "mean_depth_m": 0.41543182730674744,
+  "center_mean_camera_m": [
+    0.009594727596868436,
+    -0.030531826100601667,
+    0.4153523838689661
+  ],
+  "center_median_camera_m": [
+    0.009023706428706646,
+    -0.029804937541484833,
+    0.4150000214576721
+  ],
+  "frame": "RealSense D455 aligned color camera frame",
+  "note": "Point cloud masih camera frame, belum base frame UR5."
+}

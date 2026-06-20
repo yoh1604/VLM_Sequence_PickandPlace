@@ -2,36 +2,22 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 
-
-# ============================================================
-# PROJECT ROOT
-# ============================================================
-# File ini berada di root project:
-# /home/b401/Documents/pick_place_occlusion_noetic/capture_config.py
-#
-# Jadi PROJECT_DIR otomatis menjadi:
-# /home/b401/Documents/pick_place_occlusion_noetic
-
 PROJECT_DIR = Path(__file__).resolve().parent
-
-
-# .env berada di root project
 ENV_PATH = PROJECT_DIR / ".env"
-
 load_dotenv(ENV_PATH)
-
 
 # ============================================================
 # TEST CONFIG
 # ============================================================
-# Ganti ini saja setiap test.
 
-TEST_NAME = "soda_valid_09"
-USER_QUERY = "I want to drink coca cola"
-# USER_QUERY = "I want to eat cereal with milk. Please find the milk."
+TEST_NAME = "try_tea"
 
-# STEP yang sedang diproses untuk post-check
-STEP_INDEX = 2
+USER_QUERY = os.getenv(
+    "USER_QUERY",
+    "I want to drink tea, please pick up the tea bag.",
+)
+
+STEP_INDEX = int(os.getenv("STEP_INDEX", "1"))
 
 
 # ============================================================

@@ -1,0 +1,15 @@
+[
+  {
+    "label": "bottle",
+    "confidence": 0.8328341841697693,
+    "bbox": [
+      244,
+      85,
+      299,
+      277
+    ],
+    "bbox_format": "xyxy_pixel",
+    "source": "yolo_world",
+    "target_query": "green soda bottle"
+  }
+]

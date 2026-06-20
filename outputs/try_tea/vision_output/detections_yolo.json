@@ -1,0 +1,15 @@
+[
+  {
+    "label": "bag",
+    "confidence": 0.6512725353240967,
+    "bbox": [
+      291,
+      165,
+      396,
+      280
+    ],
+    "bbox_format": "xyxy_pixel",
+    "source": "yolo_world",
+    "target_query": "red tea bag"
+  }
+]

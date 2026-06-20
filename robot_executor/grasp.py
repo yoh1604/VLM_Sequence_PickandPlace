@@ -99,13 +99,13 @@ class RobotiqSocket:
     def set_var(self, name, value):
         return self.send_cmd(f"SET {name} {value}")
 
-    def activate(self):
-        print("[GRIPPER] Activate")
-        self.set_var("ACT", 1)
-        self.set_var("GTO", 1)
-        self.set_var("SPE", 255)
-        self.set_var("FOR", 150)
-        time.sleep(0.5)
+    # def activate(self):
+    #     print("[GRIPPER] Activate")
+    #     self.set_var("ACT", 1)
+    #     self.set_var("GTO", 1)
+    #     self.set_var("SPE", 255)
+    #     self.set_var("FOR", 150)
+    #     time.sleep(0.5)
 
     def open(self, speed=255, force=150):
         print("[GRIPPER] Open")
@@ -454,14 +454,14 @@ def plan_cartesian_segment(
         wait_time=rviz_preview_wait,
     )
 
-    print("\n[RVIZ CHECK]")
-    print(f"Trajectory {label} sudah dipublish ke RViz.")
-    print("Kalau aman, tekan ENTER.")
-    print("Kalau tidak aman, tekan CTRL+C.")
-    print()
+    # print("\n[RVIZ CHECK]")
+    # print(f"Trajectory {label} sudah dipublish ke RViz.")
+    # print("Kalau aman, tekan ENTER.")
+    # print("Kalau tidak aman, tekan CTRL+C.")
+    # print()
 
-    if rviz_confirm:
-        input(f"Tekan ENTER jika trajectory {label} sudah benar... ")
+    # if rviz_confirm:
+    #     input(f"Tekan ENTER jika trajectory {label} sudah benar... ")
 
     return plan
 
@@ -667,7 +667,7 @@ def main():
         if not args.disable_gripper:
             gripper = RobotiqSocket(args.robot_ip)
             gripper.connect()
-            gripper.activate()
+            # gripper.activate()
             gripper.open()
 
             if args.pregrasp_wait > 0:

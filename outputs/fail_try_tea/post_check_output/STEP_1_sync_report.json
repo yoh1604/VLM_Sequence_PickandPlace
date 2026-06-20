@@ -1,0 +1,38 @@
+{
+  "test_name": "try_tea",
+  "step_index": 1,
+  "current_rgb": {
+    "exists": true,
+    "path": "/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/current_scene_rgb.jpg",
+    "size_bytes": 94898,
+    "mtime_unix": 1781860767.928686,
+    "mtime_readable": "2026-06-19 16:19:27",
+    "sha256": "e8a962c49e388f97f8ff9143d90a5b58e57c7c3d23c7b629f1cb9bb7a68e72a4"
+  },
+  "post_rgb": {
+    "exists": true,
+    "path": "/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/post_scene_rgb.jpg",
+    "size_bytes": 94898,
+    "mtime_unix": 1781860771.900789,
+    "mtime_readable": "2026-06-19 16:19:31",
+    "sha256": "e8a962c49e388f97f8ff9143d90a5b58e57c7c3d23c7b629f1cb9bb7a68e72a4"
+  },
+  "depth_raw": {
+    "exists": true,
+    "path": "/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/depth_raw.npy",
+    "size_bytes": 614528,
+    "mtime_unix": 1781860767.928686,
+    "mtime_readable": "2026-06-19 16:19:27",
+    "sha256": "d03bb9a6131f169962e50a0f2b0fd48e96b09a6648587d6535529016e576dde1"
+  },
+  "intrinsics": {
+    "exists": true,
+    "path": "/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/camera_intrinsics.json",
+    "size_bytes": 186,
+    "mtime_unix": 1781860767.936686,
+    "mtime_readable": "2026-06-19 16:19:27",
+    "sha256": "9fe29a35bd36b1e5265edce8add16fae5f666dbd2d396cc5c1ebefb6266f92cc"
+  },
+  "post_rgb_is_exact_copy_of_current_rgb": true,
+  "note": "post_scene_rgb.jpg dibuat dengan copyfile dari current_scene_rgb.jpg terbaru sebelum post-check."
+}

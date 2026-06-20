@@ -1,0 +1,1495 @@
+[OK] run_first_pipeline.sh: scripts/run_first_pipeline.sh
+[OK] capture_config.py: capture_config.py
+[OK] Discard script: robot_executor/execute_from_current_pregrasp_to_discard.py
+
+============================================================
+MULTI PIPELINE RETRY CONFIG
+============================================================
+PROJECT_DIR              : /home/b401/Documents/pick_place_occlusion_noetic
+TEST_NAME                : level_medium
+MODE                     : execute
+PLANNER_ENV              : ur5_pickplace
+MAX_STEPS                : 5
+START_STEP               : 1
+MAX_RETRIES_PER_STEP     : 2
+RESUME_AFTER_ACTION      : 0
+RUN_PLANNER              : 1
+RUN_VALIDATOR            : 1
+LOCK_STABLE_CONFIG       : 1
+PREGRASP_Z               : 0.13
+DESCEND_Z                : 0.12
+NUDGE_DX/DY/DZ           : -0.05 / 0.038 / 0.0
+MAX_WRIST_DELTA          : 1.50
+CAPTURE_BEFORE_POST      : 1
+DISCARD_SKIP_LIFT        : 1
+POST_SCRIPT_FIXED        : run_post_complete_fixed.py
+POST_SCRIPT_FALLBACK     : run_post_complete.py
+
+============================================================
+STEP 1 / ATTEMPT 1
+============================================================
+
+============================================================
+ACTION STEP 1: FULL PIPELINE UNTIL GRASP ONLY
+============================================================
+
+============================================================
+FULL PIPELINE CONFIG
+============================================================
+PROJECT_DIR              : /home/b401/Documents/pick_place_occlusion_noetic
+TEST_NAME                : level_medium
+MODE                     : execute
+PLANNER_ENV              : ur5_pickplace
+ANYGRASP_ENV             : anygrasp_py310
+ROBOT_IP                 : 192.168.200.1
+VISION_OUTPUT_DIR        : /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output
+BEST_GRASP_CAMERA_JSON   : /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/best_grasp_camera.json
+BEST_GRASP_BASE_JSON     : /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/best_grasp_base.json
+TOOL0_PREGRASP_TARGET    : /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/tool0_pregrasp_target.json
+TOOL0_PREGRASP_TARGET_BL : /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/tool0_pregrasp_target_base_link.json
+TOOL0_TO_GRIPPER_TIP     : 0 0 0.17
+PREGRASP_Z               : 0.13
+SAFE_LIFT_Z              : 0.05
+SAFE_LIFT_EEF_STEP       : 0.005
+CARTESIAN_MIN_FRACTION   : 0.80
+MAX_XYZ_DISTANCE         : 0.80
+MAX_BASE_DELTA           : 1.80
+MAX_WRIST_DELTA          : 1.5
+DESCEND_Z                : 0.12
+NUDGE_DX/DY/DZ           : -0.05 / 0.038 / 0.0
+DISABLE_GRIPPER          : 0
+PREOPEN_GRIPPER          : 0
+LOCK_STABLE_CONFIG       : 1
+SKIP_DISCARD             : 1
+
+============================================================
+STEP 1: CAPTURE D455
+============================================================
+[INFO] Active conda env : ur5_pickplace
+[INFO] Python           : /home/b401/miniconda3/envs/ur5_pickplace/bin/python
+Python 3.10.20
+[OK] Capture script:
+  perception/capture_d455_once.py
+[RUN] python perception/capture_d455_once.py
+[OK] Saved:
+/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/current_scene_rgb.jpg
+/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/depth_raw.npy
+/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/current_scene_depth.png
+/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/camera_intrinsics.json
+[OK] RGB image:
+  /home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/current_scene_rgb.jpg
+[OK] Depth npy:
+  /home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/depth_raw.npy
+[OK] Camera intrinsics:
+  /home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/camera_intrinsics.json
+
+============================================================
+STEP 2: ur5_pickplace - PLANNER / VALIDATOR / VISION
+============================================================
+[INFO] Active conda env : ur5_pickplace
+[INFO] Python           : /home/b401/miniconda3/envs/ur5_pickplace/bin/python
+Python 3.10.20
+[SKIP] Script tidak ditemukan: run_planner_real.py
+[SKIP] Script tidak ditemukan: run_validator_real.py
+[OK] Vision script:
+  run_d455_pipeline.py
+[RUN] python run_d455_pipeline.py --test_name level_medium
+
+========== D455 TEST CONFIG ==========
+PROJECT_DIR: /home/b401/Documents/pick_place_occlusion_noetic
+ENV_PATH: /home/b401/Documents/pick_place_occlusion_noetic/.env
+TEST_NAME: level_medium
+USER_QUERY: I want to drink from a bottle of water
+STEP_INDEX: 1
+
+========== INPUT PATHS ==========
+BASE_DIR: /home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture
+IMAGE_PATH: /home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/current_scene_rgb.jpg
+DEPTH_PATH: /home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/depth_raw.npy
+INTRINSICS_PATH: /home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/camera_intrinsics.json
+DEPTH_VIS_PATH: /home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/current_scene_depth.png
+POST_IMAGE_PATH: /home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/post_scene_rgb.jpg
+
+========== OUTPUT PATHS ==========
+OUTPUT_BASE_DIR: /home/b401/Documents/pick_place_occlusion_noetic/outputs
+TEST_OUTPUT_DIR: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium
+VLM_OUTPUT_DIR: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vlm_output
+VISION_OUTPUT_DIR: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output
+POST_OUTPUT_DIR: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/post_check_output
+
+========== MAIN OUTPUT FILES ==========
+ACTION_PLAN_JSON: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vlm_output/action_plan_real.json
+VLM_DETECTIONS_JSON: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vlm_output/detections_from_vlm.json
+VALIDATION_JSON: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vlm_output/validation_result_real.json
+YOLO_DETECTIONS_JSON: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/detections_yolo.json
+YOLO_RESULT_IMAGE: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/yolo_world_result.jpg
+FASTSAM_MASK_PATH: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/fastsam_mask.png
+FASTSAM_RESULT_IMAGE: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/fastsam_result.jpg
+OBJECT_POSITION_JSON: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/object_position_camera.json
+
+========== POST-CHECK OUTPUT FILES ==========
+POST_CHECK_JSON: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/post_check_output/STEP_1_post_check_result.json
+POST_YOLO_JSON: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/post_check_output/STEP_1_post_check_detections_yolo.json
+POST_YOLO_IMAGE: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/post_check_output/STEP_1_post_check_yolo_result.jpg
+POST_FASTSAM_MASK: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/post_check_output/STEP_1_post_check_fastsam_mask.png
+POST_FASTSAM_IMAGE: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/post_check_output/STEP_1_post_check_fastsam_result.jpg
+REMAINING_PLAN_JSON: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/post_check_output/STEP_1_remaining_plan.json
+
+========== SNAPSHOT OUTPUTS ==========
+SNAPSHOT_DIR: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/snapshots
+SNAPSHOT_CURRENT_RGB: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/snapshots/current_scene_rgb.jpg
+SNAPSHOT_CURRENT_DEPTH: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/snapshots/current_scene_depth.png
+SNAPSHOT_POST_RGB: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/snapshots/post_scene_rgb.jpg
+=====================================
+
+Saved RGB snapshot: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/snapshots/current_scene_rgb.jpg
+Saved depth snapshot: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/snapshots/current_scene_depth.png
+ENV path: /home/b401/Documents/pick_place_occlusion_noetic/.env
+OPENAI_API_KEY detected: True
+GEMINI_API_KEY detected: True
+Menggunakan OpenAI Cloud VLM Planner...
+VLM Planner berjalan di mode CLOUD
+☁️ VLM Planner diinisialisasi untuk mode CLOUD (OpenAI).
+🧠 Menghubungi VLM Planner CLOUD...
+[DEBUG] Raw Parsed Response: {
+  "resolved_primary_target": "blue water bottle",
+  "target_visibility": "obstructed",
+  "plan_intent": "search_for_hidden_or_blocked_target",
+  "visual_analysis": [
+    {
+      "object": "green soda bottle",
+      "description": "green soda bottle with label",
+      "status": "obstructing",
+      "target_role": "search_occluder"
+    },
+    {
+      "object": "blue water bottle",
+      "description": "blue water bottle",
+      "status": "target",
+      "target_role": "primary_target"
+    },
+    {
+      "object": "red packet",
+      "description": "red packet with text",
+      "status": "clear",
+      "target_role": "background"
+    }
+  ],
+  "action_plan": [
+    {
+      "step": 1,
+      "action": "remove",
+      "target": "green soda bottle",
+      "target_role": "search_occluder",
+      "step_intent": "clear_occluder_to_reveal_primary_target",
+      "explanation": "remove the soda bottle to access the water bottle"
+    },
+    {
+      "step": 2,
+      "action": "pick",
+      "target": "blue water bottle",
+      "target_role": "primary_target",
+      "step_intent": "pick_primary_target",
+      "explanation": "pick the water bottle to drink"
+    }
+  ]
+}
+
+Action plan berhasil dibuat.
+Saved to: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vlm_output/action_plan_real.json
+{
+  "resolved_primary_target": "blue water bottle",
+  "target_visibility": "obstructed",
+  "plan_intent": "search_for_hidden_or_blocked_target",
+  "visual_analysis": [
+    {
+      "object": "green soda bottle",
+      "description": "green soda bottle with label",
+      "status": "obstructing",
+      "target_role": "search_occluder",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "object": "blue water bottle",
+      "description": "blue water bottle",
+      "status": "target",
+      "target_role": "primary_target",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "object": "red packet",
+      "description": "red packet with text",
+      "status": "clear",
+      "target_role": "background",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "action_plan": [
+    {
+      "step": 1,
+      "action": "remove",
+      "target": "green soda bottle",
+      "target_role": "search_occluder",
+      "step_intent": "clear_occluder_to_reveal_primary_target",
+      "explanation": "remove the soda bottle to access the water bottle",
+      "grasp_pixel_2d": [
+        500,
+        500
+      ]
+    },
+    {
+      "step": 2,
+      "action": "pick",
+      "target": "blue water bottle",
+      "target_role": "primary_target",
+      "step_intent": "pick_primary_target",
+      "explanation": "pick the water bottle to drink",
+      "grasp_pixel_2d": [
+        500,
+        500
+      ]
+    }
+  ]
+}
+
+VLM detections berhasil dibuat.
+Saved to: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vlm_output/detections_from_vlm.json
+[
+  {
+    "label": "green soda bottle",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "green soda bottle with label",
+    "status": "obstructing",
+    "target_role": "search_occluder"
+  },
+  {
+    "label": "blue water bottle",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "blue water bottle",
+    "status": "target",
+    "target_role": "primary_target"
+  },
+  {
+    "label": "red packet",
+    "confidence": null,
+    "bbox_format": "normalized_0_1000_xyxy",
+    "bbox": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bbox_original_format": "normalized_0_1000_yxyx",
+    "bbox_original_yxyx": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "source": "vlm_visual_analysis",
+    "description": "red packet with text",
+    "status": "clear",
+    "target_role": "background"
+  }
+]
+Menggunakan OpenAI Cloud LogicValidator...
+LogicValidator berjalan di mode CLOUD
+☁️ LogicValidator diinisialisasi untuk mode CLOUD (OpenAI).
+☁️ [LogicValidator] Menggunakan mode CLOUD...
+
+Validation berhasil dibuat.
+Saved to: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vlm_output/validation_result_real.json
+{
+  "validation_status": "PASS",
+  "feedback": "The action plan correctly identifies the 'blue water bottle' as the primary target, which matches the user's intent to drink from a bottle of water. The plan includes a step to remove the 'green soda bottle', which is obstructing the view of the primary target, before picking the 'blue water bottle'. This sequence is safe and logically valid, as it ensures the primary target is accessible for picking. The plan aligns with the user's intent and follows a reasonable sequence of actions.",
+  "final_action_plan": [
+    {
+      "step": 1,
+      "action": "remove",
+      "target": "green soda bottle",
+      "target_role": "search_occluder",
+      "step_intent": "clear_occluder_to_reveal_primary_target",
+      "explanation": "remove the soda bottle to access the water bottle",
+      "grasp_pixel_2d": [
+        500,
+        500
+      ]
+    },
+    {
+      "step": 2,
+      "action": "pick",
+      "target": "blue water bottle",
+      "target_role": "primary_target",
+      "step_intent": "pick_primary_target",
+      "explanation": "pick the water bottle to drink",
+      "grasp_pixel_2d": [
+        500,
+        500
+      ]
+    }
+  ]
+}
+
+Target pertama untuk YOLO-World: green soda bottle
+Loading YOLO-World model: /home/b401/Documents/pick_place_occlusion_noetic/models/yolov8l-worldv2.pt
+
+[YOLO-World] Target dari action plan: green soda bottle
+[YOLO-World] Dynamic classes: ['green soda bottle', 'bottle']
+
+image 1/1 /home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/current_scene_rgb.jpg: 480x640 1 bottle, 35.3ms
+Speed: 0.7ms preprocess, 35.3ms inference, 0.9ms postprocess per image at shape (1, 3, 480, 640)
+[YOLO-World] Detections saved to: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/detections_yolo.json
+[YOLO-World] Result image saved to: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/yolo_world_result.jpg
+[
+  {
+    "label": "bottle",
+    "confidence": 0.8328341841697693,
+    "bbox": [
+      244,
+      85,
+      299,
+      277
+    ],
+    "bbox_format": "xyxy_pixel",
+    "source": "yolo_world",
+    "target_query": "green soda bottle"
+  }
+]
+[YOLO-World] Best detection:
+{
+  "label": "bottle",
+  "confidence": 0.8328341841697693,
+  "bbox": [
+    244,
+    85,
+    299,
+    277
+  ],
+  "bbox_format": "xyxy_pixel",
+  "source": "yolo_world",
+  "target_query": "green soda bottle"
+}
+Loading FastSAM model: /home/b401/Documents/pick_place_occlusion_noetic/models/FastSAM-s.pt
+
+[FastSAM] Segmenting bbox: [244, 85, 299, 277]
+
+image 1/1 /home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/current_scene_rgb.jpg: 480x640 1 object, 125.5ms
+Speed: 0.8ms preprocess, 125.5ms inference, 36.6ms postprocess per image at shape (1, 3, 480, 640)
+[FastSAM] Mask saved to: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/fastsam_mask.png
+[FastSAM] Result image saved to: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/fastsam_result.jpg
+[DepthEngine] Mask asli shape: (480, 640)
+[DepthEngine] Depth shape: (480, 640)
+[DepthEngine] Mask asli unique values: [  0 255]
+[DepthEngine] Pixel mask setelah binary: 4758
+
+[DepthEngine] Jumlah pixel mask: 4758
+[DepthEngine] Jumlah depth valid pada mask: 2722
+[DepthEngine] Median depth valid: 0.4750000238418579
+[DepthEngine] Mean depth valid: 0.46807533502578735
+[DepthEngine] Object position saved to: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/object_position_camera.json
+{
+  "object": "green soda bottle",
+  "pixel_center_uv": [
+    261,
+    147
+  ],
+  "pixel_center_uv_mean": [
+    264,
+    168
+  ],
+  "median_depth_m": 0.4750000238418579,
+  "mean_depth_m": 0.46807533502578735,
+  "point_camera_m": [
+    -0.08070171624422073,
+    -0.11972987651824951,
+    0.4750000238418579
+  ],
+  "point_camera_mean_m": [
+    -0.07544496655464172,
+    -0.09488576650619507,
+    0.47103315591812134
+  ],
+  "debug": {
+    "mask_pixels": 4758,
+    "valid_depth_pixels": 2722,
+    "valid_depth_ratio": 0.5720891130727196,
+    "used_pixels_after_depth_fill": 4758,
+    "min_depth_m": 0.1,
+    "max_depth_m": 2.0,
+    "depth_scale": 0.0010000000474974513,
+    "fx": 385.8294677734375,
+    "fy": 385.38531494140625,
+    "ppx": 326.5517883300781,
+    "ppy": 244.87197875976562,
+    "method": "all_mask_pixels_with_invalid_depth_filled_by_median_depth"
+  },
+  "frame": "RealSense D455 aligned color camera frame",
+  "note": "Belum ditransformasikan ke base frame UR5."
+}
+
+========== POINT CLOUD RAW DATA INFO ==========
+RGB shape: (480, 640, 3)
+Depth shape: (480, 640)
+Mask shape: (480, 640)
+Depth raw dtype: float32
+Depth raw min: 0.0
+Depth raw max: 65535.0
+Depth meter min: 0.0
+Depth meter max: 65.53500366210938
+[PointCloud] Clean mask saved to: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/fastsam_mask_clean_debug.png
+
+========== POINT CLOUD MASK INFO ==========
+Mask pixels: 4766
+Depth values in mask: 4766
+Valid depth in mask: 2730
+Zero depth in mask: 1915
+Depth in mask min: 0.4020000100135803
+Depth in mask max: 0.492000013589859
+Depth in mask median: 0.4750000238418579
+Depth in mask mean: 0.46789345145225525
+
+========== POINT CLOUD FILTER ==========
+Method: valid_depth_only_near_median
+Median object depth: 0.4750000238418579
+Depth tolerance: 0.25
+Final valid points: 2730
+
+========== POINT CLOUD OBJECT CENTER CAMERA FRAME ==========
+Mean center  X Y Z: [  -0.073066    -0.10711     0.46849]
+Median center X Y Z: [  -0.073601     -0.1316       0.475]
+
+[PointCloud] Point cloud saved to: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/masked_object_pointcloud_valid_only.ply
+[PointCloud] Total points after filtering: 2698
+[PointCloud] Info saved to: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/masked_object_pointcloud_valid_only_info.json
+
+========== POINT CLOUD RAW DATA INFO ==========
+RGB shape: (480, 640, 3)
+Depth shape: (480, 640)
+Mask shape: (480, 640)
+Depth raw dtype: float32
+Depth raw min: 0.0
+Depth raw max: 65535.0
+Depth meter min: 0.0
+Depth meter max: 65.53500366210938
+
+========== POINT CLOUD MASK INFO ==========
+Mask pixels: 4766
+Depth values in mask: 4766
+Valid depth in mask: 2730
+Zero depth in mask: 1915
+Depth in mask min: 0.4020000100135803
+Depth in mask max: 0.492000013589859
+Depth in mask median: 0.4750000238418579
+Depth in mask mean: 0.46789345145225525
+
+========== POINT CLOUD FILTER ==========
+Method: median_fill_all_mask_pixels
+Median object depth: 0.4750000238418579
+Depth tolerance: 0.25
+Final valid points: 4766
+
+========== POINT CLOUD OBJECT CENTER CAMERA FRAME ==========
+Mean center  X Y Z: [  -0.075504   -0.095181     0.47128]
+Median center X Y Z: [  -0.080702    -0.12063       0.475]
+
+[PointCloud] Point cloud saved to: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/masked_object_pointcloud_median_fill.ply
+[PointCloud] Total points after filtering: 4692
+[PointCloud] Info saved to: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/masked_object_pointcloud_median_fill_info.json
+
+========== GRASPNET CUDA CHECK ==========
+SUBPROCESS torch: 2.12.0+cu126
+SUBPROCESS cuda: True
+SUBPROCESS device: NVIDIA GeForce RTX 2080 SUPER
+
+
+=========================================
+
+
+========== RUN GRASPNET SUBPROCESS ==========
+Command:
+/home/b401/miniconda3/envs/anygrasp_py310/bin/python /home/b401/Documents/pick_place_occlusion_noetic/models/graspnet-baseline/demo_d455.py --checkpoint_path /home/b401/Documents/pick_place_occlusion_noetic/models/graspnet-baseline/logs/log_rs/checkpoint.tar --rgb_path /home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/current_scene_rgb.jpg --depth_path /home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/depth_raw.npy --intrinsics_path /home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/camera_intrinsics.json --mask_path /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/fastsam_mask.png --output_dir /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output --best_output /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/best_grasp_camera.json --candidates_output /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/grasp_candidates_camera.json --num_point 10000 --num_view 300 --collision_thresh -1 --voxel_size 0.01 --max_center_dist 0.1 --mask_dilate_iter 1 --no_vis
+Working dir: /home/b401/Documents/pick_place_occlusion_noetic/models/graspnet-baseline
+Output best: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/best_grasp_camera.json
+============================================
+
+
+========== GRASPNET STDOUT ==========
+[INFO] capture_config.py imported successfully.
+
+========== ACTIVE D455 GRASPNET CONFIG ==========
+PROJECT_DIR: /home/b401/Documents/pick_place_occlusion_noetic
+TEST_NAME: level_medium
+RGB_PATH: /home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/current_scene_rgb.jpg
+DEPTH_PATH: /home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/depth_raw.npy
+INTRINSICS_PATH: /home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/camera_intrinsics.json
+MASK_PATH: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/fastsam_mask.png
+OUTPUT_DIR: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output
+================================================
+
+[CHECK] CHECKPOINT_PATH: /home/b401/Documents/pick_place_occlusion_noetic/models/graspnet-baseline/logs/log_rs/checkpoint.tar
+-> loaded checkpoint /home/b401/Documents/pick_place_occlusion_noetic/models/graspnet-baseline/logs/log_rs/checkpoint.tar (epoch: 18)
+[CHECK] DEPTH_PATH: /home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/depth_raw.npy
+[CHECK] RGB_PATH: /home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/current_scene_rgb.jpg
+[CHECK] MASK_PATH: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/fastsam_mask.png
+[CHECK] INTRINSICS_PATH: /home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/camera_intrinsics.json
+
+========== D455 DATA INFO ==========
+RGB shape: (480, 640, 3)
+Depth raw shape: (480, 640)
+Depth raw min/max: 0.0 65535.0
+Depth scale: 0.0010000000474974513
+Depth meter min/max: 0.0 65.53500366210938
+Mask pixels: 5974
+Workspace valid pixels: 3172
+fx fy cx cy: 385.8294677734375 385.38531494140625 326.5517883300781 244.87197875976562
+factor_depth: 999.999952502551
+===================================
+
+[INFO] Workspace mask debug saved: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/graspnet_workspace_mask_debug.png
+[INFO] cloud_masked: (3172, 3)
+[INFO] object_center_camera median: [-0.07041461 -0.12465762  0.47300002]
+[INFO] Raw grasp candidates: 1024
+[INFO] Grasp after target filtering: 577
+[INFO] Candidates saved to: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/grasp_candidates_camera.json
+[INFO] Best grasp saved to: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/best_grasp_camera.json
+
+========== BEST GRASP ==========
+{
+  "success": true,
+  "method": "graspnet_baseline_d455",
+  "best_grasp": {
+    "score": 0.5221415162086487,
+    "translation_camera": [
+      -0.06636492908000946,
+      -0.08297862857580185,
+      0.41600003838539124
+    ],
+    "rotation_matrix_camera": [
+      [
+        0.32332366704940796,
+        -0.5531456470489502,
+        -0.7677836418151855
+      ],
+      [
+        -0.38744980096817017,
+        0.6628532409667969,
+        -0.6407091617584229
+      ],
+      [
+        0.8633333444595337,
+        0.5046340823173523,
+        -2.2058255666479454e-08
+      ]
+    ],
+    "width": 0.08362159132957458,
+    "height": 0.019999999552965164,
+    "depth": 0.019999999552965164,
+    "object_id": -1,
+    "frame": "RealSense D455 aligned color camera frame",
+    "rank": 0,
+    "distance_to_object_center": 0.07072861155592208
+  },
+  "object_center_camera": [
+    -0.07041460805253506,
+    -0.12465762463935476,
+    0.47300001978874207
+  ],
+  "frame": "RealSense D455 aligned color camera frame",
+  "note": "Masih camera frame. Perlu transform camera-to-base sebelum eksekusi UR5.",
+  "meta": {
+    "object_center_camera": [
+      -0.07041460805253506,
+      -0.12465762463935476,
+      0.47300001978874207
+    ],
+    "num_mask_points": 5974,
+    "num_workspace_points": 3172,
+    "num_cloud_masked": 3172,
+    "rgb_path": "/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/current_scene_rgb.jpg",
+    "depth_path": "/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/depth_raw.npy",
+    "intrinsics_path": "/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/camera_intrinsics.json",
+    "mask_path": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/fastsam_mask.png",
+    "intrinsics": {
+      "width": 640,
+      "height": 480,
+      "fx": 385.8294677734375,
+      "fy": 385.38531494140625,
+      "ppx": 326.5517883300781,
+      "ppy": 244.87197875976562,
+      "depth_scale": 0.0010000000474974513
+    },
+    "depth_scale": 0.0010000000474974513,
+    "factor_depth": 999.999952502551,
+    "frame": "RealSense D455 aligned color camera frame"
+  }
+}
+================================
+
+
+
+========== GRASPNET STDERR ==========
+WARNING:root:Failed to import ros dependencies in rigid_transforms.py
+WARNING:root:autolab_core not installed as catkin package, RigidTransform ros methods will be unavailable
+/home/b401/Documents/pick_place_occlusion_noetic/models/graspnet-baseline/utils/loss_utils.py:89: UserWarning: Using torch.cross without specifying the dim arg is deprecated.
+Please either pass the dim explicitly or simply use torch.linalg.cross.
+The default value of dim will change to agree with that of linalg.cross in a future release. (Triggered internally at /pytorch/aten/src/ATen/native/Cross.cpp:63.)
+  axis_z = torch.cross(axis_x, axis_y)
+
+
+========== GRASPNET RESULT ==========
+{
+  "success": true,
+  "method": "graspnet_baseline_d455",
+  "best_grasp": {
+    "score": 0.5221415162086487,
+    "translation_camera": [
+      -0.06636492908000946,
+      -0.08297862857580185,
+      0.41600003838539124
+    ],
+    "rotation_matrix_camera": [
+      [
+        0.32332366704940796,
+        -0.5531456470489502,
+        -0.7677836418151855
+      ],
+      [
+        -0.38744980096817017,
+        0.6628532409667969,
+        -0.6407091617584229
+      ],
+      [
+        0.8633333444595337,
+        0.5046340823173523,
+        -2.2058255666479454e-08
+      ]
+    ],
+    "width": 0.08362159132957458,
+    "height": 0.019999999552965164,
+    "depth": 0.019999999552965164,
+    "object_id": -1,
+    "frame": "RealSense D455 aligned color camera frame",
+    "rank": 0,
+    "distance_to_object_center": 0.07072861155592208
+  },
+  "object_center_camera": [
+    -0.07041460805253506,
+    -0.12465762463935476,
+    0.47300001978874207
+  ],
+  "frame": "RealSense D455 aligned color camera frame",
+  "note": "Masih camera frame. Perlu transform camera-to-base sebelum eksekusi UR5.",
+  "meta": {
+    "object_center_camera": [
+      -0.07041460805253506,
+      -0.12465762463935476,
+      0.47300001978874207
+    ],
+    "num_mask_points": 5974,
+    "num_workspace_points": 3172,
+    "num_cloud_masked": 3172,
+    "rgb_path": "/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/current_scene_rgb.jpg",
+    "depth_path": "/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/depth_raw.npy",
+    "intrinsics_path": "/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/camera_intrinsics.json",
+    "mask_path": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/fastsam_mask.png",
+    "intrinsics": {
+      "width": 640,
+      "height": 480,
+      "fx": 385.8294677734375,
+      "fy": 385.38531494140625,
+      "ppx": 326.5517883300781,
+      "ppy": 244.87197875976562,
+      "depth_scale": 0.0010000000474974513
+    },
+    "depth_scale": 0.0010000000474974513,
+    "factor_depth": 999.999952502551,
+    "frame": "RealSense D455 aligned color camera frame"
+  }
+}
+====================================
+
+
+========== BEST GRASP CAMERA ==========
+{
+  "score": 0.5221415162086487,
+  "translation_camera": [
+    -0.06636492908000946,
+    -0.08297862857580185,
+    0.41600003838539124
+  ],
+  "rotation_matrix_camera": [
+    [
+      0.32332366704940796,
+      -0.5531456470489502,
+      -0.7677836418151855
+    ],
+    [
+      -0.38744980096817017,
+      0.6628532409667969,
+      -0.6407091617584229
+    ],
+    [
+      0.8633333444595337,
+      0.5046340823173523,
+      -2.2058255666479454e-08
+    ]
+  ],
+  "width": 0.08362159132957458,
+  "height": 0.019999999552965164,
+  "depth": 0.019999999552965164,
+  "object_id": -1,
+  "frame": "RealSense D455 aligned color camera frame",
+  "rank": 0,
+  "distance_to_object_center": 0.07072861155592208
+}
+======================================
+
+[CHECK] T_BASE_CAMERA_JSON: /home/b401/Documents/pick_place_occlusion_noetic/configs/T_base_camera.json
+[CHECK] BEST_GRASP_CAMERA_JSON: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/best_grasp_camera.json
+
+========== GRASP CAMERA TO BASE ==========
+Input grasp camera: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/best_grasp_camera.json
+Transform: /home/b401/Documents/pick_place_occlusion_noetic/configs/T_base_camera.json
+Output grasp base: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/best_grasp_base.json
+-----------------------------------------
+translation_base: [-0.7186715134357402, 0.48788976844602294, 0.2941042641743731]
+pre_grasp_translation_base: [-0.7186715134357402, 0.48788976844602294, 0.39410426417437305]
+score: 0.5221415162086487
+width: 0.08362159132957458
+=========================================
+
+
+FULL D455 PIPELINE SELESAI.
+{
+  "test_name": "level_medium",
+  "user_query": "I want to drink from a bottle of water",
+  "spatial_result": {
+    "target": "green soda bottle",
+    "first_step": {
+      "step": 1,
+      "action": "remove",
+      "target": "green soda bottle",
+      "target_role": "search_occluder",
+      "step_intent": "clear_occluder_to_reveal_primary_target",
+      "explanation": "remove the soda bottle to access the water bottle",
+      "grasp_pixel_2d": [
+        500,
+        500
+      ]
+    },
+    "final_plan": [
+      {
+        "step": 1,
+        "action": "remove",
+        "target": "green soda bottle",
+        "target_role": "search_occluder",
+        "step_intent": "clear_occluder_to_reveal_primary_target",
+        "explanation": "remove the soda bottle to access the water bottle",
+        "grasp_pixel_2d": [
+          500,
+          500
+        ]
+      },
+      {
+        "step": 2,
+        "action": "pick",
+        "target": "blue water bottle",
+        "target_role": "primary_target",
+        "step_intent": "pick_primary_target",
+        "explanation": "pick the water bottle to drink",
+        "grasp_pixel_2d": [
+          500,
+          500
+        ]
+      }
+    ],
+    "best_detection": {
+      "label": "bottle",
+      "confidence": 0.8328341841697693,
+      "bbox": [
+        244,
+        85,
+        299,
+        277
+      ],
+      "bbox_format": "xyxy_pixel",
+      "source": "yolo_world",
+      "target_query": "green soda bottle"
+    },
+    "all_detections": [
+      {
+        "label": "bottle",
+        "confidence": 0.8328341841697693,
+        "bbox": [
+          244,
+          85,
+          299,
+          277
+        ],
+        "bbox_format": "xyxy_pixel",
+        "source": "yolo_world",
+        "target_query": "green soda bottle"
+      }
+    ],
+    "fastsam_result": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/fastsam_result.jpg",
+    "object_position": {
+      "object": "green soda bottle",
+      "pixel_center_uv": [
+        261,
+        147
+      ],
+      "pixel_center_uv_mean": [
+        264,
+        168
+      ],
+      "median_depth_m": 0.4750000238418579,
+      "mean_depth_m": 0.46807533502578735,
+      "point_camera_m": [
+        -0.08070171624422073,
+        -0.11972987651824951,
+        0.4750000238418579
+      ],
+      "point_camera_mean_m": [
+        -0.07544496655464172,
+        -0.09488576650619507,
+        0.47103315591812134
+      ],
+      "debug": {
+        "mask_pixels": 4758,
+        "valid_depth_pixels": 2722,
+        "valid_depth_ratio": 0.5720891130727196,
+        "used_pixels_after_depth_fill": 4758,
+        "min_depth_m": 0.1,
+        "max_depth_m": 2.0,
+        "depth_scale": 0.0010000000474974513,
+        "fx": 385.8294677734375,
+        "fy": 385.38531494140625,
+        "ppx": 326.5517883300781,
+        "ppy": 244.87197875976562,
+        "method": "all_mask_pixels_with_invalid_depth_filled_by_median_depth"
+      },
+      "frame": "RealSense D455 aligned color camera frame",
+      "note": "Belum ditransformasikan ke base frame UR5."
+    },
+    "pointcloud_valid_only": {
+      "pointcloud_path": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/masked_object_pointcloud_valid_only.ply",
+      "clean_mask_path": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/fastsam_mask_clean_debug.png",
+      "method": "valid_depth_only_near_median",
+      "use_median_fill": false,
+      "mask_pixels": 4766,
+      "valid_depth_pixels": 2730,
+      "zero_depth_pixels": 1915,
+      "final_points": 2698,
+      "median_depth_m": 0.4750000238418579,
+      "mean_depth_m": 0.46789345145225525,
+      "center_mean_camera_m": [
+        -0.07306582014386392,
+        -0.10711132368873644,
+        0.46848742037547614
+      ],
+      "center_median_camera_m": [
+        -0.07360147684812546,
+        -0.1316009908914566,
+        0.4750000238418579
+      ],
+      "frame": "RealSense D455 aligned color camera frame",
+      "note": "Point cloud masih camera frame, belum base frame UR5."
+    },
+    "pointcloud_median_fill": {
+      "pointcloud_path": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/masked_object_pointcloud_median_fill.ply",
+      "clean_mask_path": null,
+      "method": "median_fill_all_mask_pixels",
+      "use_median_fill": true,
+      "mask_pixels": 4766,
+      "valid_depth_pixels": 2730,
+      "zero_depth_pixels": 1915,
+      "final_points": 4692,
+      "median_depth_m": 0.4750000238418579,
+      "mean_depth_m": 0.46789345145225525,
+      "center_mean_camera_m": [
+        -0.07550448184723363,
+        -0.09518126745714105,
+        0.47128071349498457
+      ],
+      "center_median_camera_m": [
+        -0.08070171624422073,
+        -0.1206304207444191,
+        0.4750000238418579
+      ],
+      "frame": "RealSense D455 aligned color camera frame",
+      "note": "Point cloud masih camera frame, belum base frame UR5."
+    }
+  },
+  "grasp_camera_result": {
+    "success": true,
+    "method": "graspnet_baseline_d455",
+    "best_grasp": {
+      "score": 0.5221415162086487,
+      "translation_camera": [
+        -0.06636492908000946,
+        -0.08297862857580185,
+        0.41600003838539124
+      ],
+      "rotation_matrix_camera": [
+        [
+          0.32332366704940796,
+          -0.5531456470489502,
+          -0.7677836418151855
+        ],
+        [
+          -0.38744980096817017,
+          0.6628532409667969,
+          -0.6407091617584229
+        ],
+        [
+          0.8633333444595337,
+          0.5046340823173523,
+          -2.2058255666479454e-08
+        ]
+      ],
+      "width": 0.08362159132957458,
+      "height": 0.019999999552965164,
+      "depth": 0.019999999552965164,
+      "object_id": -1,
+      "frame": "RealSense D455 aligned color camera frame",
+      "rank": 0,
+      "distance_to_object_center": 0.07072861155592208
+    },
+    "object_center_camera": [
+      -0.07041460805253506,
+      -0.12465762463935476,
+      0.47300001978874207
+    ],
+    "frame": "RealSense D455 aligned color camera frame",
+    "note": "Masih camera frame. Perlu transform camera-to-base sebelum eksekusi UR5.",
+    "meta": {
+      "object_center_camera": [
+        -0.07041460805253506,
+        -0.12465762463935476,
+        0.47300001978874207
+      ],
+      "num_mask_points": 5974,
+      "num_workspace_points": 3172,
+      "num_cloud_masked": 3172,
+      "rgb_path": "/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/current_scene_rgb.jpg",
+      "depth_path": "/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/depth_raw.npy",
+      "intrinsics_path": "/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/camera_intrinsics.json",
+      "mask_path": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/fastsam_mask.png",
+      "intrinsics": {
+        "width": 640,
+        "height": 480,
+        "fx": 385.8294677734375,
+        "fy": 385.38531494140625,
+        "ppx": 326.5517883300781,
+        "ppy": 244.87197875976562,
+        "depth_scale": 0.0010000000474974513
+      },
+      "depth_scale": 0.0010000000474974513,
+      "factor_depth": 999.999952502551,
+      "frame": "RealSense D455 aligned color camera frame"
+    }
+  },
+  "grasp_base_result": {
+    "success": true,
+    "method": "camera_to_base_transform",
+    "translation_base": [
+      -0.7186715134357402,
+      0.48788976844602294,
+      0.2941042641743731
+    ],
+    "rotation_matrix_base": [
+      [
+        -0.37963732860379845,
+        -0.7539325038332676,
+        -0.5361542003825824
+      ],
+      [
+        0.8288790125226893,
+        -0.019791638850578535,
+        -0.5590776930463097
+      ],
+      [
+        0.41089546959077,
+        -0.656653754760432,
+        0.6324324131085478
+      ]
+    ],
+    "score": 0.5221415162086487,
+    "width": 0.08362159132957458,
+    "height": 0.019999999552965164,
+    "depth": 0.019999999552965164,
+    "object_id": -1,
+    "frame": "UR5 base frame",
+    "source_frame": "RealSense D455 aligned color camera frame",
+    "source_file": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/best_grasp_camera.json",
+    "source_transform": "/home/b401/Documents/pick_place_occlusion_noetic/configs/T_base_camera.json",
+    "rotation_validation": {
+      "determinant": 1.0000000195730339,
+      "orthonormal_error": 1.0286794581406831e-07
+    },
+    "camera_grasp_used": {
+      "translation_camera": [
+        -0.06636492908000946,
+        -0.08297862857580185,
+        0.41600003838539124
+      ],
+      "rotation_matrix_camera": [
+        [
+          0.32332366704940796,
+          -0.5531456470489502,
+          -0.7677836418151855
+        ],
+        [
+          -0.38744980096817017,
+          0.6628532409667969,
+          -0.6407091617584229
+        ],
+        [
+          0.8633333444595337,
+          0.5046340823173523,
+          -2.2058255666479454e-08
+        ]
+      ]
+    },
+    "pre_grasp_preview": {
+      "translation_base": [
+        -0.7186715134357402,
+        0.48788976844602294,
+        0.39410426417437305
+      ],
+      "offset_z_m": 0.1,
+      "note": "Gunakan pose ini untuk test pertama agar robot hanya bergerak ke atas objek."
+    },
+    "note": "Pose grasp sudah ditransformasikan dari camera frame ke UR5 base frame. Untuk test pertama, gunakan pre_grasp_preview dan jangan langsung descend."
+  },
+  "outputs": {
+    "best_grasp_camera_json": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/best_grasp_camera.json",
+    "best_grasp_base_json": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/best_grasp_base.json",
+    "grasp_candidates_camera_json": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/grasp_candidates_camera.json",
+    "object_position_camera_json": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/object_position_camera.json",
+    "fastsam_mask": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/fastsam_mask.png"
+  }
+}
+[OK] Vision script selesai dengan --test_name.
+[OK] FastSAM mask:
+  /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/fastsam_mask.png
+
+============================================================
+STEP 3: anygrasp_py310 - GRASPNET
+============================================================
+[INFO] Active conda env : anygrasp_py310
+[INFO] Python           : /home/b401/miniconda3/envs/anygrasp_py310/bin/python
+Python 3.10.20
+[OK] GraspNet checkpoint:
+  models/graspnet-baseline/logs/log_rs/checkpoint.tar
+[OK] FastSAM mask:
+  /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/fastsam_mask.png
+[RUN] python models/graspnet-baseline/demo_d455.py --checkpoint_path models/graspnet-baseline/logs/log_rs/checkpoint.tar --test_name level_medium ...
+WARNING:root:Failed to import ros dependencies in rigid_transforms.py
+WARNING:root:autolab_core not installed as catkin package, RigidTransform ros methods will be unavailable
+/home/b401/Documents/pick_place_occlusion_noetic/models/graspnet-baseline/utils/loss_utils.py:89: UserWarning: Using torch.cross without specifying the dim arg is deprecated.
+Please either pass the dim explicitly or simply use torch.linalg.cross.
+The default value of dim will change to agree with that of linalg.cross in a future release. (Triggered internally at /pytorch/aten/src/ATen/native/Cross.cpp:63.)
+  axis_z = torch.cross(axis_x, axis_y)
+[INFO] capture_config.py imported successfully.
+
+========== ACTIVE D455 GRASPNET CONFIG ==========
+PROJECT_DIR: /home/b401/Documents/pick_place_occlusion_noetic
+TEST_NAME: level_medium
+RGB_PATH: /home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/current_scene_rgb.jpg
+DEPTH_PATH: /home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/depth_raw.npy
+INTRINSICS_PATH: /home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/camera_intrinsics.json
+MASK_PATH: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/fastsam_mask.png
+OUTPUT_DIR: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output
+================================================
+
+[CHECK] CHECKPOINT_PATH: /home/b401/Documents/pick_place_occlusion_noetic/models/graspnet-baseline/logs/log_rs/checkpoint.tar
+-> loaded checkpoint /home/b401/Documents/pick_place_occlusion_noetic/models/graspnet-baseline/logs/log_rs/checkpoint.tar (epoch: 18)
+[CHECK] DEPTH_PATH: /home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/depth_raw.npy
+[CHECK] RGB_PATH: /home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/current_scene_rgb.jpg
+[CHECK] MASK_PATH: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/fastsam_mask.png
+[CHECK] INTRINSICS_PATH: /home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/camera_intrinsics.json
+
+========== D455 DATA INFO ==========
+RGB shape: (480, 640, 3)
+Depth raw shape: (480, 640)
+Depth raw min/max: 0.0 65535.0
+Depth scale: 0.0010000000474974513
+Depth meter min/max: 0.0 65.53500366210938
+Mask pixels: 7226
+Workspace valid pixels: 3689
+fx fy cx cy: 385.8294677734375 385.38531494140625 326.5517883300781 244.87197875976562
+factor_depth: 999.999952502551
+===================================
+
+[INFO] Workspace mask debug saved: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/graspnet_workspace_mask_debug.png
+[INFO] cloud_masked: (3689, 3)
+[INFO] object_center_camera median: [-0.0678715  -0.10890456  0.47000003]
+[INFO] Raw grasp candidates: 1024
+[INFO] Grasp after collision filtering: 414
+[INFO] Grasp after target filtering: 273
+[INFO] Candidates saved to: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/grasp_candidates_camera.json
+[INFO] Best grasp saved to: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/best_grasp_camera.json
+
+========== BEST GRASP ==========
+{
+  "success": true,
+  "method": "graspnet_baseline_d455",
+  "best_grasp": {
+    "score": 0.4360268712043762,
+    "translation_camera": [
+      -0.06943221390247345,
+      -0.03755169361829758,
+      0.4150000214576721
+    ],
+    "rotation_matrix_camera": [
+      [
+        0.05689249932765961,
+        0.9917080998420715,
+        -0.11523126810789108
+      ],
+      [
+        -0.43903547525405884,
+        0.12851069867610931,
+        0.8892316222190857
+      ],
+      [
+        0.8966667056083679,
+        0.0,
+        0.44270631670951843
+      ]
+    ],
+    "width": 0.08413664996623993,
+    "height": 0.019999999552965164,
+    "depth": 0.029999999329447746,
+    "object_id": -1,
+    "frame": "RealSense D455 aligned color camera frame",
+    "rank": 0,
+    "distance_to_object_center": 0.09010365078646243
+  },
+  "object_center_camera": [
+    -0.0678715025181877,
+    -0.10890455815955037,
+    0.4700000286102295
+  ],
+  "frame": "RealSense D455 aligned color camera frame",
+  "note": "Masih camera frame. Perlu transform camera-to-base sebelum eksekusi UR5.",
+  "meta": {
+    "object_center_camera": [
+      -0.0678715025181877,
+      -0.10890455815955037,
+      0.4700000286102295
+    ],
+    "num_mask_points": 7226,
+    "num_workspace_points": 3689,
+    "num_cloud_masked": 3689,
+    "rgb_path": "/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/current_scene_rgb.jpg",
+    "depth_path": "/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/depth_raw.npy",
+    "intrinsics_path": "/home/b401/Documents/pick_place_occlusion_noetic/data/d455_capture/camera_intrinsics.json",
+    "mask_path": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/fastsam_mask.png",
+    "intrinsics": {
+      "width": 640,
+      "height": 480,
+      "fx": 385.8294677734375,
+      "fy": 385.38531494140625,
+      "ppx": 326.5517883300781,
+      "ppy": 244.87197875976562,
+      "depth_scale": 0.0010000000474974513
+    },
+    "depth_scale": 0.0010000000474974513,
+    "factor_depth": 999.999952502551,
+    "frame": "RealSense D455 aligned color camera frame"
+  }
+}
+================================
+
+[OK] best_grasp_camera.json:
+  /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/best_grasp_camera.json
+
+============================================================
+STEP 4: ur5_pickplace - TRANSFORM + CONVERT + NUDGE + BASE_LINK
+============================================================
+[INFO] Active conda env : ur5_pickplace
+[INFO] Python           : /home/b401/miniconda3/envs/ur5_pickplace/bin/python
+Python 3.10.20
+[OK] Transform script:
+  perception/transform_grasp_to_base.py
+[RUN] python perception/transform_grasp_to_base.py
+[INFO] Menggunakan capture_config.py
+[INFO] TEST_NAME: level_medium
+[INFO] VISION_OUTPUT_DIR: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output
+[CHECK] T_BASE_CAMERA_JSON: /home/b401/Documents/pick_place_occlusion_noetic/configs/T_base_camera.json
+[CHECK] BEST_GRASP_CAMERA_JSON: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/best_grasp_camera.json
+
+========== GRASP CAMERA TO BASE ==========
+Input grasp camera: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/best_grasp_camera.json
+Transform: /home/b401/Documents/pick_place_occlusion_noetic/configs/T_base_camera.json
+Output grasp base: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/best_grasp_base.json
+-----------------------------------------
+translation_base: [-0.7205436807059891, 0.48609935291639444, 0.24863664831852855]
+pre_grasp_translation_base: [-0.7205436807059891, 0.48609935291639444, 0.3486366483185286]
+score: 0.4360268712043762
+width: 0.08413664996623993
+=========================================
+
+{
+  "success": true,
+  "method": "camera_to_base_transform",
+  "translation_base": [
+    -0.7205436807059891,
+    0.48609935291639444,
+    0.24863664831852855
+  ],
+  "rotation_matrix_base": [
+    [
+      -0.5908573060081469,
+      0.6989113310656581,
+      -0.4030019922834485
+    ],
+    [
+      0.6624794322936512,
+      0.7053986181304247,
+      0.2520591190789501
+    ],
+    [
+      0.4604440592325484,
+      -0.1180495481326036,
+      -0.8798042967975113
+    ]
+  ],
+  "score": 0.4360268712043762,
+  "width": 0.08413664996623993,
+  "height": 0.019999999552965164,
+  "depth": 0.029999999329447746,
+  "object_id": -1,
+  "frame": "UR5 base frame",
+  "source_frame": "RealSense D455 aligned color camera frame",
+  "rotation_validation": {
+    "determinant": 1.000000023441554,
+    "orthonormal_error": 9.825677463733046e-08
+  },
+  "camera_grasp_used": {
+    "translation_camera": [
+      -0.06943221390247345,
+      -0.03755169361829758,
+      0.4150000214576721
+    ],
+    "rotation_matrix_camera": [
+      [
+        0.05689249932765961,
+        0.9917080998420715,
+        -0.11523126810789108
+      ],
+      [
+        -0.43903547525405884,
+        0.12851069867610931,
+        0.8892316222190857
+      ],
+      [
+        0.8966667056083679,
+        0.0,
+        0.44270631670951843
+      ]
+    ]
+  },
+  "note": "Pose grasp sudah ditransformasikan dari camera frame ke UR5 base frame. Untuk test pertama, gunakan pre-grasp dengan z ditambah 0.10 m dan jangan langsung descend.",
+  "pre_grasp_preview": {
+    "translation_base": [
+      -0.7205436807059891,
+      0.48609935291639444,
+      0.3486366483185286
+    ],
+    "offset_z_m": 0.1,
+    "note": "Gunakan pose ini untuk test pertama agar robot hanya bergerak ke atas objek."
+  },
+  "source_file": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/best_grasp_camera.json",
+  "source_transform": "/home/b401/Documents/pick_place_occlusion_noetic/configs/T_base_camera.json"
+}
+[OK] best_grasp_base.json:
+  /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/best_grasp_base.json
+[OK] Convert gripper_tip -> tool0 script:
+  perception/convert_gripper_tip_to_tool0_target.py
+[RUN] python perception/convert_gripper_tip_to_tool0_target.py ...
+[INFO] capture_config.py imported successfully.
+
+========== CONVERT GRIPPER TIP TO TOOL0 ==========
+PROJECT_DIR: /home/b401/Documents/pick_place_occlusion_noetic
+capture_config imported: True
+capture_config TEST_NAME: level_medium
+capture_config VISION_OUTPUT_DIR: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output
+ACTIVE_TEST_NAME: level_medium
+Input best_grasp_base: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/best_grasp_base.json
+Output tool0 target: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/tool0_pregrasp_target.json
+tool0_to_gripper_tip: 0 0 0.17
+pregrasp_z: 0.13
+=================================================
+
+[OK] Saved: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/tool0_pregrasp_target.json
+
+========== RESULT ==========
+{
+  "success": true,
+  "frame": "base",
+  "target_link": "tool0",
+  "source_target": "gripper_tip",
+  "active_test_name": "level_medium",
+  "translation_tool0_pregrasp": [
+    -0.6010724767405317,
+    0.36543630890341594,
+    0.3868257406104793
+  ],
+  "quaternion_tool0_xyzw": [
+    -0.28340175782789895,
+    0.6661598976406625,
+    0.6411123643592581,
+    -0.25473392137899675
+  ],
+  "rpy_tool0_rad": [
+    1.619,
+    0.024,
+    -2.36
+  ],
+  "orientation_source": "fixed_rpy",
+  "gripper_tip_grasp_base": [
+    -0.7205436807059891,
+    0.48609935291639444,
+    0.24863664831852855
+  ],
+  "gripper_tip_pregrasp_base": [
+    -0.7205436807059891,
+    0.48609935291639444,
+    0.37863664831852856
+  ],
+  "tool0_to_gripper_tip_offset_tool_frame": [
+    0.0,
+    0.0,
+    0.17
+  ],
+  "pregrasp_z_m": 0.13,
+  "score": 0.4360268712043762,
+  "width": 0.08413664996623993,
+  "depth": 0.029999999329447746,
+  "height": 0.019999999552965164,
+  "source_file": "/home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/best_grasp_base.json",
+  "note": "Kirim translation_tool0_pregrasp + quaternion_tool0_xyzw ke MoveIt sebagai target tool0. Jangan kirim gripper_tip_grasp_base langsung ke MoveIt."
+}
+============================
+
+[OK] tool0_pregrasp_target.json sebelum nudge:
+  /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/tool0_pregrasp_target.json
+[OK] Nudge script:
+  robot_executor/nudge_tool0_target.py
+[RUN] python3 robot_executor/nudge_tool0_target.py --dx -0.05 --dy 0.038 --dz 0.0
+
+========== NUDGE TOOL0 TARGET ==========
+Input : /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/tool0_pregrasp_target.json
+Output: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/tool0_pregrasp_target.json
+Old translation_tool0_pregrasp: [-0.6010724767405317, 0.36543630890341594, 0.3868257406104793]
+Nudge dx dy dz: -0.05 0.038 0.0
+New translation_tool0_pregrasp: [-0.6510724767405317, 0.4034363089034159, 0.3868257406104793]
+=======================================
+
+[OK] Saved: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/tool0_pregrasp_target.json
+[OK] tool0_pregrasp_target.json setelah nudge:
+  /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/tool0_pregrasp_target.json
+[CHECK BASE] success: True
+[CHECK BASE] frame: base
+[CHECK BASE] translation_tool0_pregrasp: [-0.6510724767405317, 0.4034363089034159, 0.3868257406104793]
+[CHECK BASE] quaternion_tool0_xyzw: [-0.28340175782789895, 0.6661598976406625, 0.6411123643592581, -0.25473392137899675]
+[CHECK BASE] manual_nudge_base_m: {'dx': -0.05, 'dy': 0.038, 'dz': 0.0}
+[OK] Base to base_link conversion script:
+  perception/convert_tool0_target_base_to_base_link.py
+[RUN] python perception/convert_tool0_target_base_to_base_link.py --input /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/tool0_pregrasp_target.json --output /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/tool0_pregrasp_target_base_link.json
+
+========== BASE -> BASE_LINK TARGET CONVERSION ==========
+Input : /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/tool0_pregrasp_target.json
+Output: /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/tool0_pregrasp_target_base_link.json
+Input frame : base
+Output frame: base_link
+translation_tool0_pregrasp original base:
+  [-0.6510724767405317, 0.4034363089034159, 0.3868257406104793]
+translation_tool0_pregrasp new base_link:
+  [0.6510724767405317, -0.4034363089034159, 0.3868257406104793]
+========================================================
+
+[OK] tool0_pregrasp_target_base_link.json:
+  /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/tool0_pregrasp_target_base_link.json
+[CHECK BASE_LINK] success: True
+[CHECK BASE_LINK] frame: base_link
+[CHECK BASE_LINK] translation_tool0_pregrasp: [0.6510724767405317, -0.4034363089034159, 0.3868257406104793]
+[CHECK BASE_LINK] original base: [-0.6510724767405317, 0.4034363089034159, 0.3868257406104793]
+[CHECK BASE_LINK] manual_nudge_base_m: {'dx': -0.05, 'dy': 0.038, 'dz': 0.0}
+
+============================================================
+STEP 5: ROS NOETIC SYSTEM PYTHON
+============================================================
+[CHECK] Clean ROS Python import...
+[DEBUG] python executable check via system python
+[DEBUG] LD_LIBRARY_PATH: /home/b401/ur5_noetic_ws/devel/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/x86_64-linux-gnu
+[OK] ctypes import OK
+[OK] moveit_commander import OK
+[INFO] Python ROS: /usr/bin/python3
+Python 3.8.10
+[CHECK] rosnode /move_group...
+[OK] /move_group aktif.
+[CHECK] TF base_link -> tool0...
+[WARN] TF base_link -> tool0 belum terbaca dari tf_echo.
+Kalau MoveIt tetap bisa membaca current pose, ini tidak selalu fatal.
+
+============================================================
+STEP 6: OPTIONAL PRE-OPEN GRIPPER
+============================================================
+[SKIP] PREOPEN_GRIPPER=0
+[INFO] grasp.py akan open gripper di pregrasp.
+
+============================================================
+STEP 7: MOVE TO PREGRASP + DESCEND + CLOSE
+============================================================
+[RUN] python3 robot_executor/grasp.py --target_json /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/tool0_pregrasp_target_base_link.json
+[CMD] python3 robot_executor/grasp.py --target_json /home/b401/Documents/pick_place_occlusion_noetic/outputs/level_medium/vision_output/tool0_pregrasp_target_base_link.json --robot_ip 192.168.200.1 --reference_frame base_link --orientation_mode current --skip_observation --safe_lift_z 0.05 --safe_lift_eef_step 0.005 --cartesian_min_fraction 0.80 --max_base_delta 1.80 --max_wrist_delta 1.5 --max_xyz_distance 0.80 --descend_z 0.12 --pregrasp_wait 5.0 --rviz_preview_wait 3.0 --velocity 0.08 --acceleration 0.05 --execute
+[33m[ WARN] [1781859079.092167449]: IK plugin for group 'manipulator' relies on deprecated API. Please implement initialize(RobotModel, ...).[0m

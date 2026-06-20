@@ -319,9 +319,7 @@ SCENE ANALYSIS RULES:
    "target_role": "background"
 3. Table, countertop, counter, floor, wall, cabinet, shelf, surface, and background are never executable targets.
 4. Do not put background/support objects in action_plan.
-5. Bounding boxes must be [ymin, xmin, ymax, xmax] on a normalized 0-1000 scale.
-6. grasp_pixel_2d must be [x_pixel, y_pixel] on the same normalized 0-1000 image scale.
-7. Look at the lowest point of the objects in the image. Objects whose bottom edges are lower down are physically closer to the camera and must be cleared first ONLY IF they overlap the target (user_query) behind them."
+5. Look at the lowest point of the objects in the image. Objects whose bottom edges are lower down are physically closer to the camera and must be cleared first ONLY IF they overlap the target (user_query) behind them."
 
 TARGET IDENTIFICATION RULES:
 1. Resolve the user's request into one concrete object name from the scene when possible.
@@ -387,7 +385,6 @@ STRICT JSON SCHEMA:
   "visual_analysis": [
     {{
       "object": "color generic_object",
-      "bbox": [ymin, xmin, ymax, xmax],
       "description": "short visual description",
       "status": "target / obstructing / clear / clear_background",
       "target_role": "primary_target / search_occluder / background"
@@ -401,7 +398,6 @@ STRICT JSON SCHEMA:
       "target_role": "primary_target / search_occluder",
       "step_intent": "pick_primary_target / clear_occluder_to_reveal_primary_target / pick_or_search_primary_target",
       "explanation": "brief reason",
-      "grasp_pixel_2d": [x_pixel, y_pixel]
     }}
   ]
 }}

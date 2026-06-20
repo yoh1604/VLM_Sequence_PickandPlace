@@ -1,0 +1,39 @@
+{
+  "object": "red tea bag",
+  "pixel_center_uv": [
+    345,
+    223
+  ],
+  "pixel_center_uv_mean": [
+    344,
+    222
+  ],
+  "median_depth_m": 0.46800002455711365,
+  "mean_depth_m": 0.46931886672973633,
+  "point_camera_m": [
+    0.022241612896323204,
+    -0.026503901928663254,
+    0.46800002455711365
+  ],
+  "point_camera_mean_m": [
+    0.021974852308630943,
+    -0.027523236349225044,
+    0.4691774845123291
+  ],
+  "debug": {
+    "mask_pixels": 9950,
+    "valid_depth_pixels": 8913,
+    "valid_depth_ratio": 0.8957788944723618,
+    "used_pixels_after_depth_fill": 9950,
+    "min_depth_m": 0.1,
+    "max_depth_m": 2.0,
+    "depth_scale": 0.0010000000474974513,
+    "fx": 385.8294677734375,
+    "fy": 385.38531494140625,
+    "ppx": 326.5517883300781,
+    "ppy": 244.87197875976562,
+    "method": "all_mask_pixels_with_invalid_depth_filled_by_median_depth"
+  },
+  "frame": "RealSense D455 aligned color camera frame",
+  "note": "Belum ditransformasikan ke base frame UR5."
+}

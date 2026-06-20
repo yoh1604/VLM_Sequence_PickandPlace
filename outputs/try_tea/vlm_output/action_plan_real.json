@@ -1,0 +1,69 @@
+{
+  "resolved_primary_target": "red tea bag",
+  "target_visibility": "clear",
+  "plan_intent": "pick_target",
+  "visual_analysis": [
+    {
+      "object": "green soda can",
+      "description": "green soda can with label",
+      "status": "clear",
+      "target_role": "clear",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "object": "red tea bag",
+      "description": "red tea bag with tea label",
+      "status": "target",
+      "target_role": "primary_target",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "object": "blue water bottle",
+      "description": "blue water bottle with label",
+      "status": "clear",
+      "target_role": "clear",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "object": "brown envelope",
+      "description": "brown envelope in the background",
+      "status": "clear_background",
+      "target_role": "background",
+      "bbox": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "action_plan": [
+    {
+      "step": 1,
+      "action": "pick",
+      "target": "red tea bag",
+      "target_role": "primary_target",
+      "step_intent": "pick_primary_target",
+      "explanation": "The red tea bag is clear and accessible.",
+      "grasp_pixel_2d": [
+        500,
+        500
+      ]
+    }
+  ]
+}

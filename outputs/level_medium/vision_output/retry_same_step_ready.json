@@ -1,0 +1,15 @@
+{
+  "ready": true,
+  "retry_same_step": true,
+  "test_name": "level_medium",
+  "step_index": 1,
+  "target": "green soda can",
+  "source_post_check_result": "outputs/level_medium/post_check_output/STEP_1_post_check_result.json",
+  "standard_outputs": {
+    "detections_yolo": "outputs/level_medium/vision_output/detections_yolo.json",
+    "yolo_world_result": "outputs/level_medium/vision_output/yolo_world_result.jpg",
+    "fastsam_mask": "outputs/level_medium/vision_output/fastsam_mask.png",
+    "fastsam_result": "outputs/level_medium/vision_output/fastsam_result.jpg"
+  },
+  "note": "Target masih terlihat setelah post-check. Output post-check dicopy ke vision_output untuk retry GraspNet pada step yang sama."
+}

@@ -77,7 +77,7 @@ MAX_XYZ_DISTANCE="${MAX_XYZ_DISTANCE:-0.80}"
 MAX_BASE_DELTA="${MAX_BASE_DELTA:-1.80}"
 MAX_WRIST_DELTA="${MAX_WRIST_DELTA:-1.50}"
 
-VELOCITY="${VELOCITY:-0.05}"
+VELOCITY="${VELOCITY:-0.08}"
 ACCELERATION="${ACCELERATION:-0.05}"
 
 # Discard stable config.
@@ -353,6 +353,62 @@ run_next_target_grasp_only() {
     "$RUN_FIRST_SCRIPT" "$TEST_NAME" "$MODE"
 }
 
+archive_precheck_outputs() {
+  local step_index="$1"
+  local attempt="$2"
+
+  local src_vision="outputs/$TEST_NAME/vision_output"
+  local dst_dir="outputs/$TEST_NAME/pre_check_output/STEP_${step_index}_attempt_${attempt}"
+  local latest_dir="outputs/$TEST_NAME/pre_check_output/STEP_${step_index}_latest"
+
+  mkdir -p "$dst_dir"
+  rm -rf "$latest_dir"
+  mkdir -p "$latest_dir"
+
+  copy_pre_file() {
+    local src="$1"
+    local name="$2"
+
+    if [ -f "$src" ]; then
+      cp -f "$src" "$dst_dir/$name"
+      cp -f "$src" "$latest_dir/$name"
+      echo "[PRE-CHECK COPY] $src -> $dst_dir/$name"
+    else
+      echo "[WARN] PRE file tidak ada: $src"
+    fi
+  }
+
+  copy_pre_file "data/d455_capture/current_scene_rgb.jpg" "pre_scene_rgb.jpg"
+  copy_pre_file "data/d455_capture/current_scene_depth.png" "pre_scene_depth.png"
+
+  copy_pre_file "$src_vision/detections_yolo.json" "pre_detections_yolo.json"
+  copy_pre_file "$src_vision/yolo_world_result.jpg" "pre_yolo_result.jpg"
+  copy_pre_file "$src_vision/fastsam_result.jpg" "pre_fastsam_result.jpg"
+  copy_pre_file "$src_vision/fastsam_mask.png" "pre_fastsam_mask.png"
+  copy_pre_file "$src_vision/object_position_camera.json" "pre_object_position_camera.json"
+
+  copy_pre_file "$src_vision/best_grasp_camera.json" "pre_best_grasp_camera.json"
+  copy_pre_file "$src_vision/best_grasp_base.json" "pre_best_grasp_base.json"
+  copy_pre_file "$src_vision/tool0_pregrasp_target.json" "pre_tool0_pregrasp_target.json"
+  copy_pre_file "$src_vision/tool0_pregrasp_target_base_link.json" "pre_tool0_pregrasp_target_base_link.json"
+
+  cat > "$dst_dir/precheck_info.json" <<EOF
+{
+  "test_name": "$TEST_NAME",
+  "step_index": $step_index,
+  "attempt": $attempt,
+  "source": "vision_output",
+  "note": "PRE-check archive dibuat dari current_scene dan vision_output sebelum/sekitar aksi robot step ini."
+}
+EOF
+
+  cp -f "$dst_dir/precheck_info.json" "$latest_dir/precheck_info.json"
+
+  echo "[OK] PRE-check archive saved:"
+  echo "  $dst_dir"
+  echo "  $latest_dir"
+}
+
 run_retry_same_step_grasp_only() {
   local step_index="$1"
 
@@ -623,6 +679,8 @@ while true; do
       else
         run_retry_same_step_grasp_only "$STEP_INDEX"
       fi
+
+      archive_precheck_outputs "$STEP_INDEX" "$ATTEMPT"
 
       run_discard_action
     fi
